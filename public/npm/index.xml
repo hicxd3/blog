@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Npm on Cxd3</title>
+    <link>http://localhost:1313/npm/</link>
+    <description>Recent content in Npm on Cxd3</description>
+    <generator>Hugo</generator>
+    <language>en</language>
+    <lastBuildDate>Sat, 08 Feb 2025 12:00:24 +0300</lastBuildDate>
+    <atom:link href="http://localhost:1313/npm/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>NPM Guide</title>
+      <link>http://localhost:1313/npm_guide/</link>
+      <pubDate>Sat, 08 Feb 2025 12:00:24 +0300</pubDate>
+      <guid>http://localhost:1313/npm_guide/</guid>
+      <description>&lt;p&gt;NPM (Node Package Manager) is a tool for managing packages in the Node.js environment. It allows you to install necessary libraries, manage project dependencies, and configure and edit its metadata.&lt;/p&gt;&#xA;&lt;h3 id=&#34;downloading-packages&#34;&gt;Downloading Packages&lt;/h3&gt;&#xA;&lt;p&gt;Packages in NPM are bundles of code that can be a library, a utility, or even a full-fledged application.&lt;/p&gt;&#xA;&lt;p&gt;Developers use pre-made packages to avoid unnecessary work — instead of writing modules from scratch that already exist, they use ready-made solutions.&lt;/p&gt;</description>
+    </item>
+  </channel>
+</rss>

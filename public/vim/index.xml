@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Vim on Cxd3</title>
+    <link>http://localhost:1313/vim/</link>
+    <description>Recent content in Vim on Cxd3</description>
+    <generator>Hugo</generator>
+    <language>en</language>
+    <lastBuildDate>Sat, 04 Jan 2025 18:53:24 +0300</lastBuildDate>
+    <atom:link href="http://localhost:1313/vim/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Commands from VimTutor</title>
+      <link>http://localhost:1313/vimtutor/</link>
+      <pubDate>Sat, 04 Jan 2025 18:53:24 +0300</pubDate>
+      <guid>http://localhost:1313/vimtutor/</guid>
+      <description>&lt;p&gt;A list of commands from the VimTutor lesson&lt;/p&gt;&#xA;&lt;h4 id=&#34;exiting-vim&#34;&gt;Exiting Vim&lt;/h4&gt;&#xA;&lt;p&gt;&lt;code&gt;:q&lt;/code&gt; › Exit if no changes were made&lt;/p&gt;&#xA;&lt;p&gt;&lt;code&gt;:q!&lt;/code&gt; › Exit Vim and discard all changes&lt;/p&gt;&#xA;&lt;p&gt;&lt;code&gt;:wq&lt;/code&gt; › Save changes and exit the file&lt;/p&gt;&#xA;&lt;p&gt;&lt;code&gt;:w&lt;/code&gt; › Save the file.&lt;/p&gt;&#xA;&lt;h4 id=&#34;editing-and-navigation&#34;&gt;Editing and Navigation&lt;/h4&gt;&#xA;&lt;p&gt;&lt;code&gt;k&lt;/code&gt; › Move up&lt;/p&gt;&#xA;&lt;p&gt;&lt;code&gt;h&lt;/code&gt; › Move left&lt;/p&gt;&#xA;&lt;p&gt;&lt;code&gt;l&lt;/code&gt; › Move right&lt;/p&gt;&#xA;&lt;p&gt;&lt;code&gt;j&lt;/code&gt; › Move down&lt;/p&gt;&#xA;&lt;p&gt;&lt;code&gt;x&lt;/code&gt; › Deletes the character under the cursor&lt;/p&gt;&#xA;&lt;p&gt;&lt;code&gt;i&lt;/code&gt; › Enter INSERT MODE to the left of the cursor&lt;/p&gt;</description>
+    </item>
+  </channel>
+</rss>

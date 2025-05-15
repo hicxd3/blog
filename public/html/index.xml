@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Html on Cxd3</title>
+    <link>http://localhost:1313/html/</link>
+    <description>Recent content in Html on Cxd3</description>
+    <generator>Hugo</generator>
+    <language>en</language>
+    <lastBuildDate>Wed, 27 Nov 2024 18:53:24 +0300</lastBuildDate>
+    <atom:link href="http://localhost:1313/html/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Page grids and document flow</title>
+      <link>http://localhost:1313/page_grids_and_flow/</link>
+      <pubDate>Wed, 27 Nov 2024 18:53:24 +0300</pubDate>
+      <guid>http://localhost:1313/page_grids_and_flow/</guid>
+      <description>&lt;p&gt;A lecture at the HTML Academy about page grids&lt;/p&gt;&#xA;&lt;p&gt;A grid or layout usually refers to the structure of the relative arrangement of large&#xA;visual blocks on a page.&lt;/p&gt;&#xA;&lt;p&gt;Imagine that the layout is mentally divided into non-intersecting rectangles.&lt;/p&gt;&#xA;&lt;p&gt;First, the largest areas are highlighted, then these areas are divided into smaller ones, and&#xA;so on until the smallest rectangles that represent&#xA;individual words or elements are highlighted.&lt;/p&gt;&#xA;&lt;p&gt;As a result, the entire page will look like a set of nested rectangles,&#xA;starting from the largest and ending with the smallest.&lt;/p&gt;</description>
+    </item>
+  </channel>
+</rss>

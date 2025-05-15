@@ -1,0 +1,33 @@
+baseURL = 'https://cxd3.dev'
+languageCode = 'en'
+title = "Cxd3"
+
+[markup]
+  [markup.goldmark]
+    [markup.goldmark.renderer]
+      unsafe = true
+    [markup.goldmark.parser]
+      [markup.goldmark.parser.attribute]
+        block = true
+        title = true
+  [markup.highlight]
+    noClasses = false
+    codeFences = true
+    guessSyntax = false
+    hl_Lines = ""
+    lineNoStart = 1
+    lineNos = false
+    lineNumbersInTable = true
+    noHl = true
+    style = "monokai"
+
+
+[permalinks]
+  categories   = "/:slug/"
+
+
+[taxonomies]
+  category = "categories"
+
+[params.categories]
+  the_hollow_crown = "A modern poetic adaptation of The Hollow Crown - the legendary BBC series based on the historical plays of William Shakespeare. Here you’ll find each episode rebuilt in thoughtful modern English, scene by scene, with illustrated moments, symbolic sketches, and a touch of shadow"

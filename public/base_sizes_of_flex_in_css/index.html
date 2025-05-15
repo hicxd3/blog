@@ -1,0 +1,335 @@
+<!DOCTYPE html>
+<html lang="en">
+<head><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=livereload" data-no-instant defer></script>
+    <link rel="icon" type="image/x-icon" href="../images/favicon.ico">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Base Sizes of Flex Items</title>
+    <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/particles.js@2.0.0/particles.min.js"></script>
+    <script>
+        MathJax = {
+          tex: {
+            inlineMath: [['\\(', '\\)']], 
+            displayMath: [['\\[', '\\]']], 
+          },
+          options: {
+            skipHtmlTags: ['script', 'noscript', 'style', 'textarea', 'pre'],
+          },
+          svg: {
+            fontCache: 'global' 
+          }
+        };
+        </script>
+          <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/remixicon/3.7.0/remixicon.css">
+          <link
+            rel="stylesheet"
+            href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.9.0/styles/tokyo-night-dark.min.css">
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.9.0/highlight.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.9.0/languages/go.min.js"></script>
+        <script>
+            hljs.highlightAll();
+        </script>
+        <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
+          <link rel="stylesheet" href="/styles/style.css">
+          <link rel="preconnect" href="https://fonts.googleapis.com">
+          <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+          <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:ital,wght@0,100..800;1,100..800&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div id="particles-js"></div>
+    <div class="content-wrapper">
+    <a href="javascript:history.back()" class="back-button" id="back-button">
+        <i class="ri-arrow-drop-left-line"></i>
+    </a>
+    
+    <div class="nav__menu" id="nav-menu">
+        <ul class="nav__list">
+           <li class="nav__item">
+              <a href="/" class="nav__link active-link">Home</a>
+           </li>
+           <li class="nav__item">
+              <a href="/me/" class="nav__link">About</a>
+           </li>
+           <li class="nav__item">
+              <a href="/links/" class="nav__link">Links</a>
+           </li>
+        </ul>
+        
+        <div class="nav__close" id="nav-close">
+           <i class="ri-close-line"></i>
+        </div> 
+     </div>
+     
+     <div class="nav__toggle" id="nav-toggle">
+        <i class="ri-menu-5-line"></i>
+     </div>
+    
+    <div class="author">
+        <a href="/">
+        <img class="author-avatar" src="/images/ava.jpeg">
+        </a>
+    </div>
+    <div class="clearfix">
+    <div class="col12 md:col8 lg:col6 mxauto pl2 pr2">
+    <div class="post">    
+        <nav class="col11 mxauto">
+    <div class="flex align-center justify-center">
+        <a href="/" class="Logo no-underline h2 serif bold mb0">Cxd3</a>
+    </div>
+    <div class="mt4 h5 text-center">
+        <a href="/" class="gray no-underline inline-block mx2 mt1 md:mt0">Home</a>
+        <a href="/me/" class="gray no-underline inline-block mx2 mt1 md:mt0">About</a>
+        <a href="/links/" class="gray no-underline inline-block mx2 mt1 md:mt0">Links</a>
+      </div>
+</nav>
+        
+<div class="list">
+   <div class="singleHead">
+    <div class="sinleHeadTexts">
+        
+            <h2 class="title__center">Base Sizes of Flex Items</h2>
+        
+
+        
+            <time class="h5 gray title__date">24 December 2024</time>
+        
+
+        <div><p>The algorithm for calculating the sizes of flex items and distributing them within a flex container involves three sequential steps. This process is significantly more complex than in the traditional block model.</p>
+<h3 id="step-one--determining-the-base-size-of-flex-items">Step One – Determining the Base Size of Flex Items</h3>
+<p>The base size is the size of the item measured along the main axis.</p>
+<p>The base size is the size a flex item takes without using additional flex model features. It&rsquo;s defined by standard block model properties (e.g., <code>width</code>, <code>height</code>, <code>padding</code>, <code>border</code>) and the content inside the element.</p>
+<p>If the main axis is horizontal, the base size is affected by:</p>
+<ul>
+<li>The <code>width</code> property or, if not set, the content width (e.g., the length of the longest word)</li>
+<li>Horizontal paddings <code>padding</code></li>
+<li>Horizontal borders <code>border</code></li>
+</ul>
+<p>If the main axis is vertical, the base size is affected by:</p>
+<ul>
+<li>The <code>height</code> property or, if not set, the height of the content, such as the number of text lines</li>
+<li>Vertical paddings <code>padding</code></li>
+<li>Vertical borders <code>border</code></li>
+</ul>
+<p>Margins and borders behave logically: depending on the main axis direction, the base size includes either vertical or horizontal margin/border components.</p>
+<p>Regarding <code>width</code> and <code>height</code>, the behavior isn&rsquo;t as straightforward. When the main axis is horizontal — we use one property, when vertical — another. Because of this, the <code>flex-basis</code> property was introduced.</p>
+<p>It defines the size of the content area along the main axis, regardless of its direction. <code>flex-basis</code> takes priority over <code>width</code> and <code>height</code>, overriding them if they are also specified on the same flex item.</p>
+<p>You can use <code>width</code>/<code>height</code> without <code>flex-basis</code>, and vice versa — that&rsquo;s acceptable too. Just remember how these properties behave depending on the main axis direction.</p>
+<p><img src="/images/base_weight.png" alt="Determining base size of flex items"></p>
+<p>The base size of a flex item is determined as follows:</p>
+<p>Step 1:</p>
+<ul>
+<li>If <code>flex-basis</code> is specified (and its value is not <code>auto</code>), its value is used as the content area size. Go to step 5. Otherwise, go to step 2.</li>
+</ul>
+<p>Step 2:</p>
+<ul>
+<li>If the main axis is horizontal and <code>width</code> is specified (and it&rsquo;s not <code>auto</code>), then <code>width</code> is used. Go to step 5. Otherwise, go to step 3.</li>
+</ul>
+<p>Step 3:</p>
+<ul>
+<li>If the main axis is vertical and <code>height</code> is specified (and it&rsquo;s not <code>auto</code>), then <code>height</code> is used. Go to step 5. Otherwise, go to step 4.</li>
+</ul>
+<p>Step 4:</p>
+<ul>
+<li>The content area size is calculated based on the actual content size along the axis. This can be non-trivial, so it&rsquo;s better to avoid such cases when building layouts to retain control. Go to step 5.</li>
+</ul>
+<p>Step 5:</p>
+<ul>
+<li>Add paddings and borders along the main axis to the content area size to get the base size.</li>
+</ul>
+<p>Important rule: when building layouts, always specify either <code>flex-basis</code> or <code>width</code>/<code>height</code>.</p>
+<p>After determining the base size of all flex items, the browser calculates the remaining free space in the container. If there&rsquo;s extra space or not enough, the &ldquo;flexibility&rdquo; of the items kicks in. That&rsquo;s the second stage.</p>
+</div>
+    </div>
+   </div>
+</div>
+ 
+        <div class="mt4 h5 text-center">
+    <div class="typed-container">
+        <span id="typed-111111"></span>
+        <div class="typed-strings" style="display: none;">
+            <p>
+                Subscribe to 👉 <a href="#">YouTube</a>
+            </p>
+        </div>
+    </div>
+    <br />
+    <a href="/" class="gray no-underline inline-block mx2 mt1 md:mt0">Home</a>
+    <a href="/me/" class="gray no-underline inline-block mx2 mt1 md:mt0">About</a>
+    <a href="/links/" class="gray no-underline inline-block mx2 mt1 md:mt0">Links</a>
+    <br />
+    <br />
+    <a href="mailto:mail@hi@cxd3.com" class="gray no-underline inline-block mx2">
+        Text me
+    </a>
+</div>
+<br />
+<br />
+
+<a href="#" class="scrollup" id="scroll-up">
+    <i class="ri-arrow-drop-up-line"></i>
+ </a> 
+    </div>
+    </div>
+    </div>
+    </div>
+    <script>
+         
+        particlesJS("particles-js", {
+  particles: {
+    number: {
+      value: 90,
+      density: {
+        enable: true,
+        value_area: 800
+      }
+    },
+    color: {
+      value: "#d2c0f5"
+    },
+    shape: {
+      type: "circle",
+      stroke: {
+        width: 0,
+        color: "#000"
+      }
+    },
+    opacity: {
+      value: 0.45,
+      random: true,
+      anim: {
+        enable: true,
+        speed: 0.4,
+        opacity_min: 0.1,
+        sync: true
+      }
+    },
+    size: {
+      value: 2,
+      random: true,
+      anim: {
+        enable: true
+      }
+    },
+    line_linked: {
+      enable: true,
+      distance: 120,
+      color: "#d2c0f5",
+      opacity: 0.25,
+      width: 1
+    },
+    move: {
+      enable: true,
+      speed: 1.1,
+      direction: "none",
+      random: false,
+      straight: false,
+      out_mode: "out",
+      bounce: true
+    }
+  },
+  interactivity: {
+    detect_on: "window",
+    events: {
+      onhover: {
+        enable: true,
+        mode: "repulse"
+      },
+      onclick: {
+        enable: false
+      },
+      resize: true
+    },
+    modes: {
+      repulse: {
+        distance: 120,
+        duration: 0.4
+      }
+    }
+  },
+  retina_detect: true
+});
+ 
+  
+    document.addEventListener('DOMContentLoaded', () => {
+    const backButton = document.getElementById('back-button');
+    if (backButton) {
+        if (window.location.pathname === '/' || window.location.pathname === '/index.html') {
+            backButton.classList.add('hidden');
+        } else {
+            backButton.classList.remove('hidden');
+        }
+    }
+});
+let scrollUp = () =>{
+	const scrollUp = document.getElementById('scroll-up')
+	this.scrollY >= 350 ? scrollUp.classList.add('show-scroll')
+						: scrollUp.classList.remove('show-scroll')
+}
+window.addEventListener('scroll', scrollUp)
+const navMenu = document.getElementById('nav-menu'),
+      navToggle = document.getElementById('nav-toggle'),
+      navClose = document.getElementById('nav-close');
+ 
+if (navToggle) {
+    navToggle.addEventListener('click', () => {
+        document.body.classList.add('show-menu');
+    });
+}
+ 
+if (navClose) {
+    navClose.addEventListener('click', () => {
+        document.body.classList.remove('show-menu');
+    });
+}
+ 
+document.addEventListener('click', (event) => {
+    const isClickInsideMenu = navMenu.contains(event.target); 
+    const isClickOnToggle = navToggle.contains(event.target); 
+    if (!isClickInsideMenu && !isClickOnToggle && document.body.classList.contains('show-menu')) {
+        document.body.classList.remove('show-menu');
+    }
+});
+const navLinks = document.querySelectorAll('.nav__link');
+const setActiveLink = () => {
+    const currentPath = window.location.pathname;
+    navLinks.forEach(link => {
+        const linkPath = new URL(link.href).pathname;
+        if (linkPath === currentPath) {
+            link.classList.add('active-link');
+        } else {
+            link.classList.remove('active-link');
+        }
+    });
+};
+window.addEventListener('load', setActiveLink);
+window.addEventListener('popstate', setActiveLink);
+document.addEventListener('DOMContentLoaded', () => {
+  const typedContainers = document.querySelectorAll('.typed-container');
+  const observer = new IntersectionObserver((entries, obs) => {
+    entries.forEach(entry => {
+      if (entry.isIntersecting) {
+        const container = entry.target;
+        const typedId = container.querySelector('span').id;
+        const stringsEl = container.querySelectorAll('.typed-strings p');
+        const strings = Array.from(stringsEl).map(el => el.innerHTML);
+        new Typed(`#${typedId}`, {
+          strings,
+          typeSpeed: 75,
+          backSpeed: 25,
+          backDelay: 1500,
+          startDelay: 300,
+          loop: false,
+          showCursor: true,
+          cursorChar: '|',
+          contentType: 'html'
+        });
+        obs.unobserve(container);
+      }
+    });
+  }, { threshold: 0.5 });
+  typedContainers.forEach(container => observer.observe(container));
+});
+    </script>
+</body>
+</html>

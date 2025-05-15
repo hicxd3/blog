@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Grid on Cxd3</title>
+    <link>http://localhost:1313/grid/</link>
+    <description>Recent content in Grid on Cxd3</description>
+    <generator>Hugo</generator>
+    <language>en</language>
+    <lastBuildDate>Thu, 26 Dec 2024 18:53:24 +0300</lastBuildDate>
+    <atom:link href="http://localhost:1313/grid/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Grid Micro Layouts</title>
+      <link>http://localhost:1313/grid_micro_layouts/</link>
+      <pubDate>Thu, 26 Dec 2024 18:53:24 +0300</pubDate>
+      <guid>http://localhost:1313/grid_micro_layouts/</guid>
+      <description>&lt;h3 id=&#34;repeat&#34;&gt;repeat&lt;/h3&gt;&#xA;&lt;p&gt;If all columns in a grid container should have the same width, the &lt;code&gt;repeat&lt;/code&gt; function is convenient. Inside the parentheses, specify the number of columns and their width, separated by a comma. For example:&lt;/p&gt;&#xA;&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-css&#34; data-lang=&#34;css&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;nt&#34;&gt;grid-template-columns&lt;/span&gt;&lt;span class=&#34;o&#34;&gt;:&lt;/span&gt; &lt;span class=&#34;nt&#34;&gt;repeat&lt;/span&gt;&lt;span class=&#34;o&#34;&gt;(&lt;/span&gt;&lt;span class=&#34;nt&#34;&gt;number&lt;/span&gt; &lt;span class=&#34;nt&#34;&gt;of&lt;/span&gt; &lt;span class=&#34;nt&#34;&gt;columns&lt;/span&gt;&lt;span class=&#34;o&#34;&gt;,&lt;/span&gt; &lt;span class=&#34;nt&#34;&gt;column&lt;/span&gt; &lt;span class=&#34;nt&#34;&gt;width&lt;/span&gt;&lt;span class=&#34;o&#34;&gt;);&lt;/span&gt;&#xA;&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;This creates three columns of equal width, where &lt;code&gt;1fr&lt;/code&gt; means each column takes an equal share of the available space.&lt;/p&gt;&#xA;&lt;h3 id=&#34;auto-fit&#34;&gt;auto-fit&lt;/h3&gt;&#xA;&lt;p&gt;If the number of columns should automatically adjust to the width of the container, use the &lt;code&gt;auto-fit&lt;/code&gt; value inside the &lt;code&gt;repeat&lt;/code&gt; function instead of a fixed number of columns. For example:&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Grid In Css</title>
+      <link>http://localhost:1313/grid_in_css/</link>
+      <pubDate>Sat, 12 Oct 2024 18:53:24 +0300</pubDate>
+      <guid>http://localhost:1313/grid_in_css/</guid>
+      <description>&lt;p&gt;A box container of the grid type contains child elements called grid items.&lt;br&gt;&#xA;Although the grid container looks like a regular block-level element for other elements like main content, the grid items inside behave differently.&lt;/p&gt;&#xA;&lt;p&gt;For example, even inline elements begin to take up the full available area, and the margins of elements inside a grid container behave differently too.&lt;/p&gt;&#xA;&lt;p&gt;By default, a grid container has a single column.&lt;br&gt;&#xA;To change this, you need to define a grid template using the &lt;code&gt;grid-template-columns&lt;/code&gt; property.&lt;/p&gt;</description>
+    </item>
+  </channel>
+</rss>

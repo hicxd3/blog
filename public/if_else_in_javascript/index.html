@@ -1,0 +1,369 @@
+<!DOCTYPE html>
+<html lang="en">
+<head><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=livereload" data-no-instant defer></script>
+    <link rel="icon" type="image/x-icon" href="../images/favicon.ico">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>if / else in JavaScript</title>
+    <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/particles.js@2.0.0/particles.min.js"></script>
+    <script>
+        MathJax = {
+          tex: {
+            inlineMath: [['\\(', '\\)']], 
+            displayMath: [['\\[', '\\]']], 
+          },
+          options: {
+            skipHtmlTags: ['script', 'noscript', 'style', 'textarea', 'pre'],
+          },
+          svg: {
+            fontCache: 'global' 
+          }
+        };
+        </script>
+          <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/remixicon/3.7.0/remixicon.css">
+          <link
+            rel="stylesheet"
+            href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.9.0/styles/tokyo-night-dark.min.css">
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.9.0/highlight.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.9.0/languages/go.min.js"></script>
+        <script>
+            hljs.highlightAll();
+        </script>
+        <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
+          <link rel="stylesheet" href="/styles/style.css">
+          <link rel="preconnect" href="https://fonts.googleapis.com">
+          <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+          <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:ital,wght@0,100..800;1,100..800&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div id="particles-js"></div>
+    <div class="content-wrapper">
+    <a href="javascript:history.back()" class="back-button" id="back-button">
+        <i class="ri-arrow-drop-left-line"></i>
+    </a>
+    
+    <div class="nav__menu" id="nav-menu">
+        <ul class="nav__list">
+           <li class="nav__item">
+              <a href="/" class="nav__link active-link">Home</a>
+           </li>
+           <li class="nav__item">
+              <a href="/me/" class="nav__link">About</a>
+           </li>
+           <li class="nav__item">
+              <a href="/links/" class="nav__link">Links</a>
+           </li>
+        </ul>
+        
+        <div class="nav__close" id="nav-close">
+           <i class="ri-close-line"></i>
+        </div> 
+     </div>
+     
+     <div class="nav__toggle" id="nav-toggle">
+        <i class="ri-menu-5-line"></i>
+     </div>
+    
+    <div class="author">
+        <a href="/">
+        <img class="author-avatar" src="/images/ava.jpeg">
+        </a>
+    </div>
+    <div class="clearfix">
+    <div class="col12 md:col8 lg:col6 mxauto pl2 pr2">
+    <div class="post">    
+        <nav class="col11 mxauto">
+    <div class="flex align-center justify-center">
+        <a href="/" class="Logo no-underline h2 serif bold mb0">Cxd3</a>
+    </div>
+    <div class="mt4 h5 text-center">
+        <a href="/" class="gray no-underline inline-block mx2 mt1 md:mt0">Home</a>
+        <a href="/me/" class="gray no-underline inline-block mx2 mt1 md:mt0">About</a>
+        <a href="/links/" class="gray no-underline inline-block mx2 mt1 md:mt0">Links</a>
+      </div>
+</nav>
+        
+<div class="list">
+   <div class="singleHead">
+    <div class="sinleHeadTexts">
+        
+            <h2 class="title__center">if / else in JavaScript</h2>
+        
+
+        
+            <time class="h5 gray title__date">25 March 2024</time>
+        
+
+        <div><p>Conditional statements allow you to change the behavior of a program depending on certain conditions. Thanks to them, we can build complex programs that behave differently under various scenarios.</p>
+<p>The <code>if</code> statement is a control structure in programming that manages the sequence of operations. It contains a predicate expression inside parentheses, followed by a block of code within curly braces. This block executes only if the predicate returns <code>true</code>.</p>
+<p>If the predicate returns <code>false</code>, the program skips the block and continues execution. In this example, the next line <code>return 'general';</code> will execute, causing the function to return a string and terminate. Note that the <code>return</code> statement can be used anywhere in a function, including inside an <code>if</code> block.</p>
+<p>If the <code>if</code> block only contains one line of code, curly braces can be omitted, for example:</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-js" data-lang="js"><span class="line"><span class="cl"><span class="kr">const</span> <span class="nx">getTypeOfSentence</span> <span class="o">=</span> <span class="p">(</span><span class="nx">sentence</span><span class="p">)</span> <span class="p">=&gt;</span> <span class="p">{</span>
+</span></span><span class="line"><span class="cl">  <span class="kr">const</span> <span class="nx">lastChar</span> <span class="o">=</span> <span class="nx">sentence</span><span class="p">[</span><span class="nx">sentence</span><span class="p">.</span><span class="nx">length</span> <span class="o">-</span> <span class="mi">1</span><span class="p">];</span>
+</span></span><span class="line"><span class="cl">  <span class="k">if</span> <span class="p">(</span><span class="nx">lastChar</span> <span class="o">===</span> <span class="s1">&#39;?&#39;</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl">    <span class="k">return</span> <span class="s1">&#39;question&#39;</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl">  <span class="k">return</span> <span class="s1">&#39;general&#39;</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl"><span class="p">};</span> 
+</span></span><span class="line"><span class="cl"><span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="nx">getTypeOfSentence</span><span class="p">(</span><span class="s1">&#39;Hodor&#39;</span><span class="p">));</span>  <span class="c1">// =&gt; general
+</span></span></span><span class="line"><span class="cl"><span class="c1"></span><span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="nx">getTypeOfSentence</span><span class="p">(</span><span class="s1">&#39;Hodor?&#39;</span><span class="p">));</span> <span class="c1">// =&gt; question
+</span></span></span></code></pre></div><p>It’s recommended to always use curly braces, even for one-line statements. This makes the structure of your code more visible and easier to understand.</p>
+<h3 id="else">else</h3>
+<p>Let’s create a <code>getTypeOfSentence()</code> function that analyzes the tone of a sentence: for declarative sentences – it returns <em>General sentence</em>, for questions – <em>Question sentence</em>.</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-js" data-lang="js"><span class="line"><span class="cl"><span class="nx">getTypeOfSentence</span><span class="p">(</span><span class="s1">&#39;Hodor&#39;</span><span class="p">);</span>  <span class="c1">// General sentence
+</span></span></span><span class="line"><span class="cl"><span class="c1"></span><span class="nx">getTypeOfSentence</span><span class="p">(</span><span class="s1">&#39;Hodor?&#39;</span><span class="p">);</span> <span class="c1">// Question sentence
+</span></span></span></code></pre></div><p>Here’s the function:</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-js" data-lang="js"><span class="line"><span class="cl"><span class="kr">const</span> <span class="nx">getTypeOfSentence</span> <span class="o">=</span> <span class="p">(</span><span class="nx">sentence</span><span class="p">)</span> <span class="p">=&gt;</span> <span class="p">{</span>
+</span></span><span class="line"><span class="cl">  <span class="c1">// Declare a variable to hold the sentence type
+</span></span></span><span class="line"><span class="cl"><span class="c1"></span>  <span class="kd">let</span> <span class="nx">sentenceType</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">  <span class="c1">// Predicate to check the sentence ending
+</span></span></span><span class="line"><span class="cl"><span class="c1"></span>  <span class="c1">// If it ends with &#39;?&#39;, it returns true
+</span></span></span><span class="line"><span class="cl"><span class="c1"></span>  <span class="k">if</span> <span class="p">(</span><span class="nx">sentence</span><span class="p">.</span><span class="nx">endsWith</span><span class="p">(</span><span class="s1">&#39;?&#39;</span><span class="p">))</span> <span class="p">{</span>
+</span></span><span class="line"><span class="cl">    <span class="nx">sentenceType</span> <span class="o">=</span> <span class="s1">&#39;Question&#39;</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl">  <span class="p">}</span> <span class="k">else</span> <span class="p">{</span>
+</span></span><span class="line"><span class="cl">    <span class="c1">// Otherwise it&#39;s a general sentence
+</span></span></span><span class="line"><span class="cl"><span class="c1"></span>    <span class="nx">sentenceType</span> <span class="o">=</span> <span class="s1">&#39;General&#39;</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl">  <span class="p">}</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">  <span class="c1">// Return the sentence type using interpolation
+</span></span></span><span class="line"><span class="cl"><span class="c1"></span>  <span class="k">return</span> <span class="sb">`</span><span class="si">${</span><span class="nx">sentenceType</span><span class="si">}</span><span class="sb"> sentence`</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl"><span class="p">};</span>
+</span></span></code></pre></div><p>We added the <code>else</code> keyword with a new block. This block only executes if the <code>if</code> condition returns false.</p>
+<h3 id="else-if">else if</h3>
+<p>The previous <code>getTypeOfSentence()</code> function only detects question and general sentences. Let’s expand it to also detect exclamatory sentences.</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-js" data-lang="js"><span class="line"><span class="cl"><span class="kr">const</span> <span class="nx">getTypeOfSentence</span> <span class="o">=</span> <span class="p">(</span><span class="nx">sentence</span><span class="p">)</span> <span class="p">=&gt;</span> <span class="p">{</span>
+</span></span><span class="line"><span class="cl">  <span class="kr">const</span> <span class="nx">lastChar</span> <span class="o">=</span> <span class="nx">sentence</span><span class="p">[</span><span class="nx">sentence</span><span class="p">.</span><span class="nx">length</span> <span class="o">-</span> <span class="mi">1</span><span class="p">];</span>
+</span></span><span class="line"><span class="cl">  <span class="kd">let</span> <span class="nx">sentenceType</span><span class="p">;</span> 
+</span></span><span class="line"><span class="cl">  <span class="k">if</span> <span class="p">(</span><span class="nx">lastChar</span> <span class="o">===</span> <span class="s1">&#39;!&#39;</span><span class="p">)</span> <span class="p">{</span>
+</span></span><span class="line"><span class="cl">    <span class="nx">sentenceType</span> <span class="o">=</span> <span class="s1">&#39;exclamation&#39;</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl">  <span class="p">}</span> <span class="k">else</span> <span class="p">{</span>
+</span></span><span class="line"><span class="cl">    <span class="nx">sentenceType</span> <span class="o">=</span> <span class="s1">&#39;normal&#39;</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl">  <span class="p">}</span>
+</span></span><span class="line"><span class="cl">  <span class="k">if</span> <span class="p">(</span><span class="nx">lastChar</span> <span class="o">===</span> <span class="s1">&#39;?&#39;</span><span class="p">)</span> <span class="p">{</span>
+</span></span><span class="line"><span class="cl">    <span class="nx">sentenceType</span> <span class="o">=</span> <span class="s1">&#39;question&#39;</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl">  <span class="p">}</span>
+</span></span><span class="line"><span class="cl">  <span class="k">return</span> <span class="sb">`Sentence is </span><span class="si">${</span><span class="nx">sentenceType</span><span class="si">}</span><span class="sb">`</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl"><span class="p">};</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="nx">getTypeOfSentence</span><span class="p">(</span><span class="s1">&#39;Who?&#39;</span><span class="p">);</span> <span class="c1">// Sentence is question
+</span></span></span><span class="line"><span class="cl"><span class="c1"></span><span class="nx">getTypeOfSentence</span><span class="p">(</span><span class="s1">&#39;No&#39;</span><span class="p">);</span>   <span class="c1">// Sentence is normal
+</span></span></span><span class="line"><span class="cl"><span class="c1"></span><span class="nx">getTypeOfSentence</span><span class="p">(</span><span class="s1">&#39;No!&#39;</span><span class="p">);</span>  <span class="c1">// Sentence is exclamation
+</span></span></span></code></pre></div><p>We added a check for &ldquo;exclamation&rdquo; (<code>!</code>). Technically the function works, but semantically there are issues:</p>
+<ol>
+<li>The question mark is checked regardless of whether an exclamation has already been detected.</li>
+<li>The second condition is not part of the else branch.</li>
+</ol>
+<p>It’s better to use <code>else if</code> for cleaner logic:</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-js" data-lang="js"><span class="line"><span class="cl"><span class="kr">const</span> <span class="nx">getTypeOfSentence</span> <span class="o">=</span> <span class="p">(</span><span class="nx">sentence</span><span class="p">)</span> <span class="p">=&gt;</span> <span class="p">{</span>
+</span></span><span class="line"><span class="cl">  <span class="kr">const</span> <span class="nx">lastChar</span> <span class="o">=</span> <span class="nx">sentence</span><span class="p">[</span><span class="nx">sentence</span><span class="p">.</span><span class="nx">length</span> <span class="o">-</span> <span class="mi">1</span><span class="p">];</span>
+</span></span><span class="line"><span class="cl">  <span class="kd">let</span> <span class="nx">sentenceType</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl">  <span class="k">if</span> <span class="p">(</span><span class="nx">lastChar</span> <span class="o">===</span> <span class="s1">&#39;?&#39;</span><span class="p">)</span> <span class="p">{</span>
+</span></span><span class="line"><span class="cl">    <span class="nx">sentenceType</span> <span class="o">=</span> <span class="s1">&#39;question&#39;</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl">  <span class="p">}</span> <span class="k">else</span> <span class="k">if</span> <span class="p">(</span><span class="nx">lastChar</span> <span class="o">===</span> <span class="s1">&#39;!&#39;</span><span class="p">)</span> <span class="p">{</span>
+</span></span><span class="line"><span class="cl">    <span class="nx">sentenceType</span> <span class="o">=</span> <span class="s1">&#39;exclamation&#39;</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl">  <span class="p">}</span> <span class="k">else</span> <span class="p">{</span>
+</span></span><span class="line"><span class="cl">    <span class="nx">sentenceType</span> <span class="o">=</span> <span class="s1">&#39;normal&#39;</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl">  <span class="p">}</span>
+</span></span><span class="line"><span class="cl">  <span class="k">return</span> <span class="sb">`Sentence is </span><span class="si">${</span><span class="nx">sentenceType</span><span class="si">}</span><span class="sb">`</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl"><span class="p">};</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="nx">getTypeOfSentence</span><span class="p">(</span><span class="s1">&#39;Who?&#39;</span><span class="p">);</span> <span class="c1">// Sentence is question
+</span></span></span><span class="line"><span class="cl"><span class="c1"></span><span class="nx">getTypeOfSentence</span><span class="p">(</span><span class="s1">&#39;No&#39;</span><span class="p">);</span>   <span class="c1">// Sentence is normal
+</span></span></span><span class="line"><span class="cl"><span class="c1"></span><span class="nx">getTypeOfSentence</span><span class="p">(</span><span class="s1">&#39;No!&#39;</span><span class="p">);</span>  <span class="c1">// Sentence is exclamation
+</span></span></span></code></pre></div><p>Now all conditions are merged into a single <code>if</code> block. The <code>else if</code> clause means: &ldquo;if the previous condition wasn’t met, but this one is – then do this.&rdquo;</p>
+<p>The execution logic will only trigger one of the branches inside the <code>if</code> statement.</p>
+</div>
+    </div>
+   </div>
+</div>
+ 
+        <div class="mt4 h5 text-center">
+    <div class="typed-container">
+        <span id="typed-111111"></span>
+        <div class="typed-strings" style="display: none;">
+            <p>
+                Subscribe to 👉 <a href="#">YouTube</a>
+            </p>
+        </div>
+    </div>
+    <br />
+    <a href="/" class="gray no-underline inline-block mx2 mt1 md:mt0">Home</a>
+    <a href="/me/" class="gray no-underline inline-block mx2 mt1 md:mt0">About</a>
+    <a href="/links/" class="gray no-underline inline-block mx2 mt1 md:mt0">Links</a>
+    <br />
+    <br />
+    <a href="mailto:mail@hi@cxd3.com" class="gray no-underline inline-block mx2">
+        Text me
+    </a>
+</div>
+<br />
+<br />
+
+<a href="#" class="scrollup" id="scroll-up">
+    <i class="ri-arrow-drop-up-line"></i>
+ </a> 
+    </div>
+    </div>
+    </div>
+    </div>
+    <script>
+         
+        particlesJS("particles-js", {
+  particles: {
+    number: {
+      value: 90,
+      density: {
+        enable: true,
+        value_area: 800
+      }
+    },
+    color: {
+      value: "#d2c0f5"
+    },
+    shape: {
+      type: "circle",
+      stroke: {
+        width: 0,
+        color: "#000"
+      }
+    },
+    opacity: {
+      value: 0.45,
+      random: true,
+      anim: {
+        enable: true,
+        speed: 0.4,
+        opacity_min: 0.1,
+        sync: true
+      }
+    },
+    size: {
+      value: 2,
+      random: true,
+      anim: {
+        enable: true
+      }
+    },
+    line_linked: {
+      enable: true,
+      distance: 120,
+      color: "#d2c0f5",
+      opacity: 0.25,
+      width: 1
+    },
+    move: {
+      enable: true,
+      speed: 1.1,
+      direction: "none",
+      random: false,
+      straight: false,
+      out_mode: "out",
+      bounce: true
+    }
+  },
+  interactivity: {
+    detect_on: "window",
+    events: {
+      onhover: {
+        enable: true,
+        mode: "repulse"
+      },
+      onclick: {
+        enable: false
+      },
+      resize: true
+    },
+    modes: {
+      repulse: {
+        distance: 120,
+        duration: 0.4
+      }
+    }
+  },
+  retina_detect: true
+});
+ 
+  
+    document.addEventListener('DOMContentLoaded', () => {
+    const backButton = document.getElementById('back-button');
+    if (backButton) {
+        if (window.location.pathname === '/' || window.location.pathname === '/index.html') {
+            backButton.classList.add('hidden');
+        } else {
+            backButton.classList.remove('hidden');
+        }
+    }
+});
+let scrollUp = () =>{
+	const scrollUp = document.getElementById('scroll-up')
+	this.scrollY >= 350 ? scrollUp.classList.add('show-scroll')
+						: scrollUp.classList.remove('show-scroll')
+}
+window.addEventListener('scroll', scrollUp)
+const navMenu = document.getElementById('nav-menu'),
+      navToggle = document.getElementById('nav-toggle'),
+      navClose = document.getElementById('nav-close');
+ 
+if (navToggle) {
+    navToggle.addEventListener('click', () => {
+        document.body.classList.add('show-menu');
+    });
+}
+ 
+if (navClose) {
+    navClose.addEventListener('click', () => {
+        document.body.classList.remove('show-menu');
+    });
+}
+ 
+document.addEventListener('click', (event) => {
+    const isClickInsideMenu = navMenu.contains(event.target); 
+    const isClickOnToggle = navToggle.contains(event.target); 
+    if (!isClickInsideMenu && !isClickOnToggle && document.body.classList.contains('show-menu')) {
+        document.body.classList.remove('show-menu');
+    }
+});
+const navLinks = document.querySelectorAll('.nav__link');
+const setActiveLink = () => {
+    const currentPath = window.location.pathname;
+    navLinks.forEach(link => {
+        const linkPath = new URL(link.href).pathname;
+        if (linkPath === currentPath) {
+            link.classList.add('active-link');
+        } else {
+            link.classList.remove('active-link');
+        }
+    });
+};
+window.addEventListener('load', setActiveLink);
+window.addEventListener('popstate', setActiveLink);
+document.addEventListener('DOMContentLoaded', () => {
+  const typedContainers = document.querySelectorAll('.typed-container');
+  const observer = new IntersectionObserver((entries, obs) => {
+    entries.forEach(entry => {
+      if (entry.isIntersecting) {
+        const container = entry.target;
+        const typedId = container.querySelector('span').id;
+        const stringsEl = container.querySelectorAll('.typed-strings p');
+        const strings = Array.from(stringsEl).map(el => el.innerHTML);
+        new Typed(`#${typedId}`, {
+          strings,
+          typeSpeed: 75,
+          backSpeed: 25,
+          backDelay: 1500,
+          startDelay: 300,
+          loop: false,
+          showCursor: true,
+          cursorChar: '|',
+          contentType: 'html'
+        });
+        obs.unobserve(container);
+      }
+    });
+  }, { threshold: 0.5 });
+  typedContainers.forEach(container => observer.observe(container));
+});
+    </script>
+</body>
+</html>

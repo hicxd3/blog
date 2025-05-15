@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Fundamentals on Cxd3</title>
+    <link>http://localhost:1313/fundamentals/</link>
+    <description>Recent content in Fundamentals on Cxd3</description>
+    <generator>Hugo</generator>
+    <language>en</language>
+    <lastBuildDate>Sat, 23 Nov 2024 18:53:24 +0300</lastBuildDate>
+    <atom:link href="http://localhost:1313/fundamentals/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Code Compiler</title>
+      <link>http://localhost:1313/compiler_of_code/</link>
+      <pubDate>Sat, 23 Nov 2024 18:53:24 +0300</pubDate>
+      <guid>http://localhost:1313/compiler_of_code/</guid>
+      <description>&lt;p&gt;A &lt;strong&gt;compiler&lt;/strong&gt; is a program that translates source code written in one programming language into another language — most often into machine code that a computer&amp;rsquo;s processor can execute.&lt;/p&gt;&#xA;&lt;hr&gt;&#xA;&lt;h2 id=&#34;compilation-process&#34;&gt;Compilation Process&lt;/h2&gt;&#xA;&lt;p&gt;When we write code in a high-level language like C++, Java, or Rust, it cannot be directly understood by the processor. The compiler performs several stages of transformation:&lt;/p&gt;&#xA;&lt;ol&gt;&#xA;&lt;li&gt;&lt;strong&gt;Lexical analysis&lt;/strong&gt; – breaks the code into tokens (words, operators, punctuation).&lt;/li&gt;&#xA;&lt;li&gt;&lt;strong&gt;Syntax analysis&lt;/strong&gt; – checks if the structure of the code matches the grammar of the language.&lt;/li&gt;&#xA;&lt;li&gt;&lt;strong&gt;Semantic analysis&lt;/strong&gt; – validates the logic: variable declarations, type usage, etc.&lt;/li&gt;&#xA;&lt;li&gt;&lt;strong&gt;Optimization&lt;/strong&gt; – improves code efficiency by removing redundancy.&lt;/li&gt;&#xA;&lt;li&gt;&lt;strong&gt;Code generation&lt;/strong&gt; – converts the optimized code into machine code.&lt;/li&gt;&#xA;&lt;li&gt;&lt;strong&gt;Linking&lt;/strong&gt; – connects compiled files together and binds external libraries.&lt;/li&gt;&#xA;&lt;/ol&gt;&#xA;&lt;hr&gt;&#xA;&lt;h2 id=&#34;benefits-of-compilation&#34;&gt;Benefits of Compilation&lt;/h2&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;&lt;strong&gt;Speed&lt;/strong&gt; – Compiled code runs faster than interpreted code.&lt;/li&gt;&#xA;&lt;li&gt;&lt;strong&gt;Error Checking&lt;/strong&gt; – The compiler checks the entire program for errors before running.&lt;/li&gt;&#xA;&lt;li&gt;&lt;strong&gt;Portability&lt;/strong&gt; – One source code can be compiled for different platforms.&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;hr&gt;&#xA;&lt;h2 id=&#34;examples-of-compiled-languages&#34;&gt;Examples of Compiled Languages&lt;/h2&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;C and C++&lt;/li&gt;&#xA;&lt;li&gt;Rust&lt;/li&gt;&#xA;&lt;li&gt;Go&lt;/li&gt;&#xA;&lt;li&gt;Swift&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;p&gt;These languages require a compiler like GCC, Clang, or Rustc to convert the source code into an executable program.&lt;/p&gt;</description>
+    </item>
+  </channel>
+</rss>

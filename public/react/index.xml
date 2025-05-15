@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>React on Cxd3</title>
+    <link>http://localhost:1313/react/</link>
+    <description>Recent content in React on Cxd3</description>
+    <generator>Hugo</generator>
+    <language>en</language>
+    <lastBuildDate>Sat, 03 May 2025 00:00:24 +0300</lastBuildDate>
+    <atom:link href="http://localhost:1313/react/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Create React App</title>
+      <link>http://localhost:1313/create_react_app/</link>
+      <pubDate>Sat, 03 May 2025 00:00:24 +0300</pubDate>
+      <guid>http://localhost:1313/create_react_app/</guid>
+      <description>&lt;p&gt;Create React App is a tool that sets up a React project with everything configured for us — no need to manually set up Webpack or Babel.&lt;/p&gt;&#xA;&lt;p&gt;Example — creating a React app:&lt;/p&gt;&#xA;&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-bash&#34; data-lang=&#34;bash&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;npx create-react-app my-app&#xA;&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;nb&#34;&gt;cd&lt;/span&gt; my-app&#xA;&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;npm start&#xA;&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;We create and start a new app at&lt;/p&gt;&#xA;&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-bash&#34; data-lang=&#34;bash&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;http://localhost:3000&#xA;&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;For a cleaner project, we can delete unused files like logo.svg, reportWebVitals.js, and related imports.&lt;/p&gt;&#xA;&lt;p&gt;Create React App uses Webpack to bundle files and Babel to transpile modern JavaScript and JSX into code browsers can understand.&lt;/p&gt;</description>
+    </item>
+  </channel>
+</rss>

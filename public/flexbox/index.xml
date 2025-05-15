@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Flexbox on Cxd3</title>
+    <link>http://localhost:1313/flexbox/</link>
+    <description>Recent content in Flexbox on Cxd3</description>
+    <generator>Hugo</generator>
+    <language>en</language>
+    <lastBuildDate>Wed, 25 Dec 2024 01:40:24 +0300</lastBuildDate>
+    <atom:link href="http://localhost:1313/flexbox/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Using Auto Margins in Flexbox</title>
+      <link>http://localhost:1313/base_size_of_flexbox_3/</link>
+      <pubDate>Wed, 25 Dec 2024 01:40:24 +0300</pubDate>
+      <guid>http://localhost:1313/base_size_of_flexbox_3/</guid>
+      <description>&lt;p&gt;The algorithm for calculating the size of flex items and their distribution within a flex container includes three sequential stages. This process is significantly more complex than in the traditional block model.&lt;/p&gt;&#xA;&lt;h3 id=&#34;step-three---applying-auto-margins&#34;&gt;Step Three - Applying Auto Margins&lt;/h3&gt;&#xA;&lt;p&gt;If there is free space in a flex container, it is automatically distributed using the &lt;code&gt;margin&lt;/code&gt; property set to &lt;code&gt;auto&lt;/code&gt; for flex items.&lt;/p&gt;&#xA;&lt;p&gt;In Flexbox, automatic margins (&lt;code&gt;margin: auto&lt;/code&gt;) are much more powerful than in the standard block model. First, they apply in all directions, unlike in block layout where they only work horizontally. Second, auto margins can interact with each other: if multiple auto margins exist on one axis (on different elements or different sides of an element), the free space is evenly distributed among them.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Applying Flexible Sizes in Flexbox</title>
+      <link>http://localhost:1313/base_size_flexbox2/</link>
+      <pubDate>Wed, 25 Dec 2024 01:29:24 +0300</pubDate>
+      <guid>http://localhost:1313/base_size_flexbox2/</guid>
+      <description>&lt;p&gt;The algorithm for calculating the sizes of flex items and their distribution within a flex container involves three sequential steps. This process is significantly more complex than in the traditional block model.&lt;/p&gt;&#xA;&lt;h3 id=&#34;step-two--applying-flexible-sizes&#34;&gt;Step Two – Applying Flexible Sizes&lt;/h3&gt;&#xA;&lt;p&gt;Let’s start with an example. The width of the flex container is 500px. Inside, there are three flex items, each with a base size of 100px. There is no padding, so the remaining free space in the container is 500px - 300px = 200px.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Base Sizes of Flex Items</title>
+      <link>http://localhost:1313/base_sizes_of_flex_in_css/</link>
+      <pubDate>Tue, 24 Dec 2024 06:29:24 +0300</pubDate>
+      <guid>http://localhost:1313/base_sizes_of_flex_in_css/</guid>
+      <description>&lt;p&gt;The algorithm for calculating the sizes of flex items and distributing them within a flex container involves three sequential steps. This process is significantly more complex than in the traditional block model.&lt;/p&gt;&#xA;&lt;h3 id=&#34;step-one--determining-the-base-size-of-flex-items&#34;&gt;Step One – Determining the Base Size of Flex Items&lt;/h3&gt;&#xA;&lt;p&gt;The base size is the size of the item measured along the main axis.&lt;/p&gt;&#xA;&lt;p&gt;The base size is the size a flex item takes without using additional flex model features. It&amp;rsquo;s defined by standard block model properties (e.g., &lt;code&gt;width&lt;/code&gt;, &lt;code&gt;height&lt;/code&gt;, &lt;code&gt;padding&lt;/code&gt;, &lt;code&gt;border&lt;/code&gt;) and the content inside the element.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>The align-content Property in CSS</title>
+      <link>http://localhost:1313/align_content_in_css/</link>
+      <pubDate>Sat, 23 Nov 2024 18:53:24 +0300</pubDate>
+      <guid>http://localhost:1313/align_content_in_css/</guid>
+      <description>&lt;p&gt;Lecture from HTML Academy on &lt;code&gt;align-content&lt;/code&gt;&lt;/p&gt;&#xA;&lt;p&gt;The &lt;code&gt;justify-content&lt;/code&gt; property controls the alignment of flex items along the &lt;strong&gt;main axis&lt;/strong&gt;,&lt;br&gt;&#xA;while &lt;code&gt;align-content&lt;/code&gt; controls the alignment of &lt;strong&gt;rows&lt;/strong&gt; of flex items along the &lt;strong&gt;cross axis&lt;/strong&gt;.&lt;br&gt;&#xA;Both properties share similar values:&lt;/p&gt;&#xA;&lt;ol&gt;&#xA;&lt;li&gt;&lt;code&gt;flex-start&lt;/code&gt;&lt;/li&gt;&#xA;&lt;li&gt;&lt;code&gt;flex-end&lt;/code&gt;&lt;/li&gt;&#xA;&lt;li&gt;&lt;code&gt;center&lt;/code&gt;&lt;/li&gt;&#xA;&lt;li&gt;&lt;code&gt;space-between&lt;/code&gt;&lt;/li&gt;&#xA;&lt;li&gt;&lt;code&gt;stretch&lt;/code&gt; — available &lt;strong&gt;only&lt;/strong&gt; for &lt;code&gt;align-content&lt;/code&gt;, and it&amp;rsquo;s the default value.&lt;/li&gt;&#xA;&lt;/ol&gt;&#xA;&lt;p&gt;The &lt;code&gt;align-content&lt;/code&gt; property &lt;strong&gt;overrides&lt;/strong&gt; the value of &lt;code&gt;align-items&lt;/code&gt;,&lt;br&gt;&#xA;which controls the alignment of individual flex items along the cross axis.&lt;br&gt;&#xA;This applies to both &lt;strong&gt;a single row&lt;/strong&gt; and &lt;strong&gt;multiple rows&lt;/strong&gt; of items.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>The justify-content Property</title>
+      <link>http://localhost:1313/justify-content_property_in_css/</link>
+      <pubDate>Thu, 21 Nov 2024 18:53:24 +0300</pubDate>
+      <guid>http://localhost:1313/justify-content_property_in_css/</guid>
+      <description>&lt;p&gt;In Flexbox, the &lt;code&gt;justify-content&lt;/code&gt; property allows you to evenly distribute items along the main axis:&lt;/p&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;&lt;code&gt;space-between&lt;/code&gt; — equal spacing between adjacent elements, with no space between the elements and the container edges.&lt;/li&gt;&#xA;&lt;li&gt;&lt;code&gt;space-around&lt;/code&gt; — equal spacing between elements, but the spacing between the elements and the edges of the container is half the spacing between elements.&lt;/li&gt;&#xA;&lt;li&gt;&lt;code&gt;space-evenly&lt;/code&gt; — equal spacing between all elements and the container edges.&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;p&gt;The &lt;code&gt;justify-content&lt;/code&gt; property controls how elements are aligned along the main axis and accepts the following values:&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>The flex-wrap Property</title>
+      <link>http://localhost:1313/flex-wrap_property_in_css/</link>
+      <pubDate>Wed, 13 Nov 2024 18:53:24 +0300</pubDate>
+      <guid>http://localhost:1313/flex-wrap_property_in_css/</guid>
+      <description>&lt;p&gt;Lecture from HTML Academy about the &lt;code&gt;flex-wrap&lt;/code&gt; property in CSS.&lt;/p&gt;&#xA;&lt;p&gt;If there are more flex items in the container than it can hold, the following will happen:&lt;/p&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;Items will shrink to the smallest possible size.&lt;/li&gt;&#xA;&lt;li&gt;Even if explicit widths are set, the flexbox model may shrink them.&lt;/li&gt;&#xA;&lt;li&gt;If the items still don’t fit in the container, they will overflow, but stay on a single line.&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;p&gt;This behavior can be changed using the &lt;code&gt;flex-wrap&lt;/code&gt; property on the flex container.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Cross Axis in Flexbox</title>
+      <link>http://localhost:1313/axis_flexbox_in_css/</link>
+      <pubDate>Sun, 03 Nov 2024 18:53:24 +0300</pubDate>
+      <guid>http://localhost:1313/axis_flexbox_in_css/</guid>
+      <description>&lt;p&gt;In Flexbox, instead of directions like &amp;ldquo;up&amp;rdquo; and &amp;ldquo;down&amp;rdquo;, we use the concept of a &lt;strong&gt;cross axis&lt;/strong&gt;.&lt;/p&gt;&#xA;&lt;p&gt;This axis is used for vertical alignment of elements.&lt;/p&gt;&#xA;&lt;p&gt;Illustration:&lt;/p&gt;&#xA;&lt;p&gt;&lt;img src=&#34;../images/axis-flexbox.png&#34; alt=&#34;Cross Axis in Flexbox&#34;&gt;&lt;/p&gt;&#xA;&lt;p&gt;The cross axis is always perpendicular to the main axis and rotates with it:&lt;/p&gt;&#xA;&lt;ol&gt;&#xA;&lt;li&gt;If the main axis is horizontal, the cross axis points downward.&lt;/li&gt;&#xA;&lt;li&gt;If the main axis is vertical, the cross axis points to the right.&lt;/li&gt;&#xA;&lt;/ol&gt;&#xA;&lt;p&gt;This behavior may not feel intuitive at first, and takes some getting used to.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>flex-direction in CSS</title>
+      <link>http://localhost:1313/flex_direction_in_flexbox/</link>
+      <pubDate>Sun, 03 Nov 2024 18:53:24 +0300</pubDate>
+      <guid>http://localhost:1313/flex_direction_in_flexbox/</guid>
+      <description>&lt;p&gt;In the standard block model, directions like &amp;ldquo;left&amp;rdquo;, &amp;ldquo;right&amp;rdquo;, &amp;ldquo;top&amp;rdquo;, and &amp;ldquo;bottom&amp;rdquo; are fixed.&lt;/p&gt;&#xA;&lt;h3 id=&#34;enabling-flexbox&#34;&gt;Enabling Flexbox&lt;/h3&gt;&#xA;&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-css&#34; data-lang=&#34;css&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;nt&#34;&gt;display&lt;/span&gt;&lt;span class=&#34;o&#34;&gt;:&lt;/span&gt; &lt;span class=&#34;nt&#34;&gt;flex&lt;/span&gt;&lt;span class=&#34;o&#34;&gt;;&lt;/span&gt;&#xA;&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;However, inside a flex container, these directions can change because the flow of elements can be redefined.&lt;/p&gt;&#xA;&lt;p&gt;Changing the Direction&lt;/p&gt;&#xA;&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-js&#34; data-lang=&#34;js&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;nx&#34;&gt;flex&lt;/span&gt;&lt;span class=&#34;o&#34;&gt;-&lt;/span&gt;&lt;span class=&#34;nx&#34;&gt;direction&lt;/span&gt;&lt;span class=&#34;o&#34;&gt;:&lt;/span&gt; &lt;span class=&#34;nx&#34;&gt;row&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;;&lt;/span&gt; &lt;span class=&#34;c1&#34;&gt;// Default value&#xA;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;In Flexbox, instead of using &amp;ldquo;left&amp;rdquo; and &amp;ldquo;right&amp;rdquo;, we operate with the concept of the main axis. The flow of flex elements follows this main axis — from its start to its end.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Flexbox Basics</title>
+      <link>http://localhost:1313/flexbox_basics/</link>
+      <pubDate>Sun, 13 Oct 2024 18:53:24 +0300</pubDate>
+      <guid>http://localhost:1313/flexbox_basics/</guid>
+      <description>&lt;p&gt;To take advantage of the unique properties of flex (from the English word &amp;ldquo;flexible&amp;rdquo;), you first need to change the element type using the &lt;code&gt;display&lt;/code&gt; property:&lt;/p&gt;&#xA;&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-css&#34; data-lang=&#34;css&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;nt&#34;&gt;display&lt;/span&gt;&lt;span class=&#34;o&#34;&gt;:&lt;/span&gt; &lt;span class=&#34;nt&#34;&gt;flex&lt;/span&gt;&lt;span class=&#34;o&#34;&gt;;&lt;/span&gt;&#xA;&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;A container with &lt;code&gt;display: flex&lt;/code&gt; is called a &lt;strong&gt;flex container&lt;/strong&gt;, and its child elements are called &lt;strong&gt;flex items&lt;/strong&gt;.&lt;/p&gt;&#xA;&lt;p&gt;Flex items are automatically arranged along the main axis. By default, the main axis runs from left to right.&lt;/p&gt;&#xA;&lt;img src=&#34;../images/flex1.1.png&#34; /&gt;&#xA;&lt;p&gt;By default, flex items do not wrap onto a new line and shrink to fit their content. Because of this behavior, it&amp;rsquo;s often recommended to set a width or allow wrapping for flex items.&lt;/p&gt;</description>
+    </item>
+  </channel>
+</rss>
