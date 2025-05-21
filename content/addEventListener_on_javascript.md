@@ -5,7 +5,7 @@ categories = [ "javascript" ]
 +++
 
 The `addEventListener()` method is the standard way to assign event handlers in `JavaScript`.  
-It allows you to attach functions that run when a specific event occurs, offering more flexibility than old-school inline HTML event attributes.
+It allows you to attach functions that run when a specific event occurs, offering more flexibility than old-school inline HTML event attributes. 
 
 This method takes **three arguments**:
 
