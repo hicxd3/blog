@@ -1,0 +1,398 @@
+<!DOCTYPE html>
+<html lang="en">
+<head><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=livereload" data-no-instant defer></script>
+    <link rel="icon" type="image/x-icon" href="../images/favicon.ico">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Basic data types in Python</title>
+    <meta name="description" content="">
+    <script src="https://cdn.jsdelivr.net/npm/particles.js@2.0.0/particles.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/remixicon/3.7.0/remixicon.css">
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.9.0/styles/tokyo-night-dark.min.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.9.0/highlight.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.9.0/languages/go.min.js"></script>
+    <script>
+      hljs.highlightAll();
+    </script>
+    <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
+    <link rel="stylesheet" href="/styles/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:ital,wght@0,100..800;1,100..800&display=swap" rel="stylesheet">
+    
+    <script type="text/javascript" >
+      (function(m,e,t,r,i,k,a){m[i]=m[i]||function(){(m[i].a=m[i].a||[]).push(arguments)};
+      m[i].l=1*new Date();
+      for (var j = 0; j < document.scripts.length; j++) {if (document.scripts[j].src === r) { return; }}
+      k=e.createElement(t),a=e.getElementsByTagName(t)[0],k.async=1,k.src=r,a.parentNode.insertBefore(k,a)})
+      (window, document, "script", "https://mc.yandex.ru/metrika/tag.js", "ym");
+
+      ym(102487226, "init", {
+        clickmap:true,
+        trackLinks:true,
+        accurateTrackBounce:true,
+        webvisor:true
+      });
+</script>
+<noscript><div><img src="https://mc.yandex.ru/watch/102487226" style="position:absolute; left:-9999px;" alt="" /></div></noscript>
+
+ <meta name="yandex-verification" content="902aabbe3b7f4ec2" />
+ <meta name="google-site-verification" content="b8xqUSFNwNSPOerFCGXGO11levY0iQM5QpuzuKtNLpc" />
+
+ 
+ <meta property="og:title" content="Basic data types in Python">
+ <meta property="og:description" content="">
+ <meta property="og:type" content="article">
+ <meta property="og:url" content="http://localhost:1313/type_of_data_python/">
+ <meta property="og:image" content="/images/og-default.png">
+ <meta property="og:site_name" content="A web development blog about JavaScript, React, Tailwind CSS, Sass, front-end and more — by Cxd3">
+
+ 
+ <script type="application/ld+json">
+ {
+  "@context": "https://schema.org",
+  "@type": "BlogPosting",
+  "headline": "Basic data types in Python",
+  "author": {
+    "@type": "Person",
+    "name": "Cxd3"
+  },
+  "datePublished": "2025-01-09",
+  "image": "/images/og-default.png",
+  "publisher": {
+    "@type": "Organization",
+    "name": "Cxd3.dev",
+    "logo": {
+      "@type": "ImageObject",
+      "url": "/images/logo.png"
+    }
+  },
+  "mainEntityOfPage": "http:\/\/localhost:1313\/type_of_data_python\/"
+ }
+</script>
+
+</head>
+<body>
+    <div id="particles-js"></div>
+    <div class="content-wrapper">
+    <a href="javascript:history.back()" class="back-button" id="back-button">
+        <i class="ri-arrow-drop-left-line"></i>
+    </a>
+    
+    <div class="nav__menu" id="nav-menu">
+        <ul class="nav__list">
+           <li class="nav__item">
+              <a href="/" class="nav__link active-link">Home</a>
+           </li>
+           <li class="nav__item">
+              <a href="/me/" class="nav__link">About</a>
+           </li>
+           <li class="nav__item">
+              <a href="/links/" class="nav__link">Links</a>
+           </li>
+        </ul>
+        
+        <div class="nav__close" id="nav-close">
+           <i class="ri-close-line"></i>
+        </div> 
+     </div>
+     
+     <div class="nav__toggle" id="nav-toggle">
+        <i class="ri-menu-5-line"></i>
+     </div>
+    
+    <div class="author">
+        <a href="/">
+        <img class="author-avatar" src="/images/ava.jpeg">
+        </a>
+    </div>
+    <div class="clearfix">
+    <div class="col12 md:col8 lg:col6 mxauto pl2 pr2">
+    <div class="post">    
+        <nav class="col11 mxauto">
+    <div class="flex align-center justify-center">
+        <a href="/" class="Logo no-underline h2 serif bold mb0">Cxd3</a>
+    </div>
+    <div class="mt4 h5 text-center">
+        <a href="/" class="gray no-underline inline-block mx2 mt1 md:mt0">Home</a>
+        <a href="/me/" class="gray no-underline inline-block mx2 mt1 md:mt0">About</a>
+        <a href="/links/" class="gray no-underline inline-block mx2 mt1 md:mt0">Links</a>
+      </div>
+</nav>
+        
+<div class="list">
+   <div class="singleHead">
+    <div class="sinleHeadTexts">
+        
+            <h2 class="title__center">Basic data types in Python</h2>
+        
+
+        
+            <time class="h5 gray title__date">09 January 2025</time>
+        
+
+        <div><h4 id="integers">Integers</h4>
+<p>The data type for integers is called int (from the English &ldquo;integer&rdquo;). Integers can be positive, negative, or zero.</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-py" data-lang="py"><span class="line"><span class="cl"><span class="n">a</span> <span class="o">=</span> <span class="mi">42</span> <span class="c1"># Positive integer</span>
+</span></span><span class="line"><span class="cl"><span class="n">b</span> <span class="o">=</span> <span class="o">-</span><span class="mi">10</span> <span class="c1"># Negative integer</span>
+</span></span><span class="line"><span class="cl"><span class="n">c</span> <span class="o">=</span> <span class="mi">0</span> <span class="c1"># Zero</span>
+</span></span><span class="line"><span class="cl"><span class="n">d</span> <span class="o">=</span> <span class="mi">1234567890</span> <span class="c1"># Large integer</span>
+</span></span></code></pre></div><h4 id="floating-point-numbers">Floating point numbers</h4>
+<p>Data type for floating point numbers (fractional numbers) it&rsquo;s called float. These numbers are used to represent real numbers, that is, numbers with a fractional part. Examples: <code>3.14</code>, <code>-0.001</code>, <code>2.0</code>.</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-py" data-lang="py"><span class="line"><span class="cl"><span class="n">a</span> <span class="o">=</span> <span class="mf">3.14</span> <span class="c1"># Positive floating point number</span>
+</span></span><span class="line"><span class="cl"><span class="n">b</span> <span class="o">=</span> <span class="o">-</span><span class="mf">0.001</span> <span class="c1"># Negative floating point</span>
+</span></span><span class="line"><span class="cl"><span class="n">number</span> <span class="n">c</span> <span class="o">=</span> <span class="mf">2.0</span> <span class="c1"># Floating point number, although the value is an integer</span>
+</span></span><span class="line"><span class="cl"><span class="n">d</span> <span class="o">=</span> <span class="mf">1.23e-4</span> <span class="c1"># Scientific notation: 1.23 * 10^(-4) = 0.000123</span>
+</span></span></code></pre></div><h4 id="lines">Lines</h4>
+<p>Strings (type str) are sequences of characters used to store and process text data.</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-py" data-lang="py"><span class="line"><span class="cl"><span class="n">s1</span> <span class="o">=</span> <span class="s2">&#34;Hello world!&#34;</span> <span class="c1"># String in double quotes</span>
+</span></span><span class="line"><span class="cl"><span class="n">s2</span> <span class="o">=</span> <span class="s1">&#39;Python&#39;</span>        <span class="c1"># A string in single quotes</span>
+</span></span><span class="line"><span class="cl"><span class="n">s3</span> <span class="o">=</span> <span class="s2">&#34;&#34;&#34;Is
+</span></span></span><span class="line"><span class="cl"><span class="s2">a multiline
+</span></span></span><span class="line"><span class="cl"><span class="s2">string &#34;&#34;&#34;</span> <span class="c1"># A multiline string in triple quotes</span>
+</span></span><span class="line"><span class="cl"><span class="n">s4</span> <span class="o">=</span> <span class="s1">&#39;123&#39;</span> <span class="c1"># A string containing numbers</span>
+</span></span></code></pre></div><h4 id="lists">Lists</h4>
+<p>Lists (type list) are ordered mutable collections of elements. Lists can contain elements of different data types (numbers, strings, other lists, etc.), and they are one of the most commonly used data structures.</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-py" data-lang="py"><span class="line"><span class="cl"><span class="n">numbers</span> <span class="o">=</span> <span class="p">[</span><span class="mi">1</span><span class="p">,</span> <span class="mi">2</span><span class="p">,</span> <span class="mi">3</span><span class="p">,</span> <span class="mi">4</span><span class="p">,</span> <span class="mi">5</span><span class="p">]</span> <span class="c1"># List of integers</span>
+</span></span><span class="line"><span class="cl"><span class="n">fruits</span> <span class="o">=</span> <span class="p">[</span><span class="s2">&#34;apple&#34;</span><span class="p">,</span> <span class="s2">&#34;banana&#34;</span><span class="p">,</span> <span class="s2">&#34;cherry&#34;</span><span class="p">]</span> <span class="c1"># List of strings</span>
+</span></span><span class="line"><span class="cl"><span class="n">mixed</span> <span class="o">=</span> <span class="p">[</span><span class="mi">1</span><span class="p">,</span> <span class="s2">&#34;apple&#34;</span><span class="p">,</span> <span class="mf">3.14</span><span class="p">,</span> <span class="kc">True</span><span class="p">]</span>  <span class="c1"># A list with different types</span>
+</span></span><span class="line"><span class="cl"><span class="n">of</span> <span class="n">nested</span> <span class="n">items</span> <span class="o">=</span> <span class="p">[[</span><span class="mi">1</span><span class="p">,</span> <span class="mi">2</span><span class="p">],</span> <span class="p">[</span><span class="mi">3</span><span class="p">,</span> <span class="mi">4</span><span class="p">],</span> <span class="p">[</span><span class="mi">5</span><span class="p">,</span> <span class="mi">6</span><span class="p">]]</span>  <span class="c1"># Nested list (list of lists)</span>
+</span></span></code></pre></div><h4 id="dictionaries">Dictionaries</h4>
+<p>Dictionaries (dict type) are unordered collections of key-value pairs. The keys in the dictionary are unique and are used to access the corresponding values. Dictionaries are very useful for storing and quickly searching data by key.</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-py" data-lang="py"><span class="line"><span class="cl"><span class="c1"># Dictionary with key strings</span>
+</span></span><span class="line"><span class="cl"><span class="n">person</span> <span class="o">=</span> <span class="p">{</span>
+</span></span><span class="line"><span class="cl">    <span class="s2">&#34;name&#34;</span><span class="p">:</span> <span class="s2">&#34;Alexey&#34;</span><span class="p">,</span>
+</span></span><span class="line"><span class="cl"><span class="s2">&#34;age&#34;</span><span class="p">:</span> <span class="mi">25</span><span class="p">,</span>
+</span></span><span class="line"><span class="cl"><span class="s2">&#34;city&#34;</span><span class="p">:</span> <span class="s2">&#34;Moscow&#34;</span>
+</span></span><span class="line"><span class="cl"><span class="p">}</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="c1"># Dictionary with different types of keys</span>
+</span></span><span class="line"><span class="cl"><span class="n">mixed_dict</span> <span class="o">=</span> <span class="p">{</span>
+</span></span><span class="line"><span class="cl">    <span class="mi">1</span><span class="p">:</span> <span class="s2">&#34;alone&#34;</span><span class="p">,</span>
+</span></span><span class="line"><span class="cl">    <span class="s2">&#34;two&#34;</span><span class="p">:</span> <span class="mi">2</span><span class="p">,</span>
+</span></span><span class="line"><span class="cl"><span class="p">(</span><span class="mi">3</span><span class="p">,</span> <span class="mi">4</span><span class="p">):</span> <span class="s2">&#34; the motorcade&#34;</span>
+</span></span><span class="line"><span class="cl"><span class="p">}</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="c1"># Empty dictionary</span>
+</span></span><span class="line"><span class="cl"><span class="n">empty_dict</span> <span class="o">=</span> <span class="p">{}</span>
+</span></span></code></pre></div><h4 id="tuples">Tuples</h4>
+<p>Tuples (tuple type) are ordered immutable collections of elements. Tuples are similar to lists, but unlike lists, they cannot be changed after creation. This makes them useful for storing data that should not change.</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-py" data-lang="py"><span class="line"><span class="cl"><span class="c1"># A tuple of numbers</span>
+</span></span><span class="line"><span class="cl"><span class="n">numbers</span> <span class="o">=</span> <span class="p">(</span><span class="mi">1</span><span class="p">,</span> <span class="mi">2</span><span class="p">,</span> <span class="mi">3</span><span class="p">,</span> <span class="mi">4</span><span class="p">,</span> <span class="mi">5</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="c1"># A tuple of strings</span>
+</span></span><span class="line"><span class="cl"><span class="n">fruits</span> <span class="o">=</span> <span class="p">(</span><span class="s2">&#34;apple&#34;</span><span class="p">,</span> <span class="s2">&#34;banana&#34;</span><span class="p">,</span> <span class="s2">&#34;cherry&#34;</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="c1"># Tuple with elements of different types</span>
+</span></span><span class="line"><span class="cl"><span class="n">mixed</span> <span class="o">=</span> <span class="p">(</span><span class="mi">1</span><span class="p">,</span> <span class="s2">&#34;apple&#34;</span><span class="p">,</span> <span class="mf">3.14</span><span class="p">,</span> <span class="kc">True</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="c1"># Empty tuple</span>
+</span></span><span class="line"><span class="cl"><span class="n">empty_tuple</span> <span class="o">=</span> <span class="p">()</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="c1"># A tuple of one element (don&#39;t forget the comma!)</span>
+</span></span><span class="line"><span class="cl"><span class="n">single_element</span> <span class="o">=</span> <span class="p">(</span><span class="mi">42</span><span class="p">,)</span>
+</span></span></code></pre></div><h4 id="sets">Sets</h4>
+<p>Sets (type set) are unordered collections of unique elements. Sets are useful for performing operations such as removing duplicates, checking whether an element belongs to, and mathematical operations on sets (union, intersection, difference, etc.).</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-py" data-lang="py"><span class="line"><span class="cl"><span class="c1"># Set of integers</span>
+</span></span><span class="line"><span class="cl"><span class="n">numbers</span> <span class="o">=</span> <span class="p">{</span><span class="mi">1</span><span class="p">,</span> <span class="mi">2</span><span class="p">,</span> <span class="mi">3</span><span class="p">,</span> <span class="mi">4</span><span class="p">,</span> <span class="mi">5</span><span class="p">}</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="c1"># Multiple lines</span>
+</span></span><span class="line"><span class="cl"><span class="n">fruits</span> <span class="o">=</span> <span class="p">{</span><span class="s2">&#34;apple&#34;</span><span class="p">,</span> <span class="s2">&#34;banana&#34;</span><span class="p">,</span> <span class="s2">&#34;cherry&#34;</span><span class="p">}</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="c1"># Set with elements of different types</span>
+</span></span><span class="line"><span class="cl"><span class="n">mixed</span> <span class="o">=</span> <span class="p">{</span><span class="mi">1</span><span class="p">,</span> <span class="s2">&#34;apple&#34;</span><span class="p">,</span> <span class="mf">3.14</span><span class="p">,</span> <span class="kc">True</span><span class="p">}</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="c1"># Empty set (use set(), as {} creates an empty dictionary)</span>
+</span></span><span class="line"><span class="cl"><span class="n">empty_set</span> <span class="o">=</span> <span class="nb">set</span><span class="p">()</span>
+</span></span></code></pre></div><h4 id="boolean-values">Boolean values</h4>
+<p>Boolean values (type bool) represent Boolean values: True and False. They are used to perform logical operations, control the flow of program execution (for example, in if conditions, while loops), and work with logical expressions.</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-py" data-lang="py"><span class="line"><span class="cl"><span class="n">is_raining</span> <span class="o">=</span> <span class="kc">True</span>
+</span></span><span class="line"><span class="cl"><span class="n">is_sunny</span> <span class="o">=</span> <span class="kc">False</span>
+</span></span></code></pre></div></div>
+    </div>
+   </div>
+</div>
+ 
+        <div class="mt4 h5 text-center">
+    <br />
+    <a href="/" class="gray no-underline inline-block mx2 mt1 md:mt0">Home</a>
+    <a href="/me/" class="gray no-underline inline-block mx2 mt1 md:mt0">About</a>
+    <a href="/links/" class="gray no-underline inline-block mx2 mt1 md:mt0">Links</a>
+    <br />
+    <br />
+    <a href="mailto:mail@hi@cxd3.dev" class="gray no-underline inline-block mx2">
+        Text me
+    </a>
+</div>
+<br />
+<br />
+
+<a href="#" class="scrollup" id="scroll-up">
+    <i class="ri-arrow-drop-up-line"></i>
+ </a> 
+    </div>
+    </div>
+    </div>
+    </div>
+    <script>
+         
+        particlesJS("particles-js", {
+  particles: {
+    number: {
+      value: 90,
+      density: {
+        enable: true,
+        value_area: 800
+      }
+    },
+    color: {
+      value: "#d2c0f5"
+    },
+    shape: {
+      type: "circle",
+      stroke: {
+        width: 0,
+        color: "#000"
+      }
+    },
+    opacity: {
+      value: 0.45,
+      random: true,
+      anim: {
+        enable: true,
+        speed: 0.4,
+        opacity_min: 0.1,
+        sync: true
+      }
+    },
+    size: {
+      value: 2,
+      random: true,
+      anim: {
+        enable: true
+      }
+    },
+    line_linked: {
+      enable: true,
+      distance: 120,
+      color: "#d2c0f5",
+      opacity: 0.25,
+      width: 1
+    },
+    move: {
+      enable: true,
+      speed: 1.1,
+      direction: "none",
+      random: false,
+      straight: false,
+      out_mode: "out",
+      bounce: true
+    }
+  },
+  interactivity: {
+    detect_on: "window",
+    events: {
+      onhover: {
+        enable: true,
+        mode: "repulse"
+      },
+      onclick: {
+        enable: false
+      },
+      resize: true
+    },
+    modes: {
+      repulse: {
+        distance: 120,
+        duration: 0.4
+      }
+    }
+  },
+  retina_detect: true
+});
+ 
+  
+    document.addEventListener('DOMContentLoaded', () => {
+    const backButton = document.getElementById('back-button');
+    if (backButton) {
+        if (window.location.pathname === '/' || window.location.pathname === '/index.html') {
+            backButton.classList.add('hidden');
+        } else {
+            backButton.classList.remove('hidden');
+        }
+    }
+});
+let scrollUp = () =>{
+	const scrollUp = document.getElementById('scroll-up')
+	this.scrollY >= 350 ? scrollUp.classList.add('show-scroll')
+						: scrollUp.classList.remove('show-scroll')
+}
+window.addEventListener('scroll', scrollUp)
+const navMenu = document.getElementById('nav-menu'),
+      navToggle = document.getElementById('nav-toggle'),
+      navClose = document.getElementById('nav-close');
+ 
+if (navToggle) {
+    navToggle.addEventListener('click', () => {
+        document.body.classList.add('show-menu');
+    });
+}
+ 
+if (navClose) {
+    navClose.addEventListener('click', () => {
+        document.body.classList.remove('show-menu');
+    });
+}
+ 
+document.addEventListener('click', (event) => {
+    const isClickInsideMenu = navMenu.contains(event.target); 
+    const isClickOnToggle = navToggle.contains(event.target); 
+    if (!isClickInsideMenu && !isClickOnToggle && document.body.classList.contains('show-menu')) {
+        document.body.classList.remove('show-menu');
+    }
+});
+const navLinks = document.querySelectorAll('.nav__link');
+const setActiveLink = () => {
+    const currentPath = window.location.pathname;
+    navLinks.forEach(link => {
+        const linkPath = new URL(link.href).pathname;
+        if (linkPath === currentPath) {
+            link.classList.add('active-link');
+        } else {
+            link.classList.remove('active-link');
+        }
+    });
+};
+window.addEventListener('load', setActiveLink);
+window.addEventListener('popstate', setActiveLink);
+document.addEventListener('DOMContentLoaded', () => {
+  const typedContainers = document.querySelectorAll('.typed-container');
+  const observer = new IntersectionObserver((entries, obs) => {
+    entries.forEach(entry => {
+      if (entry.isIntersecting) {
+        const container = entry.target;
+        const typedId = container.querySelector('span').id;
+        const stringsEl = container.querySelectorAll('.typed-strings p');
+        const strings = Array.from(stringsEl).map(el => el.innerHTML);
+        new Typed(`#${typedId}`, {
+          strings,
+          typeSpeed: 75,
+          backSpeed: 25,
+          backDelay: 1500,
+          startDelay: 300,
+          loop: false,
+          showCursor: true,
+          cursorChar: '|',
+          contentType: 'html'
+        });
+        obs.unobserve(container);
+      }
+    });
+  }, { threshold: 0.5 });
+  typedContainers.forEach(container => observer.observe(container));
+});
+    </script>
+</body>
+</html>

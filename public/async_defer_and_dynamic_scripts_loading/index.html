@@ -1,0 +1,382 @@
+<!DOCTYPE html>
+<html lang="en">
+<head><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=livereload" data-no-instant defer></script>
+    <link rel="icon" type="image/x-icon" href="../images/favicon.ico">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Async, Defer, and Dynamic Script Loading</title>
+    <meta name="description" content="">
+    <script src="https://cdn.jsdelivr.net/npm/particles.js@2.0.0/particles.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/remixicon/3.7.0/remixicon.css">
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.9.0/styles/tokyo-night-dark.min.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.9.0/highlight.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.9.0/languages/go.min.js"></script>
+    <script>
+      hljs.highlightAll();
+    </script>
+    <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
+    <link rel="stylesheet" href="/styles/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:ital,wght@0,100..800;1,100..800&display=swap" rel="stylesheet">
+    
+    <script type="text/javascript" >
+      (function(m,e,t,r,i,k,a){m[i]=m[i]||function(){(m[i].a=m[i].a||[]).push(arguments)};
+      m[i].l=1*new Date();
+      for (var j = 0; j < document.scripts.length; j++) {if (document.scripts[j].src === r) { return; }}
+      k=e.createElement(t),a=e.getElementsByTagName(t)[0],k.async=1,k.src=r,a.parentNode.insertBefore(k,a)})
+      (window, document, "script", "https://mc.yandex.ru/metrika/tag.js", "ym");
+
+      ym(102487226, "init", {
+        clickmap:true,
+        trackLinks:true,
+        accurateTrackBounce:true,
+        webvisor:true
+      });
+</script>
+<noscript><div><img src="https://mc.yandex.ru/watch/102487226" style="position:absolute; left:-9999px;" alt="" /></div></noscript>
+
+ <meta name="yandex-verification" content="902aabbe3b7f4ec2" />
+ <meta name="google-site-verification" content="b8xqUSFNwNSPOerFCGXGO11levY0iQM5QpuzuKtNLpc" />
+
+ 
+ <meta property="og:title" content="Async, Defer, and Dynamic Script Loading">
+ <meta property="og:description" content="">
+ <meta property="og:type" content="article">
+ <meta property="og:url" content="http://localhost:1313/async_defer_and_dynamic_scripts_loading/">
+ <meta property="og:image" content="/images/og-default.png">
+ <meta property="og:site_name" content="A web development blog about JavaScript, React, Tailwind CSS, Sass, front-end and more — by Cxd3">
+
+ 
+ <script type="application/ld+json">
+ {
+  "@context": "https://schema.org",
+  "@type": "BlogPosting",
+  "headline": "Async, Defer, and Dynamic Script Loading",
+  "author": {
+    "@type": "Person",
+    "name": "Cxd3"
+  },
+  "datePublished": "2025-04-22",
+  "image": "/images/og-default.png",
+  "publisher": {
+    "@type": "Organization",
+    "name": "Cxd3.dev",
+    "logo": {
+      "@type": "ImageObject",
+      "url": "/images/logo.png"
+    }
+  },
+  "mainEntityOfPage": "http:\/\/localhost:1313\/async_defer_and_dynamic_scripts_loading\/"
+ }
+</script>
+
+</head>
+<body>
+    <div id="particles-js"></div>
+    <div class="content-wrapper">
+    <a href="javascript:history.back()" class="back-button" id="back-button">
+        <i class="ri-arrow-drop-left-line"></i>
+    </a>
+    
+    <div class="nav__menu" id="nav-menu">
+        <ul class="nav__list">
+           <li class="nav__item">
+              <a href="/" class="nav__link active-link">Home</a>
+           </li>
+           <li class="nav__item">
+              <a href="/me/" class="nav__link">About</a>
+           </li>
+           <li class="nav__item">
+              <a href="/links/" class="nav__link">Links</a>
+           </li>
+        </ul>
+        
+        <div class="nav__close" id="nav-close">
+           <i class="ri-close-line"></i>
+        </div> 
+     </div>
+     
+     <div class="nav__toggle" id="nav-toggle">
+        <i class="ri-menu-5-line"></i>
+     </div>
+    
+    <div class="author">
+        <a href="/">
+        <img class="author-avatar" src="/images/ava.jpeg">
+        </a>
+    </div>
+    <div class="clearfix">
+    <div class="col12 md:col8 lg:col6 mxauto pl2 pr2">
+    <div class="post">    
+        <nav class="col11 mxauto">
+    <div class="flex align-center justify-center">
+        <a href="/" class="Logo no-underline h2 serif bold mb0">Cxd3</a>
+    </div>
+    <div class="mt4 h5 text-center">
+        <a href="/" class="gray no-underline inline-block mx2 mt1 md:mt0">Home</a>
+        <a href="/me/" class="gray no-underline inline-block mx2 mt1 md:mt0">About</a>
+        <a href="/links/" class="gray no-underline inline-block mx2 mt1 md:mt0">Links</a>
+      </div>
+</nav>
+        
+<div class="list">
+   <div class="singleHead">
+    <div class="sinleHeadTexts">
+        
+            <h2 class="title__center">Async, Defer, and Dynamic Script Loading</h2>
+        
+
+        
+            <time class="h5 gray title__date">22 April 2025</time>
+        
+
+        <div><p>When working with web pages, it&rsquo;s important to understand when the DOM is ready and how scripts load and execute.</p>
+<p>Let&rsquo;s explore the key concepts: <code>DOMContentLoaded</code>, <code>load</code>, <code>defer</code>, <code>async</code>, and dynamic script creation.</p>
+<h4 id="domcontentloaded-and-load-events">DOMContentLoaded and load events</h4>
+<p>There are two key events to know:</p>
+<p>DOMContentLoaded fires when the HTML is fully loaded and parsed, but images and styles may still be loading.</p>
+<p>load fires when the entire page is fully loaded, including images, styles, and fonts.</p>
+<p>Example:</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-javascript" data-lang="javascript"><span class="line"><span class="cl"><span class="nb">document</span><span class="p">.</span><span class="nx">addEventListener</span><span class="p">(</span><span class="s1">&#39;DOMContentLoaded&#39;</span><span class="p">,</span> <span class="kd">function</span><span class="p">()</span> <span class="p">{</span>
+</span></span><span class="line"><span class="cl">  <span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="s1">&#39;DOM is fully loaded and parsed!&#39;</span><span class="p">);</span>
+</span></span><span class="line"><span class="cl"><span class="p">});</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="nb">window</span><span class="p">.</span><span class="nx">addEventListener</span><span class="p">(</span><span class="s1">&#39;load&#39;</span><span class="p">,</span> <span class="kd">function</span><span class="p">()</span> <span class="p">{</span>
+</span></span><span class="line"><span class="cl">  <span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="s1">&#39;Everything is loaded, including images and styles!&#39;</span><span class="p">);</span>
+</span></span><span class="line"><span class="cl"><span class="p">});</span>
+</span></span></code></pre></div><p>When to use each:</p>
+<p><code>DOMContentLoaded</code> is great for working with the structure of the page immediately.</p>
+<p><code>load</code> is better when you need to wait for all resources to be available.</p>
+<h4 id="defer-attribute">Defer attribute</h4>
+<p><code>defer</code> tells the browser:</p>
+<p>Download me in parallel with the HTML, but only execute me after the HTML is fully parsed.</p>
+<p>Scripts with <code>defer</code> are loaded asynchronously but executed in order after <code>DOMContentLoaded</code>.</p>
+<p>Great for DOM manipulation scripts.</p>
+<p>Example:</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-html" data-lang="html"><span class="line"><span class="cl"><span class="p">&lt;</span><span class="nt">script</span> <span class="na">src</span><span class="o">=</span><span class="s">&#34;app.js&#34;</span> <span class="na">defer</span><span class="p">&gt;&lt;/</span><span class="nt">script</span><span class="p">&gt;</span>
+</span></span></code></pre></div><div class="highlight"><pre tabindex="0" class="chroma"><code class="language-javascript" data-lang="javascript"><span class="line"><span class="cl"><span class="c1">// app.js
+</span></span></span><span class="line"><span class="cl"><span class="c1"></span><span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="s1">&#39;DOM is ready, now running deferred script!&#39;</span><span class="p">);</span>
+</span></span></code></pre></div><p>Quick summary:</p>
+<p><code>defer</code> = doesn&rsquo;t block HTML parsing + waits for the full document.</p>
+<h4 id="async-attribute">Async attribute</h4>
+<p><code>async</code> works differently:</p>
+<p>Download me in parallel with the HTML, and execute me immediately once ready!</p>
+<p>Scripts with <code>async</code> are loaded asynchronously and executed as soon as they are downloaded.</p>
+<p>Execution order is not guaranteed.</p>
+<p>Example:</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-html" data-lang="html"><span class="line"><span class="cl"><span class="p">&lt;</span><span class="nt">script</span> <span class="na">src</span><span class="o">=</span><span class="s">&#34;analytics.js&#34;</span> <span class="na">async</span><span class="p">&gt;&lt;/</span><span class="nt">script</span><span class="p">&gt;</span>
+</span></span></code></pre></div><div class="highlight"><pre tabindex="0" class="chroma"><code class="language-javascript" data-lang="javascript"><span class="line"><span class="cl"><span class="c1">// analytics.js
+</span></span></span><span class="line"><span class="cl"><span class="c1"></span><span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="s1">&#39;Analytics script running independently!&#39;</span><span class="p">);</span>
+</span></span></code></pre></div><p>Quick summary:</p>
+<p><code>async</code> = script lives its own life.</p>
+<p>Best for independent scripts like analytics or tracking codes.</p>
+<h4 id="dynamically-creating-and-loading-scripts">Dynamically creating and loading scripts</h4>
+<p>Sometimes you may want to load a script dynamically — after an event or condition is met.</p>
+<p>You can create a <code>&lt;script&gt;</code> element, set its <code>src</code>, and add it to the <code>&lt;head&gt;</code></p>
+<p>Example:</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-javascript" data-lang="javascript"><span class="line"><span class="cl"><span class="kr">const</span> <span class="nx">script</span> <span class="o">=</span> <span class="nb">document</span><span class="p">.</span><span class="nx">createElement</span><span class="p">(</span><span class="s1">&#39;script&#39;</span><span class="p">);</span>
+</span></span><span class="line"><span class="cl"><span class="nx">script</span><span class="p">.</span><span class="nx">src</span> <span class="o">=</span> <span class="s1">&#39;https://example.com/library.js&#39;</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl"><span class="nx">script</span><span class="p">.</span><span class="nx">defer</span> <span class="o">=</span> <span class="kc">true</span><span class="p">;</span> <span class="c1">// or async = true if you want
+</span></span></span><span class="line"><span class="cl"><span class="c1"></span><span class="nb">document</span><span class="p">.</span><span class="nx">head</span><span class="p">.</span><span class="nx">appendChild</span><span class="p">(</span><span class="nx">script</span><span class="p">);</span>
+</span></span></code></pre></div><p>Explanation:</p>
+<p>We create a <code>script</code> element.</p>
+<p>Set the loading address with <code>src</code></p>
+<p>(Optional) Add <code>defer</code> or <code>async</code></p>
+<p>Append the script to <code>&lt;head&gt;</code>, and it starts loading immediately.</p>
+<p>Dynamic script loading gives you flexibility to control when and what scripts are loaded!</p>
+<h3 id="notes">Notes</h3>
+<p>Today we explored:</p>
+<p>DOMContentLoaded and load events.</p>
+<p><code>defer</code> and <code>async</code> script loading.</p>
+<p>Dynamically adding scripts with <code>script.src</code></p>
+<p>How and when to control script execution for better page performance.</p>
+<p>Understanding these concepts helps you build faster, more efficient web pages!</p>
+</div>
+    </div>
+   </div>
+</div>
+ 
+        <div class="mt4 h5 text-center">
+    <br />
+    <a href="/" class="gray no-underline inline-block mx2 mt1 md:mt0">Home</a>
+    <a href="/me/" class="gray no-underline inline-block mx2 mt1 md:mt0">About</a>
+    <a href="/links/" class="gray no-underline inline-block mx2 mt1 md:mt0">Links</a>
+    <br />
+    <br />
+    <a href="mailto:mail@hi@cxd3.dev" class="gray no-underline inline-block mx2">
+        Text me
+    </a>
+</div>
+<br />
+<br />
+
+<a href="#" class="scrollup" id="scroll-up">
+    <i class="ri-arrow-drop-up-line"></i>
+ </a> 
+    </div>
+    </div>
+    </div>
+    </div>
+    <script>
+         
+        particlesJS("particles-js", {
+  particles: {
+    number: {
+      value: 90,
+      density: {
+        enable: true,
+        value_area: 800
+      }
+    },
+    color: {
+      value: "#d2c0f5"
+    },
+    shape: {
+      type: "circle",
+      stroke: {
+        width: 0,
+        color: "#000"
+      }
+    },
+    opacity: {
+      value: 0.45,
+      random: true,
+      anim: {
+        enable: true,
+        speed: 0.4,
+        opacity_min: 0.1,
+        sync: true
+      }
+    },
+    size: {
+      value: 2,
+      random: true,
+      anim: {
+        enable: true
+      }
+    },
+    line_linked: {
+      enable: true,
+      distance: 120,
+      color: "#d2c0f5",
+      opacity: 0.25,
+      width: 1
+    },
+    move: {
+      enable: true,
+      speed: 1.1,
+      direction: "none",
+      random: false,
+      straight: false,
+      out_mode: "out",
+      bounce: true
+    }
+  },
+  interactivity: {
+    detect_on: "window",
+    events: {
+      onhover: {
+        enable: true,
+        mode: "repulse"
+      },
+      onclick: {
+        enable: false
+      },
+      resize: true
+    },
+    modes: {
+      repulse: {
+        distance: 120,
+        duration: 0.4
+      }
+    }
+  },
+  retina_detect: true
+});
+ 
+  
+    document.addEventListener('DOMContentLoaded', () => {
+    const backButton = document.getElementById('back-button');
+    if (backButton) {
+        if (window.location.pathname === '/' || window.location.pathname === '/index.html') {
+            backButton.classList.add('hidden');
+        } else {
+            backButton.classList.remove('hidden');
+        }
+    }
+});
+let scrollUp = () =>{
+	const scrollUp = document.getElementById('scroll-up')
+	this.scrollY >= 350 ? scrollUp.classList.add('show-scroll')
+						: scrollUp.classList.remove('show-scroll')
+}
+window.addEventListener('scroll', scrollUp)
+const navMenu = document.getElementById('nav-menu'),
+      navToggle = document.getElementById('nav-toggle'),
+      navClose = document.getElementById('nav-close');
+ 
+if (navToggle) {
+    navToggle.addEventListener('click', () => {
+        document.body.classList.add('show-menu');
+    });
+}
+ 
+if (navClose) {
+    navClose.addEventListener('click', () => {
+        document.body.classList.remove('show-menu');
+    });
+}
+ 
+document.addEventListener('click', (event) => {
+    const isClickInsideMenu = navMenu.contains(event.target); 
+    const isClickOnToggle = navToggle.contains(event.target); 
+    if (!isClickInsideMenu && !isClickOnToggle && document.body.classList.contains('show-menu')) {
+        document.body.classList.remove('show-menu');
+    }
+});
+const navLinks = document.querySelectorAll('.nav__link');
+const setActiveLink = () => {
+    const currentPath = window.location.pathname;
+    navLinks.forEach(link => {
+        const linkPath = new URL(link.href).pathname;
+        if (linkPath === currentPath) {
+            link.classList.add('active-link');
+        } else {
+            link.classList.remove('active-link');
+        }
+    });
+};
+window.addEventListener('load', setActiveLink);
+window.addEventListener('popstate', setActiveLink);
+document.addEventListener('DOMContentLoaded', () => {
+  const typedContainers = document.querySelectorAll('.typed-container');
+  const observer = new IntersectionObserver((entries, obs) => {
+    entries.forEach(entry => {
+      if (entry.isIntersecting) {
+        const container = entry.target;
+        const typedId = container.querySelector('span').id;
+        const stringsEl = container.querySelectorAll('.typed-strings p');
+        const strings = Array.from(stringsEl).map(el => el.innerHTML);
+        new Typed(`#${typedId}`, {
+          strings,
+          typeSpeed: 75,
+          backSpeed: 25,
+          backDelay: 1500,
+          startDelay: 300,
+          loop: false,
+          showCursor: true,
+          cursorChar: '|',
+          contentType: 'html'
+        });
+        obs.unobserve(container);
+      }
+    });
+  }, { threshold: 0.5 });
+  typedContainers.forEach(container => observer.observe(container));
+});
+    </script>
+</body>
+</html>

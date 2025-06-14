@@ -1,0 +1,1933 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta name="generator" content="Hugo 0.145.0"><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=livereload" data-no-instant defer></script>
+    <link rel="icon" type="image/x-icon" href="../images/favicon.ico">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>A web development blog about JavaScript, React, Tailwind CSS, Sass, front-end and more — by Cxd3</title>
+    <meta name="description" content="">
+    <script src="https://cdn.jsdelivr.net/npm/particles.js@2.0.0/particles.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/remixicon/3.7.0/remixicon.css">
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.9.0/styles/tokyo-night-dark.min.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.9.0/highlight.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.9.0/languages/go.min.js"></script>
+    <script>
+      hljs.highlightAll();
+    </script>
+    <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
+    <link rel="stylesheet" href="/styles/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:ital,wght@0,100..800;1,100..800&display=swap" rel="stylesheet">
+    
+    <script type="text/javascript" >
+      (function(m,e,t,r,i,k,a){m[i]=m[i]||function(){(m[i].a=m[i].a||[]).push(arguments)};
+      m[i].l=1*new Date();
+      for (var j = 0; j < document.scripts.length; j++) {if (document.scripts[j].src === r) { return; }}
+      k=e.createElement(t),a=e.getElementsByTagName(t)[0],k.async=1,k.src=r,a.parentNode.insertBefore(k,a)})
+      (window, document, "script", "https://mc.yandex.ru/metrika/tag.js", "ym");
+
+      ym(102487226, "init", {
+        clickmap:true,
+        trackLinks:true,
+        accurateTrackBounce:true,
+        webvisor:true
+      });
+</script>
+<noscript><div><img src="https://mc.yandex.ru/watch/102487226" style="position:absolute; left:-9999px;" alt="" /></div></noscript>
+
+ <meta name="yandex-verification" content="902aabbe3b7f4ec2" />
+ <meta name="google-site-verification" content="b8xqUSFNwNSPOerFCGXGO11levY0iQM5QpuzuKtNLpc" />
+
+ 
+ <meta property="og:title" content="A web development blog about JavaScript, React, Tailwind CSS, Sass, front-end and more — by Cxd3">
+ <meta property="og:description" content="">
+ <meta property="og:type" content="article">
+ <meta property="og:url" content="http://localhost:1313/">
+ <meta property="og:image" content="/images/og-default.png">
+ <meta property="og:site_name" content="A web development blog about JavaScript, React, Tailwind CSS, Sass, front-end and more — by Cxd3">
+
+ 
+ <script type="application/ld+json">
+ {
+  "@context": "https://schema.org",
+  "@type": "BlogPosting",
+  "headline": "A web development blog about JavaScript, React, Tailwind CSS, Sass, front-end and more — by Cxd3",
+  "author": {
+    "@type": "Person",
+    "name": "Cxd3"
+  },
+  "datePublished": "2025-05-10",
+  "image": "/images/og-default.png",
+  "publisher": {
+    "@type": "Organization",
+    "name": "Cxd3.dev",
+    "logo": {
+      "@type": "ImageObject",
+      "url": "/images/logo.png"
+    }
+  },
+  "mainEntityOfPage": "http:\/\/localhost:1313\/"
+ }
+</script>
+
+</head>
+<body>
+    <div id="particles-js"></div>
+    <div class="content-wrapper">
+    <a href="javascript:history.back()" class="back-button" id="back-button">
+        <i class="ri-arrow-drop-left-line"></i>
+    </a>
+    
+    <div class="nav__menu" id="nav-menu">
+        <ul class="nav__list">
+           <li class="nav__item">
+              <a href="/" class="nav__link active-link">Home</a>
+           </li>
+           <li class="nav__item">
+              <a href="/me/" class="nav__link">About</a>
+           </li>
+           <li class="nav__item">
+              <a href="/links/" class="nav__link">Links</a>
+           </li>
+        </ul>
+        
+        <div class="nav__close" id="nav-close">
+           <i class="ri-close-line"></i>
+        </div> 
+     </div>
+     
+     <div class="nav__toggle" id="nav-toggle">
+        <i class="ri-menu-5-line"></i>
+     </div>
+    
+    <div class="author">
+        <a href="/">
+        <img class="author-avatar" src="/images/ava.jpeg">
+        </a>
+    </div>
+    <div class="clearfix">
+    <div class="col12 md:col8 lg:col6 mxauto pl2 pr2">
+    <div class="post">    
+        <nav class="col11 mxauto">
+    <div class="flex align-center justify-center">
+        <a href="/" class="Logo no-underline h2 serif bold mb0">Cxd3</a>
+    </div>
+    <div class="mt4 h5 text-center">
+        <a href="/" class="gray no-underline inline-block mx2 mt1 md:mt0">Home</a>
+        <a href="/me/" class="gray no-underline inline-block mx2 mt1 md:mt0">About</a>
+        <a href="/links/" class="gray no-underline inline-block mx2 mt1 md:mt0">Links</a>
+      </div>
+</nav>
+        
+<div>
+    <h2 class="mt5">
+        blog
+    </h2>
+    <div class="typed-container">
+        <span id="typed-1"></span>
+        <div class="typed-strings" style="display: none;">
+            <p>
+                My personal knowledge base built while studying web development, programming languages and emerging technologies.
+            </p>
+        </div>
+    </div>
+</div>
+<div class="list">
+    
+    <h3>
+        May 2025
+    </h3>
+    <ul>
+        
+        
+            <li>
+                <time class="gray">
+                    10
+                </time> 
+                <a href="http://localhost:1313/mested_elements_in_react/">
+                    Nested elements in React
+                </a>
+            </li>
+        
+        
+        
+            <li>
+                <time class="gray">
+                    09
+                </time> 
+                <a href="http://localhost:1313/custom_components_in_react/">
+                    Custom Components in React
+                </a>
+            </li>
+        
+        
+        
+            <li>
+                <time class="gray">
+                    08
+                </time> 
+                <a href="http://localhost:1313/import_components/">
+                    Importing React Components
+                </a>
+            </li>
+        
+        
+        
+            <li>
+                <time class="gray">
+                    07
+                </time> 
+                <a href="http://localhost:1313/react_components/">
+                    React components
+                </a>
+            </li>
+        
+        
+        
+            <li>
+                <time class="gray">
+                    06
+                </time> 
+                <a href="http://localhost:1313/react_elements/">
+                    React elements
+                </a>
+            </li>
+        
+        
+        
+            <li>
+                <time class="gray">
+                    04
+                </time> 
+                <a href="http://localhost:1313/attributes_in_jsx/">
+                    Attributes in JSX
+                </a>
+            </li>
+        
+        
+        
+            <li>
+                <time class="gray">
+                    04
+                </time> 
+                <a href="http://localhost:1313/multiline_jsx_component_in_react/">
+                    Multiline JSX Components in React
+                </a>
+            </li>
+        
+        
+        
+            <li>
+                <time class="gray">
+                    04
+                </time> 
+                <a href="http://localhost:1313/react_without_jsx/">
+                    React Without JSX
+                </a>
+            </li>
+        
+        
+        
+            <li>
+                <time class="gray">
+                    04
+                </time> 
+                <a href="http://localhost:1313/first_jsx_element/">
+                    First JSX Element in React
+                </a>
+            </li>
+        
+        
+        
+            <li>
+                <time class="gray">
+                    04
+                </time> 
+                <a href="http://localhost:1313/jsx/">
+                    JSX and index.js with createRoot in React
+                </a>
+            </li>
+        
+        
+        
+            <li>
+                <time class="gray">
+                    03
+                </time> 
+                <a href="http://localhost:1313/create_react_app/">
+                    Create React App
+                </a>
+            </li>
+        
+        
+        
+            <li>
+                <time class="gray">
+                    02
+                </time> 
+                <a href="http://localhost:1313/constructor_function_in_js/">
+                    Constructor Functions and new Function in JavaScript
+                </a>
+            </li>
+        
+        
+        
+            <li>
+                <time class="gray">
+                    01
+                </time> 
+                <a href="http://localhost:1313/showing_the_modal_when_cursor_leaves_the_page/">
+                    Showing a Modal When the Cursor Leaves the Page in JavaScript
+                </a>
+            </li>
+        
+        
+        
+            <li>
+                <time class="gray">
+                    01
+                </time> 
+                <a href="http://localhost:1313/opening_the_modal_at_the_bottom_of_page_in_js/">
+                    Opening a Modal at the Bottom of the Page in JavaScript
+                </a>
+            </li>
+        
+        
+        
+            <li>
+                <time class="gray">
+                    01
+                </time> 
+                <a href="http://localhost:1313/opening_modal_with_a_timer_in_js/">
+                    Opening a Modal Window with a Timer in JavaScript
+                </a>
+            </li>
+        
+        
+        
+            <li>
+                <time class="gray">
+                    01
+                </time> 
+                <a href="http://localhost:1313/working_with_modal_in_js/">
+                    Working with Modal Window Behavior in JavaScript
+                </a>
+            </li>
+        
+        
+        
+            <li>
+                <time class="gray">
+                    01
+                </time> 
+                <a href="http://localhost:1313/triggers_for_modal_in_js/">
+                    Classes for Modal Triggers in JavaScript
+                </a>
+            </li>
+        
+        
+    </ul>
+    
+    <h3>
+        April 2025
+    </h3>
+    <ul>
+        
+        
+            <li>
+                <time class="gray">
+                    29
+                </time> 
+                <a href="http://localhost:1313/scrolltop_in_js/">
+                    ScrollTop in JavaScript
+                </a>
+            </li>
+        
+        
+        
+            <li>
+                <time class="gray">
+                    29
+                </time> 
+                <a href="http://localhost:1313/clientwigth_clientheight_in_js/">
+                    ClientWidth and ClientHeight in JavaScript
+                </a>
+            </li>
+        
+        
+        
+            <li>
+                <time class="gray">
+                    29
+                </time> 
+                <a href="http://localhost:1313/window_in_js/">
+                    Window Object in JavaScript
+                </a>
+            </li>
+        
+        
+        
+            <li>
+                <time class="gray">
+                    29
+                </time> 
+                <a href="http://localhost:1313/date_in_js/">
+                    Date() in JavaScript
+                </a>
+            </li>
+        
+        
+        
+            <li>
+                <time class="gray">
+                    29
+                </time> 
+                <a href="http://localhost:1313/settimeout_and_setinterval_in_js/">
+                    setTimeout and setInterval in JavaScript
+                </a>
+            </li>
+        
+        
+        
+            <li>
+                <time class="gray">
+                    29
+                </time> 
+                <a href="http://localhost:1313/event_deligation_in_javascript/">
+                    Event Delegation in JavaScript
+                </a>
+            </li>
+        
+        
+        
+            <li>
+                <time class="gray">
+                    28
+                </time> 
+                <a href="http://localhost:1313/classlist_contains_in_js/">
+                    ClassList.contains() in JavaScript
+                </a>
+            </li>
+        
+        
+        
+            <li>
+                <time class="gray">
+                    28
+                </time> 
+                <a href="http://localhost:1313/classlist_toggle_in_js/">
+                    ClassList.toggle() in JavaScript
+                </a>
+            </li>
+        
+        
+        
+            <li>
+                <time class="gray">
+                    28
+                </time> 
+                <a href="http://localhost:1313/classlist_remove_in_js/">
+                    ClassList.remove() in JavaScript
+                </a>
+            </li>
+        
+        
+        
+            <li>
+                <time class="gray">
+                    28
+                </time> 
+                <a href="http://localhost:1313/classlist_add_in_js/">
+                    ClassList.add() in JavaScript
+                </a>
+            </li>
+        
+        
+        
+            <li>
+                <time class="gray">
+                    28
+                </time> 
+                <a href="http://localhost:1313/classlist_item_in_js/">
+                    ClassList.item() in JavaScript
+                </a>
+            </li>
+        
+        
+        
+            <li>
+                <time class="gray">
+                    28
+                </time> 
+                <a href="http://localhost:1313/classlist_in_js_new/">
+                    Working with classList in JavaScript
+                </a>
+            </li>
+        
+        
+        
+            <li>
+                <time class="gray">
+                    27
+                </time> 
+                <a href="http://localhost:1313/iterable_objects_in_js/">
+                    Iterable Objects in JavaScript
+                </a>
+            </li>
+        
+        
+        
+            <li>
+                <time class="gray">
+                    26
+                </time> 
+                <a href="http://localhost:1313/des%D1%81riptors_in_javascript/">
+                    Property Descriptors and Useful Methods in JavaScript
+                </a>
+            </li>
+        
+        
+        
+            <li>
+                <time class="gray">
+                    25
+                </time> 
+                <a href="http://localhost:1313/live_collections_in_javascript/">
+                    Live Collections in JavaScript
+                </a>
+            </li>
+        
+        
+        
+            <li>
+                <time class="gray">
+                    24
+                </time> 
+                <a href="http://localhost:1313/chaining_operator_in_javascript/">
+                    Optional Chaining Operator (?.) in JavaScript
+                </a>
+            </li>
+        
+        
+        
+            <li>
+                <time class="gray">
+                    23
+                </time> 
+                <a href="http://localhost:1313/nullish_operator_in_javascript/">
+                    Nullish Coalescing Operator (??) in JavaScript
+                </a>
+            </li>
+        
+        
+        
+            <li>
+                <time class="gray">
+                    22
+                </time> 
+                <a href="http://localhost:1313/async_defer_and_dynamic_scripts_loading/">
+                    Async, Defer, and Dynamic Script Loading
+                </a>
+            </li>
+        
+        
+        
+            <li>
+                <time class="gray">
+                    21
+                </time> 
+                <a href="http://localhost:1313/recursion_in_javascript/">
+                    Recursion in JavaScript
+                </a>
+            </li>
+        
+        
+        
+            <li>
+                <time class="gray">
+                    20
+                </time> 
+                <a href="http://localhost:1313/dom_navigation_in_js/">
+                    Navigating the DOM in JavaScript
+                </a>
+            </li>
+        
+        
+        
+            <li>
+                <time class="gray">
+                    18
+                </time> 
+                <a href="http://localhost:1313/event_bubbling_in_javascript/">
+                    Event bubbling in JavaScript
+                </a>
+            </li>
+        
+        
+        
+            <li>
+                <time class="gray">
+                    17
+                </time> 
+                <a href="http://localhost:1313/event_capturing_in_js/">
+                    Event capturing in JavaScript
+                </a>
+            </li>
+        
+        
+        
+            <li>
+                <time class="gray">
+                    16
+                </time> 
+                <a href="http://localhost:1313/preventdefault_method_in_js/">
+                    preventDefault() method in JavaScript
+                </a>
+            </li>
+        
+        
+        
+            <li>
+                <time class="gray">
+                    15
+                </time> 
+                <a href="http://localhost:1313/stoppropagation_in_js/">
+                    stopPropagation() method in JavaScript
+                </a>
+            </li>
+        
+        
+        
+            <li>
+                <time class="gray">
+                    14
+                </time> 
+                <a href="http://localhost:1313/event_delegation_in_js/">
+                    Event Delegation in JavaScript
+                </a>
+            </li>
+        
+        
+    </ul>
+    
+    <h3>
+        March 2025
+    </h3>
+    <ul>
+        
+        
+            <li>
+                <time class="gray">
+                    31
+                </time> 
+                <a href="http://localhost:1313/events_properties_in_javascript/">
+                    Event properties in JavaScript
+                </a>
+            </li>
+        
+        
+        
+            <li>
+                <time class="gray">
+                    30
+                </time> 
+                <a href="http://localhost:1313/addeventlistener_on_javascript/">
+                    The addEventListener() Method in JavaScript
+                </a>
+            </li>
+        
+        
+        
+            <li>
+                <time class="gray">
+                    30
+                </time> 
+                <a href="http://localhost:1313/closures_in_javascript/">
+                    How Closures Work in JavaScript
+                </a>
+            </li>
+        
+        
+        
+            <li>
+                <time class="gray">
+                    30
+                </time> 
+                <a href="http://localhost:1313/event_atributes_in_js/">
+                    Event attributes in JavaScript
+                </a>
+            </li>
+        
+        
+        
+            <li>
+                <time class="gray">
+                    30
+                </time> 
+                <a href="http://localhost:1313/events_in_javascript/">
+                    Events in JavaScript
+                </a>
+            </li>
+        
+        
+        
+            <li>
+                <time class="gray">
+                    30
+                </time> 
+                <a href="http://localhost:1313/before_and_after_in_js/">
+                    The before() and after() Methods in JavaScript
+                </a>
+            </li>
+        
+        
+        
+            <li>
+                <time class="gray">
+                    30
+                </time> 
+                <a href="http://localhost:1313/createtextnode_js/">
+                    Creating Text Nodes with createTextNode in JavaScript
+                </a>
+            </li>
+        
+        
+        
+            <li>
+                <time class="gray">
+                    30
+                </time> 
+                <a href="http://localhost:1313/append_prepend_in_javascript/">
+                    append() and prepend() Methods in JavaScript
+                </a>
+            </li>
+        
+        
+        
+            <li>
+                <time class="gray">
+                    29
+                </time> 
+                <a href="http://localhost:1313/createelements_method_in_javascript/">
+                    The createElement() Method in JavaScript
+                </a>
+            </li>
+        
+        
+        
+            <li>
+                <time class="gray">
+                    28
+                </time> 
+                <a href="http://localhost:1313/style_object_in_javascript/">
+                    The style Object in JavaScript
+                </a>
+            </li>
+        
+        
+        
+            <li>
+                <time class="gray">
+                    27
+                </time> 
+                <a href="http://localhost:1313/method_getelementsbyclassname_in_javascript/">
+                    The getElementsByClassName() Method in JavaScript
+                </a>
+            </li>
+        
+        
+        
+            <li>
+                <time class="gray">
+                    26
+                </time> 
+                <a href="http://localhost:1313/method_getelementsbytagname_in_javascript/">
+                    The getElementsByTagName() method in JavaScript
+                </a>
+            </li>
+        
+        
+        
+            <li>
+                <time class="gray">
+                    25
+                </time> 
+                <a href="http://localhost:1313/external_lexical_environment_in_javascript/">
+                    External lexical environment in JavaScript
+                </a>
+            </li>
+        
+        
+        
+            <li>
+                <time class="gray">
+                    23
+                </time> 
+                <a href="http://localhost:1313/classlist_in_js/">
+                    The classList Property in JavaScript
+                </a>
+            </li>
+        
+        
+        
+            <li>
+                <time class="gray">
+                    22
+                </time> 
+                <a href="http://localhost:1313/queryselector_in_js/">
+                    The querySelector() Method in JavaScript
+                </a>
+            </li>
+        
+        
+        
+            <li>
+                <time class="gray">
+                    17
+                </time> 
+                <a href="http://localhost:1313/closures_mistakes/">
+                    Common Mistakes with Closures in JavaScript
+                </a>
+            </li>
+        
+        
+        
+            <li>
+                <time class="gray">
+                    16
+                </time> 
+                <a href="http://localhost:1313/closures_usage_in_javascript/">
+                    Where Closures Are Used in JavaScript
+                </a>
+            </li>
+        
+        
+        
+            <li>
+                <time class="gray">
+                    14
+                </time> 
+                <a href="http://localhost:1313/what_is_closure_in_javascript/">
+                    What is closures in JavaScript
+                </a>
+            </li>
+        
+        
+        
+            <li>
+                <time class="gray">
+                    12
+                </time> 
+                <a href="http://localhost:1313/code_interpreter/">
+                    Code Interpreter
+                </a>
+            </li>
+        
+        
+        
+            <li>
+                <time class="gray">
+                    11
+                </time> 
+                <a href="http://localhost:1313/closure_and_lexical_environment_in_javascript/">
+                    Closure and lexical environment in JavaScript
+                </a>
+            </li>
+        
+        
+        
+            <li>
+                <time class="gray">
+                    10
+                </time> 
+                <a href="http://localhost:1313/csstext_in_javascript/">
+                    The cssText property in JavaScript
+                </a>
+            </li>
+        
+        
+        
+            <li>
+                <time class="gray">
+                    09
+                </time> 
+                <a href="http://localhost:1313/remove_method_in_javascript/">
+                    The remove() method in Javascript
+                </a>
+            </li>
+        
+        
+        
+            <li>
+                <time class="gray">
+                    08
+                </time> 
+                <a href="http://localhost:1313/replace_method_in_javascript/">
+                    The replaceWith() method in Javascript
+                </a>
+            </li>
+        
+        
+        
+            <li>
+                <time class="gray">
+                    07
+                </time> 
+                <a href="http://localhost:1313/innerhtml_in_javascript/">
+                    The innerHTML Property in JavaScript
+                </a>
+            </li>
+        
+        
+        
+            <li>
+                <time class="gray">
+                    06
+                </time> 
+                <a href="http://localhost:1313/textcontent_property_in_javascript/">
+                    The textContent property in JavaScript
+                </a>
+            </li>
+        
+        
+        
+            <li>
+                <time class="gray">
+                    05
+                </time> 
+                <a href="http://localhost:1313/insertadjacenthtml_in_javascript/">
+                    The insertAdjacentHTML() Method in JavaScript
+                </a>
+            </li>
+        
+        
+        
+            <li>
+                <time class="gray">
+                    01
+                </time> 
+                <a href="http://localhost:1313/mixin_in_sass/">
+                    Mixins in SCSS/SASS Preprocessors
+                </a>
+            </li>
+        
+        
+    </ul>
+    
+    <h3>
+        February 2025
+    </h3>
+    <ul>
+        
+        
+            <li>
+                <time class="gray">
+                    20
+                </time> 
+                <a href="http://localhost:1313/partials_sass/">
+                    Code Fragmentation in SASS Preprocessor
+                </a>
+            </li>
+        
+        
+        
+            <li>
+                <time class="gray">
+                    18
+                </time> 
+                <a href="http://localhost:1313/nesting_in_sass/">
+                    Nesting in the SASS preprocessor
+                </a>
+            </li>
+        
+        
+        
+            <li>
+                <time class="gray">
+                    16
+                </time> 
+                <a href="http://localhost:1313/dynamic_typing_in_javascrit/">
+                    Dynamic Typing in JavaScript
+                </a>
+            </li>
+        
+        
+        
+            <li>
+                <time class="gray">
+                    15
+                </time> 
+                <a href="http://localhost:1313/object_create_in_javascript/">
+                    The Object.create Method in JavaScript
+                </a>
+            </li>
+        
+        
+        
+            <li>
+                <time class="gray">
+                    14
+                </time> 
+                <a href="http://localhost:1313/setprototype_method/">
+                    The setPrototypeOf method in JavaScript
+                </a>
+            </li>
+        
+        
+        
+            <li>
+                <time class="gray">
+                    09
+                </time> 
+                <a href="http://localhost:1313/basic_of_sass/">
+                    Basics of the SASS preprocessor
+                </a>
+            </li>
+        
+        
+        
+            <li>
+                <time class="gray">
+                    08
+                </time> 
+                <a href="http://localhost:1313/npm_guide/">
+                    NPM Guide
+                </a>
+            </li>
+        
+        
+        
+            <li>
+                <time class="gray">
+                    07
+                </time> 
+                <a href="http://localhost:1313/spread_operator_in_javascript/">
+                    Spread operator in JavaScript
+                </a>
+            </li>
+        
+        
+    </ul>
+    
+    <h3>
+        January 2025
+    </h3>
+    <ul>
+        
+        
+            <li>
+                <time class="gray">
+                    30
+                </time> 
+                <a href="http://localhost:1313/array_methods_in_javascript/">
+                    Array Methods in JavaScript
+                </a>
+            </li>
+        
+        
+        
+            <li>
+                <time class="gray">
+                    25
+                </time> 
+                <a href="http://localhost:1313/destructuring_objects_in_javascript/">
+                    Destructuring Objects in JavaScript
+                </a>
+            </li>
+        
+        
+        
+            <li>
+                <time class="gray">
+                    22
+                </time> 
+                <a href="http://localhost:1313/callback_function_javascript/">
+                    Callback functions in JavaScript
+                </a>
+            </li>
+        
+        
+        
+            <li>
+                <time class="gray">
+                    21
+                </time> 
+                <a href="http://localhost:1313/round_function_in_python/">
+                    round() function in Python
+                </a>
+            </li>
+        
+        
+        
+            <li>
+                <time class="gray">
+                    21
+                </time> 
+                <a href="http://localhost:1313/numbers_in_python/">
+                    Working with Numbers in Python
+                </a>
+            </li>
+        
+        
+        
+            <li>
+                <time class="gray">
+                    16
+                </time> 
+                <a href="http://localhost:1313/string_and_numbers_method_in_javascript/">
+                    String and Number Methods in JavaScript
+                </a>
+            </li>
+        
+        
+        
+            <li>
+                <time class="gray">
+                    16
+                </time> 
+                <a href="http://localhost:1313/properties_of_string_and_numbers_in_js/">
+                    Properties of strings and numbers in JavaScript
+                </a>
+            </li>
+        
+        
+        
+            <li>
+                <time class="gray">
+                    15
+                </time> 
+                <a href="http://localhost:1313/retern_operator_in_javascript/">
+                    The return operator in Javascript
+                </a>
+            </li>
+        
+        
+        
+            <li>
+                <time class="gray">
+                    15
+                </time> 
+                <a href="http://localhost:1313/arguments_in_javascript/">
+                    Arguments in JavaScript Functions
+                </a>
+            </li>
+        
+        
+        
+            <li>
+                <time class="gray">
+                    14
+                </time> 
+                <a href="http://localhost:1313/function_expression_javascript/">
+                    Function Expression in JavaScript
+                </a>
+            </li>
+        
+        
+        
+            <li>
+                <time class="gray">
+                    14
+                </time> 
+                <a href="http://localhost:1313/function_declaration_javascript/">
+                    Function Declaration in JavaScript
+                </a>
+            </li>
+        
+        
+        
+            <li>
+                <time class="gray">
+                    14
+                </time> 
+                <a href="http://localhost:1313/arrow_function_javascript/">
+                    Arrow Functions in JavaScript
+                </a>
+            </li>
+        
+        
+        
+            <li>
+                <time class="gray">
+                    10
+                </time> 
+                <a href="http://localhost:1313/loop_javascript/">
+                    Loops in JavaScript
+                </a>
+            </li>
+        
+        
+        
+            <li>
+                <time class="gray">
+                    09
+                </time> 
+                <a href="http://localhost:1313/type_of_data_python/">
+                    Basic data types in Python
+                </a>
+            </li>
+        
+        
+        
+            <li>
+                <time class="gray">
+                    09
+                </time> 
+                <a href="http://localhost:1313/comparison_operators_in_javascript/">
+                    Comparison Operators in JavaScript
+                </a>
+            </li>
+        
+        
+        
+            <li>
+                <time class="gray">
+                    09
+                </time> 
+                <a href="http://localhost:1313/operators_in_javascript/">
+                    Arithmetic Operators in JavaScript
+                </a>
+            </li>
+        
+        
+        
+            <li>
+                <time class="gray">
+                    08
+                </time> 
+                <a href="http://localhost:1313/interpolation_in_javascript/">
+                    Interpolation in JavaScript
+                </a>
+            </li>
+        
+        
+        
+            <li>
+                <time class="gray">
+                    08
+                </time> 
+                <a href="http://localhost:1313/method_document_write_in_javascript/">
+                    The document.write Method in JavaScript
+                </a>
+            </li>
+        
+        
+        
+            <li>
+                <time class="gray">
+                    08
+                </time> 
+                <a href="http://localhost:1313/typeof_javascript/">
+                    The typeof() operator in JavaScript
+                </a>
+            </li>
+        
+        
+        
+            <li>
+                <time class="gray">
+                    08
+                </time> 
+                <a href="http://localhost:1313/alert_prompt_confirm_in_javascript/">
+                    Alert, Prompt and Confirm in JavaScript
+                </a>
+            </li>
+        
+        
+        
+            <li>
+                <time class="gray">
+                    06
+                </time> 
+                <a href="http://localhost:1313/main_in_c/">
+                    The main() Function in C
+                </a>
+            </li>
+        
+        
+        
+            <li>
+                <time class="gray">
+                    06
+                </time> 
+                <a href="http://localhost:1313/hello_world_in_c/">
+                    Hello, World! in C
+                </a>
+            </li>
+        
+        
+        
+            <li>
+                <time class="gray">
+                    04
+                </time> 
+                <a href="http://localhost:1313/vimtutor/">
+                    Commands from VimTutor
+                </a>
+            </li>
+        
+        
+    </ul>
+    
+    <h3>
+        December 2024
+    </h3>
+    <ul>
+        
+        
+            <li>
+                <time class="gray">
+                    26
+                </time> 
+                <a href="http://localhost:1313/grid_micro_layouts/">
+                    Grid Micro Layouts
+                </a>
+            </li>
+        
+        
+        
+            <li>
+                <time class="gray">
+                    25
+                </time> 
+                <a href="http://localhost:1313/base_size_of_flexbox_3/">
+                    Using Auto Margins in Flexbox
+                </a>
+            </li>
+        
+        
+        
+            <li>
+                <time class="gray">
+                    25
+                </time> 
+                <a href="http://localhost:1313/base_size_flexbox2/">
+                    Applying Flexible Sizes in Flexbox
+                </a>
+            </li>
+        
+        
+        
+            <li>
+                <time class="gray">
+                    24
+                </time> 
+                <a href="http://localhost:1313/base_sizes_of_flex_in_css/">
+                    Base Sizes of Flex Items
+                </a>
+            </li>
+        
+        
+        
+            <li>
+                <time class="gray">
+                    14
+                </time> 
+                <a href="http://localhost:1313/display_property_in_javascript/">
+                    The Display property in CSS
+                </a>
+            </li>
+        
+        
+        
+        
+        
+        
+        
+            <li>
+                <time class="gray">
+                    02
+                </time> 
+                <a href="http://localhost:1313/local_lexical_scope_in_javascript/">
+                    Local Lexical Scope in JavaScript
+                </a>
+            </li>
+        
+        
+    </ul>
+    
+    <h3>
+        November 2024
+    </h3>
+    <ul>
+        
+        
+            <li>
+                <time class="gray">
+                    27
+                </time> 
+                <a href="http://localhost:1313/page_grids_and_flow/">
+                    Page grids and document flow
+                </a>
+            </li>
+        
+        
+        
+            <li>
+                <time class="gray">
+                    23
+                </time> 
+                <a href="http://localhost:1313/align_content_in_css/">
+                    The align-content Property in CSS
+                </a>
+            </li>
+        
+        
+        
+            <li>
+                <time class="gray">
+                    23
+                </time> 
+                <a href="http://localhost:1313/set_in_javascript/">
+                    Set in JavaScript
+                </a>
+            </li>
+        
+        
+        
+            <li>
+                <time class="gray">
+                    23
+                </time> 
+                <a href="http://localhost:1313/map_in_javascript/">
+                    Map in JavaScript
+                </a>
+            </li>
+        
+        
+        
+            <li>
+                <time class="gray">
+                    23
+                </time> 
+                <a href="http://localhost:1313/compiler_of_code/">
+                    Code Compiler
+                </a>
+            </li>
+        
+        
+        
+            <li>
+                <time class="gray">
+                    22
+                </time> 
+                <a href="http://localhost:1313/background_v_css_1/">
+                    Background in CSS (Part 1)
+                </a>
+            </li>
+        
+        
+        
+            <li>
+                <time class="gray">
+                    21
+                </time> 
+                <a href="http://localhost:1313/justify-content_property_in_css/">
+                    The justify-content Property
+                </a>
+            </li>
+        
+        
+        
+            <li>
+                <time class="gray">
+                    17
+                </time> 
+                <a href="http://localhost:1313/objects_in_javascript/">
+                    Objects in JavaScript
+                </a>
+            </li>
+        
+        
+        
+            <li>
+                <time class="gray">
+                    17
+                </time> 
+                <a href="http://localhost:1313/arrays_in_javasctipt/">
+                    Arrays in JavaScript
+                </a>
+            </li>
+        
+        
+        
+            <li>
+                <time class="gray">
+                    14
+                </time> 
+                <a href="http://localhost:1313/text_styling_in_css/">
+                    Text Styling in CSS
+                </a>
+            </li>
+        
+        
+        
+            <li>
+                <time class="gray">
+                    13
+                </time> 
+                <a href="http://localhost:1313/flex-wrap_property_in_css/">
+                    The flex-wrap Property
+                </a>
+            </li>
+        
+        
+        
+            <li>
+                <time class="gray">
+                    12
+                </time> 
+                <a href="http://localhost:1313/data_types_in_javascript/">
+                    Data types in JavaScript
+                </a>
+            </li>
+        
+        
+        
+            <li>
+                <time class="gray">
+                    11
+                </time> 
+                <a href="http://localhost:1313/function_javascript/">
+                    Functions in JavaScript
+                </a>
+            </li>
+        
+        
+        
+            <li>
+                <time class="gray">
+                    11
+                </time> 
+                <a href="http://localhost:1313/box_model_css/">
+                    Box Model in CSS
+                </a>
+            </li>
+        
+        
+        
+            <li>
+                <time class="gray">
+                    03
+                </time> 
+                <a href="http://localhost:1313/flex_direction_in_flexbox/">
+                    flex-direction in CSS
+                </a>
+            </li>
+        
+        
+        
+            <li>
+                <time class="gray">
+                    03
+                </time> 
+                <a href="http://localhost:1313/axis_flexbox_in_css/">
+                    Cross Axis in Flexbox
+                </a>
+            </li>
+        
+        
+    </ul>
+    
+    <h3>
+        October 2024
+    </h3>
+    <ul>
+        
+        
+            <li>
+                <time class="gray">
+                    29
+                </time> 
+                <a href="http://localhost:1313/variables_peremennye_in_sass/">
+                    Variables in Sass
+                </a>
+            </li>
+        
+        
+        
+            <li>
+                <time class="gray">
+                    29
+                </time> 
+                <a href="http://localhost:1313/variables_in_javascript/">
+                    Variables in JavaScript
+                </a>
+            </li>
+        
+        
+        
+            <li>
+                <time class="gray">
+                    13
+                </time> 
+                <a href="http://localhost:1313/flexbox_basics/">
+                    Flexbox Basics
+                </a>
+            </li>
+        
+        
+        
+            <li>
+                <time class="gray">
+                    12
+                </time> 
+                <a href="http://localhost:1313/margin_and_padding/">
+                    Margin and Padding in CSS
+                </a>
+            </li>
+        
+        
+        
+            <li>
+                <time class="gray">
+                    12
+                </time> 
+                <a href="http://localhost:1313/grid_in_css/">
+                    Grid In Css
+                </a>
+            </li>
+        
+        
+        
+            <li>
+                <time class="gray">
+                    08
+                </time> 
+                <a href="http://localhost:1313/value_types_in_css/">
+                    Value Types in CSS
+                </a>
+            </li>
+        
+        
+        
+            <li>
+                <time class="gray">
+                    08
+                </time> 
+                <a href="http://localhost:1313/units_of_measurement_in_css/">
+                    Units of Measurement in CSS
+                </a>
+            </li>
+        
+        
+        
+            <li>
+                <time class="gray">
+                    06
+                </time> 
+                <a href="http://localhost:1313/nested_selectors_css/">
+                    Nested Selectors in CSS
+                </a>
+            </li>
+        
+        
+        
+            <li>
+                <time class="gray">
+                    03
+                </time> 
+                <a href="http://localhost:1313/git_initial/">
+                    Initial Git Setup
+                </a>
+            </li>
+        
+        
+        
+            <li>
+                <time class="gray">
+                    03
+                </time> 
+                <a href="http://localhost:1313/git_branches/">
+                    Git Branch Commands
+                </a>
+            </li>
+        
+        
+        
+            <li>
+                <time class="gray">
+                    03
+                </time> 
+                <a href="http://localhost:1313/css_selectors/">
+                    CSS Selectors
+                </a>
+            </li>
+        
+        
+        
+            <li>
+                <time class="gray">
+                    03
+                </time> 
+                <a href="http://localhost:1313/pseudo_array_javascript/">
+                    Arrays and Pseudo-Arrays in JavaScript
+                </a>
+            </li>
+        
+        
+    </ul>
+    
+    <h3>
+        September 2024
+    </h3>
+    <ul>
+        
+        
+            <li>
+                <time class="gray">
+                    30
+                </time> 
+                <a href="http://localhost:1313/background_css_2/">
+                    Background in CSS 2
+                </a>
+            </li>
+        
+        
+    </ul>
+    
+    <h3>
+        May 2024
+    </h3>
+    <ul>
+        
+        
+            <li>
+                <time class="gray">
+                    05
+                </time> 
+                <a href="http://localhost:1313/switch_case_in_javascript/">
+                    Switch / Case in JavaScript
+                </a>
+            </li>
+        
+        
+        
+            <li>
+                <time class="gray">
+                    02
+                </time> 
+                <a href="http://localhost:1313/ternary_operator_in_javascript/">
+                    Ternary Operator in JavaScript
+                </a>
+            </li>
+        
+        
+    </ul>
+    
+    <h3>
+        March 2024
+    </h3>
+    <ul>
+        
+        
+            <li>
+                <time class="gray">
+                    25
+                </time> 
+                <a href="http://localhost:1313/if_else_in_javascript/">
+                    if / else in JavaScript
+                </a>
+            </li>
+        
+        
+        
+            <li>
+                <time class="gray">
+                    05
+                </time> 
+                <a href="http://localhost:1313/logical_operators_in_javascript/">
+                    Logical Operators in JavaScript
+                </a>
+            </li>
+        
+        
+    </ul>
+    
+</div>
+ 
+        <div class="mt4 h5 text-center">
+    <br />
+    <a href="/" class="gray no-underline inline-block mx2 mt1 md:mt0">Home</a>
+    <a href="/me/" class="gray no-underline inline-block mx2 mt1 md:mt0">About</a>
+    <a href="/links/" class="gray no-underline inline-block mx2 mt1 md:mt0">Links</a>
+    <br />
+    <br />
+    <a href="mailto:mail@hi@cxd3.dev" class="gray no-underline inline-block mx2">
+        Text me
+    </a>
+</div>
+<br />
+<br />
+
+<a href="#" class="scrollup" id="scroll-up">
+    <i class="ri-arrow-drop-up-line"></i>
+ </a> 
+    </div>
+    </div>
+    </div>
+    </div>
+    <script>
+         
+        particlesJS("particles-js", {
+  particles: {
+    number: {
+      value: 90,
+      density: {
+        enable: true,
+        value_area: 800
+      }
+    },
+    color: {
+      value: "#d2c0f5"
+    },
+    shape: {
+      type: "circle",
+      stroke: {
+        width: 0,
+        color: "#000"
+      }
+    },
+    opacity: {
+      value: 0.45,
+      random: true,
+      anim: {
+        enable: true,
+        speed: 0.4,
+        opacity_min: 0.1,
+        sync: true
+      }
+    },
+    size: {
+      value: 2,
+      random: true,
+      anim: {
+        enable: true
+      }
+    },
+    line_linked: {
+      enable: true,
+      distance: 120,
+      color: "#d2c0f5",
+      opacity: 0.25,
+      width: 1
+    },
+    move: {
+      enable: true,
+      speed: 1.1,
+      direction: "none",
+      random: false,
+      straight: false,
+      out_mode: "out",
+      bounce: true
+    }
+  },
+  interactivity: {
+    detect_on: "window",
+    events: {
+      onhover: {
+        enable: true,
+        mode: "repulse"
+      },
+      onclick: {
+        enable: false
+      },
+      resize: true
+    },
+    modes: {
+      repulse: {
+        distance: 120,
+        duration: 0.4
+      }
+    }
+  },
+  retina_detect: true
+});
+ 
+  
+    document.addEventListener('DOMContentLoaded', () => {
+    const backButton = document.getElementById('back-button');
+    if (backButton) {
+        if (window.location.pathname === '/' || window.location.pathname === '/index.html') {
+            backButton.classList.add('hidden');
+        } else {
+            backButton.classList.remove('hidden');
+        }
+    }
+});
+let scrollUp = () =>{
+	const scrollUp = document.getElementById('scroll-up')
+	this.scrollY >= 350 ? scrollUp.classList.add('show-scroll')
+						: scrollUp.classList.remove('show-scroll')
+}
+window.addEventListener('scroll', scrollUp)
+const navMenu = document.getElementById('nav-menu'),
+      navToggle = document.getElementById('nav-toggle'),
+      navClose = document.getElementById('nav-close');
+ 
+if (navToggle) {
+    navToggle.addEventListener('click', () => {
+        document.body.classList.add('show-menu');
+    });
+}
+ 
+if (navClose) {
+    navClose.addEventListener('click', () => {
+        document.body.classList.remove('show-menu');
+    });
+}
+ 
+document.addEventListener('click', (event) => {
+    const isClickInsideMenu = navMenu.contains(event.target); 
+    const isClickOnToggle = navToggle.contains(event.target); 
+    if (!isClickInsideMenu && !isClickOnToggle && document.body.classList.contains('show-menu')) {
+        document.body.classList.remove('show-menu');
+    }
+});
+const navLinks = document.querySelectorAll('.nav__link');
+const setActiveLink = () => {
+    const currentPath = window.location.pathname;
+    navLinks.forEach(link => {
+        const linkPath = new URL(link.href).pathname;
+        if (linkPath === currentPath) {
+            link.classList.add('active-link');
+        } else {
+            link.classList.remove('active-link');
+        }
+    });
+};
+window.addEventListener('load', setActiveLink);
+window.addEventListener('popstate', setActiveLink);
+document.addEventListener('DOMContentLoaded', () => {
+  const typedContainers = document.querySelectorAll('.typed-container');
+  const observer = new IntersectionObserver((entries, obs) => {
+    entries.forEach(entry => {
+      if (entry.isIntersecting) {
+        const container = entry.target;
+        const typedId = container.querySelector('span').id;
+        const stringsEl = container.querySelectorAll('.typed-strings p');
+        const strings = Array.from(stringsEl).map(el => el.innerHTML);
+        new Typed(`#${typedId}`, {
+          strings,
+          typeSpeed: 75,
+          backSpeed: 25,
+          backDelay: 1500,
+          startDelay: 300,
+          loop: false,
+          showCursor: true,
+          cursorChar: '|',
+          contentType: 'html'
+        });
+        obs.unobserve(container);
+      }
+    });
+  }, { threshold: 0.5 });
+  typedContainers.forEach(container => observer.observe(container));
+});
+    </script>
+</body>
+</html>

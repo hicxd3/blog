@@ -1,0 +1,36 @@
+User-agent: *
+
+Allow: /
+
+Sitemap: https://cxd3.dev/sitemap.xml
+Host: https://cxd3.dev
+
+User-agent: Googlebot
+Allow: /
+
+User-agent: Bingbot
+Allow: /
+
+User-agent: Yandex
+Allow: /
+
+User-agent: DuckDuckBot
+Allow: /
+
+User-agent: Baiduspider
+Allow: /
+
+User-agent: Applebot
+Allow: /
+
+User-agent: facebot
+Allow: /
+
+User-agent: Twitterbot
+Allow: /
+
+User-agent: AhrefsBot
+Allow: /
+
+User-agent: SemrushBot
+Allow: /
