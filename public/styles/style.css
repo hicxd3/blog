@@ -141,7 +141,7 @@ section {
     display: block;
 }
 a {
-    color: #c0caf5;
+    color: #cecece;
 }
 
 body {
@@ -189,7 +189,7 @@ body,
 html {
     position: relative;
     z-index: auto;
-    color: #a0b1dd;
+    color: #cecece;
     font-size: 20px;
     line-height: 1.5;
     background-color: #000000;
@@ -653,7 +653,7 @@ body.show-menu .nav__toggle {
   .typed-container {
     font-family: "JetBrains Mono", monospace;
     font-size: 1rem;
-    color: #8d9cc9;
+    color: #cecece;
     position: relative;
   }
 
@@ -661,7 +661,7 @@ body.show-menu .nav__toggle {
     display: inline-block;
     width: 0.7ch;
     height: 1.2em;
-    background-color: #8d9cc9; 
+    background-color: #cecece; 
     vertical-align: middle;
     margin-left: 2px;
     animation: blink-block 4s step-start infinite;
@@ -4379,11 +4379,11 @@ label {
     border-bottom: 1px solid #e1d6b1;
 }
 a {
-    color: #a0b1dd;
+    color: #cecece;
     transition: color 0.2s ease-in;
 }
 a:hover {
-    color: #7a82ac;
+    color: #2e2e2e;
 }
 .post img:not(.emoji).profile {
     max-width: 200px;
