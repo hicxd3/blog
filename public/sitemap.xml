@@ -3,15 +3,18 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
     <loc>http://localhost:1313/</loc>
-    <lastmod>2025-05-10T00:30:24+03:00</lastmod>
+    <lastmod>2025-06-21T15:34:00+03:00</lastmod>
   </url><url>
     <loc>http://localhost:1313/categories/</loc>
-    <lastmod>2025-05-10T00:30:24+03:00</lastmod>
+    <lastmod>2025-06-21T15:34:00+03:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/mested_elements_in_react/</loc>
-    <lastmod>2025-05-10T00:30:24+03:00</lastmod>
+    <loc>http://localhost:1313/funcrion_inside_jsx_component/</loc>
+    <lastmod>2025-06-21T15:34:00+03:00</lastmod>
   </url><url>
     <loc>http://localhost:1313/react/</loc>
+    <lastmod>2025-06-21T15:34:00+03:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/mested_elements_in_react/</loc>
     <lastmod>2025-05-10T00:30:24+03:00</lastmod>
   </url><url>
     <loc>http://localhost:1313/custom_components_in_react/</loc>
