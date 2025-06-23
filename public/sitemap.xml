@@ -3,10 +3,16 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
     <loc>http://localhost:1313/</loc>
-    <lastmod>2025-06-21T15:34:00+03:00</lastmod>
+    <lastmod>2025-06-23T15:00:00+03:00</lastmod>
   </url><url>
     <loc>http://localhost:1313/categories/</loc>
-    <lastmod>2025-06-21T15:34:00+03:00</lastmod>
+    <lastmod>2025-06-23T15:00:00+03:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/css/</loc>
+    <lastmod>2025-06-23T15:00:00+03:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/rotate_in_css/</loc>
+    <lastmod>2025-06-23T15:00:00+03:00</lastmod>
   </url><url>
     <loc>http://localhost:1313/funcrion_inside_jsx_component/</loc>
     <lastmod>2025-06-21T15:34:00+03:00</lastmod>
@@ -220,9 +226,6 @@
   </url><url>
     <loc>http://localhost:1313/insertadjacenthtml_in_javascript/</loc>
     <lastmod>2025-03-05T12:00:24+03:00</lastmod>
-  </url><url>
-    <loc>http://localhost:1313/css/</loc>
-    <lastmod>2025-03-01T12:53:24+03:00</lastmod>
   </url><url>
     <loc>http://localhost:1313/mixin_in_sass/</loc>
     <lastmod>2025-03-01T12:53:24+03:00</lastmod>
