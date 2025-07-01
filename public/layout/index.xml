@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Layout on A web development blog about JavaScript, React, Tailwind CSS, Sass, front-end and more — by Cxd3</title>
+    <link>http://localhost:1313/layout/</link>
+    <description>Recent content in Layout on A web development blog about JavaScript, React, Tailwind CSS, Sass, front-end and more — by Cxd3</description>
+    <generator>Hugo</generator>
+    <language>en</language>
+    <lastBuildDate>Tue, 01 Jul 2025 22:50:00 +0300</lastBuildDate>
+    <atom:link href="http://localhost:1313/layout/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>CSS: Using column-count for Multi-column Layouts</title>
+      <link>http://localhost:1313/column_count_in_css/</link>
+      <pubDate>Tue, 01 Jul 2025 22:50:00 +0300</pubDate>
+      <guid>http://localhost:1313/column_count_in_css/</guid>
+      <description>&lt;h2 id=&#34;column-count-in-css&#34;&gt;Column-count in CSS&lt;/h2&gt;&#xA;&lt;p&gt;The &lt;code&gt;column-count&lt;/code&gt; property lets you split content into multiple columns.&lt;/p&gt;&#xA;&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-css&#34; data-lang=&#34;css&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;p&#34;&gt;.&lt;/span&gt;&lt;span class=&#34;nc&#34;&gt;columned&lt;/span&gt; &lt;span class=&#34;p&#34;&gt;{&lt;/span&gt;&#xA;&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;  &lt;span class=&#34;k&#34;&gt;column-count&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;:&lt;/span&gt; &lt;span class=&#34;mi&#34;&gt;2&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;;&lt;/span&gt;&#xA;&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;p&#34;&gt;}&lt;/span&gt;&#xA;&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;This will break the content into two vertical columns.&lt;/p&gt;&#xA;&lt;p&gt;Key Points ^-^&lt;/p&gt;&#xA;&lt;p&gt;Works on block-level containers&lt;/p&gt;&#xA;&lt;p&gt;Common for articles, lists, or magazine-style layouts&lt;/p&gt;&#xA;&lt;p&gt;Combine with column-gap for spacing&lt;/p&gt;&#xA;&lt;p&gt;Use column-rule for visual dividers&lt;/p&gt;&#xA;&lt;p&gt;Simple way to add structure without using flex or grid.&lt;/p&gt;</description>
+    </item>
+  </channel>
+</rss>
