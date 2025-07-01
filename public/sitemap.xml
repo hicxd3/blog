@@ -3,15 +3,18 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
     <loc>http://localhost:1313/</loc>
-    <lastmod>2025-07-01T22:50:00+03:00</lastmod>
+    <lastmod>2025-07-01T23:00:00+03:00</lastmod>
   </url><url>
     <loc>http://localhost:1313/categories/</loc>
-    <lastmod>2025-07-01T22:50:00+03:00</lastmod>
-  </url><url>
-    <loc>http://localhost:1313/column_count_in_css/</loc>
-    <lastmod>2025-07-01T22:50:00+03:00</lastmod>
+    <lastmod>2025-07-01T23:00:00+03:00</lastmod>
   </url><url>
     <loc>http://localhost:1313/css/</loc>
+    <lastmod>2025-07-01T23:00:00+03:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/column_gap_in_css/</loc>
+    <lastmod>2025-07-01T23:00:00+03:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/column_count_in_css/</loc>
     <lastmod>2025-07-01T22:50:00+03:00</lastmod>
   </url><url>
     <loc>http://localhost:1313/text_indent_in_css/</loc>

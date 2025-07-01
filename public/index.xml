@@ -6,8 +6,15 @@
     <description>Recent content on A web development blog about JavaScript, React, Tailwind CSS, Sass, front-end and more — by Cxd3</description>
     <generator>Hugo</generator>
     <language>en</language>
-    <lastBuildDate>Tue, 01 Jul 2025 22:50:00 +0300</lastBuildDate>
+    <lastBuildDate>Tue, 01 Jul 2025 23:00:00 +0300</lastBuildDate>
     <atom:link href="http://localhost:1313/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Spacing with column-gap</title>
+      <link>http://localhost:1313/column_gap_in_css/</link>
+      <pubDate>Tue, 01 Jul 2025 23:00:00 +0300</pubDate>
+      <guid>http://localhost:1313/column_gap_in_css/</guid>
+      <description>&lt;h2 id=&#34;column-gap-in-css&#34;&gt;Column-gap in CSS&lt;/h2&gt;&#xA;&lt;p&gt;The &lt;code&gt;column-gap&lt;/code&gt; property sets the space between columns created with &lt;code&gt;column-count&lt;/code&gt;.&lt;/p&gt;&#xA;&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-css&#34; data-lang=&#34;css&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;p&#34;&gt;.&lt;/span&gt;&lt;span class=&#34;nc&#34;&gt;columned&lt;/span&gt; &lt;span class=&#34;p&#34;&gt;{&lt;/span&gt;&#xA;&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;  &lt;span class=&#34;k&#34;&gt;column-count&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;:&lt;/span&gt; &lt;span class=&#34;mi&#34;&gt;2&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;;&lt;/span&gt;&#xA;&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;  &lt;span class=&#34;k&#34;&gt;column-gap&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;:&lt;/span&gt; &lt;span class=&#34;mi&#34;&gt;40&lt;/span&gt;&lt;span class=&#34;kt&#34;&gt;px&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;;&lt;/span&gt;&#xA;&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;p&#34;&gt;}&lt;/span&gt;&#xA;&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;This code creates a two-column layout inside any element with the class columned.&lt;/p&gt;&#xA;&lt;p&gt;The column-gap of 40px sets a clear, readable space between the two columns — preventing the text from feeling too tight or overwhelming.&lt;/p&gt;&#xA;&lt;p&gt;Key Points ^-^&lt;/p&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;&#xA;&lt;p&gt;Works with column-count, column-width&lt;/p&gt;&#xA;&lt;/li&gt;&#xA;&lt;li&gt;&#xA;&lt;p&gt;Controls the spacing between columns&lt;/p&gt;&#xA;&lt;/li&gt;&#xA;&lt;li&gt;&#xA;&lt;p&gt;Default value is normal&lt;/p&gt;</description>
+    </item>
     <item>
       <title>Column-count for Multi column Layouts in CSS</title>
       <link>http://localhost:1313/column_count_in_css/</link>
