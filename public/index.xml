@@ -6,8 +6,15 @@
     <description>Recent content on A web development blog about JavaScript, React, Tailwind CSS, Sass, front-end and more — by Cxd3</description>
     <generator>Hugo</generator>
     <language>en</language>
-    <lastBuildDate>Tue, 01 Jul 2025 21:15:00 +0300</lastBuildDate>
+    <lastBuildDate>Tue, 01 Jul 2025 22:30:00 +0300</lastBuildDate>
     <atom:link href="http://localhost:1313/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Text-indent in CSS</title>
+      <link>http://localhost:1313/text_indent_in_css/</link>
+      <pubDate>Tue, 01 Jul 2025 22:30:00 +0300</pubDate>
+      <guid>http://localhost:1313/text_indent_in_css/</guid>
+      <description>&lt;h2 id=&#34;text-indent-in-css&#34;&gt;Text-indent in CSS&lt;/h2&gt;&#xA;&lt;p&gt;The &lt;code&gt;text-indent&lt;/code&gt; property sets the indentation of the first line in a block of text.&lt;/p&gt;&#xA;&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-css&#34; data-lang=&#34;css&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;nt&#34;&gt;text-indent&lt;/span&gt;&lt;span class=&#34;o&#34;&gt;:&lt;/span&gt; &lt;span class=&#34;nt&#34;&gt;2em&lt;/span&gt;&lt;span class=&#34;o&#34;&gt;;&lt;/span&gt;&#xA;&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;This shifts the first line to the right by the specified amount.&lt;/p&gt;&#xA;&lt;p&gt;Key Points ^-^&lt;/p&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;&#xA;&lt;p&gt;Common units: px, em&lt;/p&gt;&#xA;&lt;/li&gt;&#xA;&lt;li&gt;&#xA;&lt;p&gt;em adapts to font size, making it scalable&lt;/p&gt;&#xA;&lt;/li&gt;&#xA;&lt;li&gt;&#xA;&lt;p&gt;Often used in long-form content for clean paragraph starts&lt;/p&gt;&#xA;&lt;/li&gt;&#xA;&lt;li&gt;&#xA;&lt;p&gt;Can be negative to pull the first line left&lt;/p&gt;&#xA;&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;p&gt;A small touch that adds classic flow to your layout.&lt;/p&gt;</description>
+    </item>
     <item>
       <title>Letter-spacing in CSS</title>
       <link>http://localhost:1313/letter_spacing_in_css/</link>
