@@ -6,8 +6,15 @@
     <description>Recent content on A web development blog about JavaScript, React, Tailwind CSS, Sass, front-end and more — by Cxd3</description>
     <generator>Hugo</generator>
     <language>en</language>
-    <lastBuildDate>Tue, 24 Jun 2025 10:30:00 +0300</lastBuildDate>
+    <lastBuildDate>Tue, 01 Jul 2025 21:00:00 +0300</lastBuildDate>
     <atom:link href="http://localhost:1313/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>How word-wrap Works</title>
+      <link>http://localhost:1313/word_wrap_in_css/</link>
+      <pubDate>Tue, 01 Jul 2025 21:00:00 +0300</pubDate>
+      <guid>http://localhost:1313/word_wrap_in_css/</guid>
+      <description>&lt;h2 id=&#34;how-word-wrap-works-in-css&#34;&gt;How word-wrap Works in CSS&lt;/h2&gt;&#xA;&lt;p&gt;Sometimes, long words or links break your layout.&lt;/p&gt;&#xA;&lt;p&gt;To handle that, use:&lt;/p&gt;&#xA;&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-css&#34; data-lang=&#34;css&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;nt&#34;&gt;word-wrap&lt;/span&gt;&lt;span class=&#34;o&#34;&gt;:&lt;/span&gt; &lt;span class=&#34;nt&#34;&gt;break-word&lt;/span&gt;&lt;span class=&#34;o&#34;&gt;;&lt;/span&gt;&#xA;&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;It tells the browser: if the word is too long — break it to the next line.&lt;/p&gt;&#xA;&lt;p&gt;Key Points ^-^&lt;/p&gt;&#xA;&lt;p&gt;&lt;code&gt;normal&lt;/code&gt; — words stay in one line&lt;/p&gt;&#xA;&lt;p&gt;&lt;code&gt;break-word&lt;/code&gt; — breaks long words if needed&lt;/p&gt;&#xA;&lt;p&gt;Same as overflow-wrap: break-word; in modern CSS&lt;/p&gt;&#xA;&lt;p&gt;Use it to keep your layout clean and readable, even with wild content.&lt;/p&gt;</description>
+    </item>
     <item>
       <title>Text Shadow in CSS</title>
       <link>http://localhost:1313/text_shadow_in_css/</link>
