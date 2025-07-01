@@ -6,8 +6,15 @@
     <description>Recent content on A web development blog about JavaScript, React, Tailwind CSS, Sass, front-end and more — by Cxd3</description>
     <generator>Hugo</generator>
     <language>en</language>
-    <lastBuildDate>Tue, 01 Jul 2025 21:00:00 +0300</lastBuildDate>
+    <lastBuildDate>Tue, 01 Jul 2025 21:15:00 +0300</lastBuildDate>
     <atom:link href="http://localhost:1313/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Letter-spacing in CSS</title>
+      <link>http://localhost:1313/letter_spacing_in_css/</link>
+      <pubDate>Tue, 01 Jul 2025 21:15:00 +0300</pubDate>
+      <guid>http://localhost:1313/letter_spacing_in_css/</guid>
+      <description>&lt;h2 id=&#34;let-your-letters-breathe-with-letter-spacing&#34;&gt;Let your letters breathe with letter-spacing&lt;/h2&gt;&#xA;&lt;p&gt;Sometimes, text feels too tight. To add elegance and clarity, use:&lt;/p&gt;&#xA;&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-css&#34; data-lang=&#34;css&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;nt&#34;&gt;letter-spacing&lt;/span&gt;&lt;span class=&#34;o&#34;&gt;:&lt;/span&gt; &lt;span class=&#34;nt&#34;&gt;0&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;.&lt;/span&gt;&lt;span class=&#34;nc&#34;&gt;05em&lt;/span&gt;&lt;span class=&#34;o&#34;&gt;;&lt;/span&gt;&#xA;&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;It adds space between characters, making text lighter and more readable.&lt;/p&gt;&#xA;&lt;p&gt;Key Points ^-^&lt;/p&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;&#xA;&lt;p&gt;px, em, % — all supported&lt;/p&gt;&#xA;&lt;/li&gt;&#xA;&lt;li&gt;&#xA;&lt;p&gt;em is scalable — perfect for responsive design&lt;/p&gt;&#xA;&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;p&gt;Combine with line-height for that perfect cozy layout&lt;/p&gt;&#xA;&lt;p&gt;Great typography is invisible, but it makes everything feel right.&lt;/p&gt;</description>
+    </item>
     <item>
       <title>How word-wrap Works</title>
       <link>http://localhost:1313/word_wrap_in_css/</link>
