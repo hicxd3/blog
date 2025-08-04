@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>English on A web development blog about JavaScript, React, Tailwind CSS, Sass, front-end and more — by Cxd3</title>
+    <link>http://localhost:1313/english/</link>
+    <description>Recent content in English on A web development blog about JavaScript, React, Tailwind CSS, Sass, front-end and more — by Cxd3</description>
+    <generator>Hugo</generator>
+    <language>en</language>
+    <lastBuildDate>Mon, 04 Aug 2025 14:43:24 +0300</lastBuildDate>
+    <atom:link href="http://localhost:1313/english/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>The Secret Garden Part 1</title>
+      <link>http://localhost:1313/the-secret-garden-part-1/</link>
+      <pubDate>Mon, 04 Aug 2025 14:43:24 +0300</pubDate>
+      <guid>http://localhost:1313/the-secret-garden-part-1/</guid>
+      <description>&lt;p&gt;&amp;ldquo;We&amp;rsquo;re alike, you and me&amp;rdquo; old Ben Weatherstaff said to Mary.&lt;/p&gt;&#xA;&lt;p&gt;&amp;ldquo;We&amp;rsquo;re not pretty to look at and we&amp;rsquo;re both very disagreeable.&amp;rdquo;&lt;/p&gt;&#xA;&lt;p&gt;Poor Mary! Nobody wants her, nobody likes her. Her parents have died, and she is sent home from Indies to live in her uncle&amp;rsquo;s house in Yorkshire. It is a big old house, with nearly a hundred rooms, but most of then ore shut and locked. Mary is cross and bored, and lonely. There is nothing to do all day, and no one to talk to, except old Ben Weatherstaff, the gardener.&lt;/p&gt;</description>
+    </item>
+  </channel>
+</rss>

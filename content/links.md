@@ -39,4 +39,9 @@ links
 <p>
 <a href="https://typerun.top" target="_blank">TypeRun</a> &rsaquo; Typing speed trainer
 </p>
+
+<h3>Tags</h3>
+<p>
+<a href="../english/" >English</a>
+</p>
 </div>
