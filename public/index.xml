@@ -6,8 +6,15 @@
     <description>Recent content on A web development blog about JavaScript, React, Tailwind CSS, Sass, front-end and more — by Cxd3</description>
     <generator>Hugo</generator>
     <language>en</language>
-    <lastBuildDate>Mon, 04 Aug 2025 14:46:24 +0300</lastBuildDate>
+    <lastBuildDate>Tue, 09 Sep 2025 18:00:24 +0300</lastBuildDate>
     <atom:link href="http://localhost:1313/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>GET and POST requests in servers</title>
+      <link>http://localhost:1313/get-and-post-requests-in-servers/</link>
+      <pubDate>Tue, 09 Sep 2025 18:00:24 +0300</pubDate>
+      <guid>http://localhost:1313/get-and-post-requests-in-servers/</guid>
+      <description>&lt;h2 id=&#34;get-requests&#34;&gt;GET requests&lt;/h2&gt;&#xA;&lt;p&gt;GET is the simplest way to ask data from a server.&lt;br&gt;&#xA;The request is visible in the URL, so it’s not private.&lt;br&gt;&#xA;It’s best for reading data, not sending secrets.&lt;/p&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;Used to read information&lt;/li&gt;&#xA;&lt;li&gt;Parameters go in the URL&lt;/li&gt;&#xA;&lt;li&gt;Not secure for passwords&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;h2 id=&#34;post-requests&#34;&gt;POST requests&lt;/h2&gt;&#xA;&lt;p&gt;POST is used to send data to the server.&lt;br&gt;&#xA;The data is hidden in the body of the request.&lt;br&gt;&#xA;It’s good for forms, passwords, or any private info.&lt;/p&gt;</description>
+    </item>
     <item>
       <title>The Secret Garden Part 2</title>
       <link>http://localhost:1313/the-secret-garden-part-2/</link>
