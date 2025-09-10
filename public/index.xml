@@ -6,8 +6,15 @@
     <description>Recent content on A web development blog about JavaScript, React, Tailwind CSS, Sass, front-end and more — by Cxd3</description>
     <generator>Hugo</generator>
     <language>en</language>
-    <lastBuildDate>Tue, 09 Sep 2025 18:00:24 +0300</lastBuildDate>
+    <lastBuildDate>Tue, 09 Sep 2025 18:20:24 +0300</lastBuildDate>
     <atom:link href="http://localhost:1313/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>JSON - JavaScript Object Notation</title>
+      <link>http://localhost:1313/json----javascript-object-notation/</link>
+      <pubDate>Tue, 09 Sep 2025 18:20:24 +0300</pubDate>
+      <guid>http://localhost:1313/json----javascript-object-notation/</guid>
+      <description>&lt;p&gt;JSON means JavaScript Object Notation.&lt;br&gt;&#xA;It’s a simple text format for storing and sharing data.&lt;/p&gt;&#xA;&lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;{&#xA;  &amp;#34;name&amp;#34;: &amp;#34;Eva&amp;#34;,&#xA;  &amp;#34;age&amp;#34;: 27,&#xA;  &amp;#34;isStudent&amp;#34;: false,&#xA;  &amp;#34;skills&amp;#34;: [&amp;#34;HTML&amp;#34;, &amp;#34;CSS&amp;#34;, &amp;#34;JavaScript&amp;#34;],&#xA;}&#xA;&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;It looks like JavaScript objects, but it is always just a string.&lt;br&gt;&#xA;Most APIs use JSON to send information between server and client.&lt;br&gt;&#xA;For example, when your app talks to a backend, the backend usually answers with JSON.&lt;/p&gt;&#xA;&lt;p&gt;Important rules:&lt;/p&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;&#xA;&lt;p&gt;Always use &lt;strong&gt;double quotes&lt;/strong&gt; for keys and strings.&lt;/p&gt;</description>
+    </item>
     <item>
       <title>GET and POST requests in servers</title>
       <link>http://localhost:1313/get-and-post-requests-in-servers/</link>
