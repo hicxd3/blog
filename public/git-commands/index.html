@@ -4,7 +4,7 @@
     <link rel="icon" type="image/x-icon" href="../images/favicon.ico">
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Links and Extra Sections</title>
+    <title>Full list of Git commands: branches, commits, cherry-pick, rebase, stash and more</title>
     <meta name="description" content="">
     <script src="https://cdn.jsdelivr.net/npm/particles.js@2.0.0/particles.min.js"></script>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/remixicon/3.7.0/remixicon.css">
@@ -42,10 +42,10 @@
  <meta name="google-site-verification" content="b8xqUSFNwNSPOerFCGXGO11levY0iQM5QpuzuKtNLpc" />
 
  
- <meta property="og:title" content="Links and Extra Sections">
+ <meta property="og:title" content="Full list of Git commands: branches, commits, cherry-pick, rebase, stash and more">
  <meta property="og:description" content="">
  <meta property="og:type" content="article">
- <meta property="og:url" content="http://localhost:1313/links/">
+ <meta property="og:url" content="http://localhost:1313/git-commands/">
  <meta property="og:image" content="/images/og-default.png">
  <meta property="og:site_name" content="A web development blog about JavaScript, React, Tailwind CSS, Sass, front-end and more — by Cxd3">
 
@@ -54,12 +54,12 @@
  {
   "@context": "https://schema.org",
   "@type": "BlogPosting",
-  "headline": "Links and Extra Sections",
+  "headline": "Full list of Git commands: branches, commits, cherry-pick, rebase, stash and more",
   "author": {
     "@type": "Person",
     "name": "Cxd3"
   },
-  "datePublished": "2024-12-12",
+  "datePublished": "2025-09-13",
   "image": "/images/og-default.png",
   "publisher": {
     "@type": "Organization",
@@ -69,7 +69,7 @@
       "url": "/images/logo.png"
     }
   },
-  "mainEntityOfPage": "http:\/\/localhost:1313\/links\/"
+  "mainEntityOfPage": "http:\/\/localhost:1313\/git-commands\/"
  }
 </script>
 
@@ -126,49 +126,130 @@
    <div class="singleHead">
     <div class="sinleHeadTexts">
         
-
+            <h2 class="title__center">Full list of Git commands: branches, commits, cherry-pick, rebase, stash and more</h2>
         
 
-        <div><div>
-<h2 class="mt5">
-links
-</h2>
-<div class="typed-container">
-<span id="typed-2"></span>
-<div class="typed-strings" style="display: none;">
-<p>Links to useful resources</p>
-</div>
-</div>
-<br />
-<p>
-📌 <a href="https://cxd3.dev/git-commands/">Git commands</a> &rsaquo; Full list of Git commands
-</p>
-<p>
-<a href="https://mastery.games/flexboxzombies/" target="_blank">FlexboxZombies</a> &rsaquo; Flexbox training game
-</p>
-<p>
-<a href="https://codingfantasy.com/games/flexboxadventure/play" target="_blank">FlexboxAdventure</a> &rsaquo; Flexbox training game
-</p>
-<p>
-<a href="http://www.flexboxdefense.com/" target="_blank">FlexboxDefense</a> &rsaquo; Flexbox training game
-</p>
-<p>
-<a href="https://cssgridgarden.com" target="_blank">GridGarden</a> &rsaquo; CSS Grid game
-</p>
-<p>
-<a href="https://flexboxfroggy.com/" target="_blank">FlexboxFroggy</a> &rsaquo; Flexbox training game
-</p>
-<p>
-<a href="https://learngitbranching.js.org" target="_blank">LearnGit</a> &rsaquo; Git branching visualizer
-</p>
-<p>
-<a href="https://typerun.top" target="_blank">TypeRun</a> &rsaquo; Typing speed trainer
-</p>
-<h3>Tags</h3>
-<p>
-<a href="../english/" >English</a>
-</p>
-</div>
+        
+            <time class="h5 gray title__date">13 September 2025</time>
+        
+
+        <div><h2 id="git-cheatsheet--">Git Cheatsheet ^-^</h2>
+<p>This is a complete guide with 100 Git commands.<br>
+From basics to advanced workflows — everything you need to feel like a Git Ninja 🥷.</p>
+<h3 id="basics">Basics</h3>
+<p>git init — create a new repository</p>
+<p>git clone <url> — clone a project</p>
+<p>git status — check current changes</p>
+<p>git add <file> — add a file to staging</p>
+<p>git add . — add all files</p>
+<p>git commit -m &ldquo;msg&rdquo; — commit changes</p>
+<p>git log — full commit history</p>
+<p>git log &ndash;oneline — short history view</p>
+<p>git show <hash> — details of a commit</p>
+<p>git diff — show unstaged changes</p>
+<h3 id="branches">Branches</h3>
+<p>git branch — list all branches</p>
+<p>git branch <name> — create a branch</p>
+<p>git checkout <name> — switch to a branch</p>
+<p>git checkout -b <name> — create and switch</p>
+<p>git switch <name> — switch branch (modern way)</p>
+<p>git switch -c <name> — create and switch (modern way)</p>
+<p>git merge <name> — merge a branch</p>
+<p>git rebase <name> — reapply commits on top</p>
+<p>git branch -d <name> — delete branch</p>
+<p>git branch -D <name> — force delete branch</p>
+<h3 id="remote-repositories">Remote Repositories</h3>
+<p>git remote -v — show all remotes</p>
+<p>git remote add origin <url> — add a remote</p>
+<p>git push origin <branch> — push branch to remote</p>
+<p>git push -u origin <branch> — push and set upstream</p>
+<p>git pull origin <branch> — pull from remote</p>
+<p>git fetch — fetch changes without merging</p>
+<p>git remote remove origin — remove a remote</p>
+<p>git remote rename old new — rename a remote</p>
+<p>git remote set-url origin <url> — change remote URL</p>
+<p>git push origin &ndash;delete <branch> — delete remote branch</p>
+<h3 id="managing-changes">Managing Changes</h3>
+<p>git diff &ndash;staged — compare staged changes</p>
+<p>git reset <file> — unstage a file</p>
+<p>git reset &ndash;hard <hash> — reset to commit (delete changes)</p>
+<p>git reset &ndash;soft <hash> — reset but keep changes</p>
+<p>git revert <hash> — undo commit by new commit</p>
+<p>git checkout &ndash; <file> — restore file</p>
+<p>git restore <file> — modern restore file</p>
+<p>git restore &ndash;staged <file> — unstage file (modern way)</p>
+<p>git commit &ndash;amend — edit last commit</p>
+<p>git commit &ndash;amend -m &ldquo;msg&rdquo; — edit commit message</p>
+<h3 id="stash">Stash</h3>
+<p>git stash — save changes temporarily</p>
+<p>git stash list — list all stashes</p>
+<p>git stash pop — restore last stash and delete it</p>
+<p>git stash apply stash@{n} — apply specific stash</p>
+<p>git stash drop stash@{n} — delete stash</p>
+<p>git stash clear — delete all stashes</p>
+<p>git stash save &ldquo;msg&rdquo; — save stash with message</p>
+<p>git stash show — show stash changes</p>
+<p>git stash branch <name> — create branch from stash</p>
+<p>git stash show -p — show patch of stash</p>
+<h3 id="cherry-pick--tags">Cherry-pick &amp; Tags</h3>
+<p>git cherry-pick <hash> — apply commit from another branch</p>
+<p>git cherry-pick -n <hash> — apply without commit</p>
+<p>git cherry-pick &ndash;continue — continue after conflict</p>
+<p>git cherry-pick &ndash;abort — stop cherry-pick</p>
+<p>git tag <name> — create tag</p>
+<p>git tag -a <name> -m &ldquo;msg&rdquo; — annotated tag</p>
+<p>git push origin <tag> — push tag to remote</p>
+<p>git push origin &ndash;tags — push all tags</p>
+<p>git tag -d <name> — delete tag locally</p>
+<p>git push origin :refs/tags/<name> — delete tag remotely</p>
+<h3 id="logs-and-history">Logs and History</h3>
+<p>git log &ndash;graph &ndash;oneline &ndash;all — graph view</p>
+<p>git log &ndash;stat — show changes in each commit</p>
+<p>git log &ndash;pretty=oneline — compact view</p>
+<p>git log &ndash;pretty=format:&quot;%h - %an, %ar : %s&quot; — custom log format</p>
+<p>git shortlog -sn — contributors list</p>
+<p>git reflog — complete action history</p>
+<p>git blame <file> — show who edited each line</p>
+<p>git annotate <file> — similar to blame</p>
+<p>git show-branch — show branch history</p>
+<p>git whatchanged — show commits and changes</p>
+<h3 id="advanced">Advanced</h3>
+<p>git bisect start — start binary search for bug</p>
+<p>git bisect bad — mark commit as bad</p>
+<p>git bisect good — mark commit as good</p>
+<p>git bisect reset — finish bisect</p>
+<p>git clean -fd — delete untracked files</p>
+<p>git clean -n — preview untracked delete</p>
+<p>git submodule add <url> — add submodule</p>
+<p>git submodule update &ndash;init — initialize submodules</p>
+<p>git submodule foreach git pull — update submodules</p>
+<p>git archive &ndash;format=zip HEAD &gt; file.zip — export project</p>
+<h3 id="collaboration--workflow">Collaboration &amp; Workflow</h3>
+<p>git fetch &ndash;all — fetch all branches</p>
+<p>git pull &ndash;rebase — pull with rebase</p>
+<p>git push &ndash;force — force push</p>
+<p>git push &ndash;force-with-lease — safe force push</p>
+<p>git rebase -i HEAD~n — interactive rebase</p>
+<p>git merge &ndash;squash <branch> — squash merge</p>
+<p>git rebase &ndash;abort — abort rebase</p>
+<p>git rebase &ndash;continue — continue rebase</p>
+<p>git merge &ndash;abort — abort merge</p>
+<p>git cherry — show unmerged commits</p>
+<h3 id="misc">Misc</h3>
+<p>git help <command> — show help</p>
+<p>git config &ndash;list — show config</p>
+<p>git config &ndash;global user.name &ldquo;Name&rdquo; — set username</p>
+<p>git config &ndash;global user.email &ldquo;Email&rdquo; — set email</p>
+<p>git config core.editor &ldquo;code &ndash;wait&rdquo; — set editor</p>
+<p>git init &ndash;bare — create bare repo</p>
+<p>git archive <branch> — archive branch</p>
+<p>git fsck — check integrity</p>
+<p>git gc — clean up repository</p>
+<p>gitk — open Git GUI</p>
+<p>Key Points ^-^</p>
+<p>100 commands cover 90% of daily and advanced Git usage</p>
+<p>Don’t memorize, use this as a reference</p>
+<p>Git is about save points, branches and history merging</p>
 </div>
     </div>
    </div>
