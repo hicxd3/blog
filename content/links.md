@@ -19,7 +19,7 @@ links
 </div>
 <br />
 <p>
-📌 <a href="https://cxd3.dev/git-commands/">Git commands</a> &rsaquo; Full list of Git commands
+📌 <a href="../git-commands/">Git commands</a> &rsaquo; Full list of Git commands
 </p>
 <p>
 <a href="https://mastery.games/flexboxzombies/" target="_blank">FlexboxZombies</a> &rsaquo; Flexbox training game
