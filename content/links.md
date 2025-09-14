@@ -22,6 +22,9 @@ links
 📌 <a href="../git-commands/">Git commands</a> &rsaquo; Full list of Git commands
 </p>
 <p>
+📌 <a href="../tailwind-css/">Tailwind CSS</a> &rsaquo; Tailwind CSS Cheatsheet
+</p>
+<p>
 <a href="https://mastery.games/flexboxzombies/" target="_blank">FlexboxZombies</a> &rsaquo; Flexbox training game
 </p>
 <p>
