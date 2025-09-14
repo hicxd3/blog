@@ -1,0 +1,447 @@
+<!DOCTYPE html>
+<html lang="en">
+<head><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=livereload" data-no-instant defer></script>
+    <link rel="icon" type="image/x-icon" href="../images/favicon.ico">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tailwind CSS Cheatsheet — 100 Classes and Setup</title>
+    <meta name="description" content="">
+    <script src="https://cdn.jsdelivr.net/npm/particles.js@2.0.0/particles.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/remixicon/3.7.0/remixicon.css">
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.9.0/styles/tokyo-night-dark.min.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.9.0/highlight.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.9.0/languages/go.min.js"></script>
+    <script>
+      hljs.highlightAll();
+    </script>
+    <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
+    <link rel="stylesheet" href="/styles/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:ital,wght@0,100..800;1,100..800&display=swap" rel="stylesheet">
+    
+    <script type="text/javascript" >
+      (function(m,e,t,r,i,k,a){m[i]=m[i]||function(){(m[i].a=m[i].a||[]).push(arguments)};
+      m[i].l=1*new Date();
+      for (var j = 0; j < document.scripts.length; j++) {if (document.scripts[j].src === r) { return; }}
+      k=e.createElement(t),a=e.getElementsByTagName(t)[0],k.async=1,k.src=r,a.parentNode.insertBefore(k,a)})
+      (window, document, "script", "https://mc.yandex.ru/metrika/tag.js", "ym");
+
+      ym(102487226, "init", {
+        clickmap:true,
+        trackLinks:true,
+        accurateTrackBounce:true,
+        webvisor:true
+      });
+</script>
+<noscript><div><img src="https://mc.yandex.ru/watch/102487226" style="position:absolute; left:-9999px;" alt="" /></div></noscript>
+
+ <meta name="yandex-verification" content="902aabbe3b7f4ec2" />
+ <meta name="google-site-verification" content="b8xqUSFNwNSPOerFCGXGO11levY0iQM5QpuzuKtNLpc" />
+
+ 
+ <meta property="og:title" content="Tailwind CSS Cheatsheet — 100 Classes and Setup">
+ <meta property="og:description" content="">
+ <meta property="og:type" content="article">
+ <meta property="og:url" content="http://localhost:1313/tailwind-css/">
+ <meta property="og:image" content="/images/og-default.png">
+ <meta property="og:site_name" content="A web development blog about JavaScript, React, Tailwind CSS, Sass, front-end and more — by Cxd3">
+
+ 
+ <script type="application/ld+json">
+ {
+  "@context": "https://schema.org",
+  "@type": "BlogPosting",
+  "headline": "Tailwind CSS Cheatsheet — 100 Classes and Setup",
+  "author": {
+    "@type": "Person",
+    "name": "Cxd3"
+  },
+  "datePublished": "2025-09-12",
+  "image": "/images/og-default.png",
+  "publisher": {
+    "@type": "Organization",
+    "name": "Cxd3.dev",
+    "logo": {
+      "@type": "ImageObject",
+      "url": "/images/logo.png"
+    }
+  },
+  "mainEntityOfPage": "http:\/\/localhost:1313\/tailwind-css\/"
+ }
+</script>
+
+</head>
+<body>
+    <div id="particles-js"></div>
+    <div class="content-wrapper">
+    <a href="javascript:history.back()" class="back-button" id="back-button">
+        <i class="ri-arrow-drop-left-line"></i>
+    </a>
+    
+    <div class="nav__menu" id="nav-menu">
+        <ul class="nav__list">
+           <li class="nav__item">
+              <a href="/" class="nav__link active-link">Home</a>
+           </li>
+           <li class="nav__item">
+              <a href="/me/" class="nav__link">About</a>
+           </li>
+           <li class="nav__item">
+              <a href="/links/" class="nav__link">Links</a>
+           </li>
+        </ul>
+        
+        <div class="nav__close" id="nav-close">
+           <i class="ri-close-line"></i>
+        </div> 
+     </div>
+     
+     <div class="nav__toggle" id="nav-toggle">
+        <i class="ri-menu-5-line"></i>
+     </div>
+    
+    <div class="author">
+        <a href="/">
+        <img class="author-avatar" src="/images/ava.jpeg">
+        </a>
+    </div>
+    <div class="clearfix">
+    <div class="col12 md:col8 lg:col6 mxauto pl2 pr2">
+    <div class="post">    
+        <nav class="col11 mxauto">
+    <div class="flex align-center justify-center">
+        <a href="/" class="Logo no-underline h2 serif bold mb0">Cxd3</a>
+    </div>
+    <div class="mt4 h5 text-center">
+        <a href="/" class="gray no-underline inline-block mx2 mt1 md:mt0">Home</a>
+        <a href="/me/" class="gray no-underline inline-block mx2 mt1 md:mt0">About</a>
+        <a href="/links/" class="gray no-underline inline-block mx2 mt1 md:mt0">Links</a>
+      </div>
+</nav>
+        
+<div class="list">
+   <div class="singleHead">
+    <div class="sinleHeadTexts">
+        
+            <h2 class="title__center">Tailwind CSS Cheatsheet — 100 Classes and Setup</h2>
+        
+
+        
+            <time class="h5 gray title__date">12 September 2025</time>
+        
+
+        <div><h2 id="tailwind-css-cheatsheet--">Tailwind CSS Cheatsheet ^-^</h2>
+<p>Complete guide to start with Tailwind and master 100 most important classes.<br>
+From setup to advanced utilities — everything you need</p>
+<h3 id="setup">Setup</h3>
+<p>npm install -D tailwindcss postcss autoprefixer — install Tailwind</p>
+<p>npx tailwindcss init -p — create config files</p>
+<p>tailwind.config.js → add content paths:</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-js" data-lang="js"><span class="line"><span class="cl"><span class="p">[</span><span class="s2">&#34;./index.html&#34;</span><span class="p">,</span> <span class="s2">&#34;./src/**/*.{js,ts,jsx,tsx}&#34;</span><span class="p">]</span>
+</span></span></code></pre></div><p>In index.css add:</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-css" data-lang="css"><span class="line"><span class="cl"><span class="p">@</span><span class="k">tailwind</span> <span class="nt">base</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="p">@</span><span class="k">tailwind</span> <span class="nt">components</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="p">@</span><span class="k">tailwind</span> <span class="nt">utilities</span><span class="p">;</span>
+</span></span></code></pre></div><p>npm run dev — start dev server</p>
+<h3 id="colors--background">Colors &amp; Background</h3>
+<p>text-red-500 — red text</p>
+<p>text-blue-600 — blue text</p>
+<p>text-gray-700 — gray text</p>
+<p>bg-pink-500 — pink background</p>
+<p>bg-green-400 — green background</p>
+<p>bg-gradient-to-r from-pink-500 to-yellow-500 — gradient</p>
+<p>border — default border</p>
+<p>border-2 border-blue-500 — thick blue border</p>
+<p>border-dashed — dashed border</p>
+<p>divide-y divide-gray-300 — divide children with line</p>
+<h3 id="spacing">Spacing</h3>
+<p>m-4 — margin 1rem</p>
+<p>mt-2 — margin top</p>
+<p>mx-auto — center horizontally</p>
+<p>p-4 — padding 1rem</p>
+<p>px-6 — padding left and right</p>
+<p>py-8 — padding top and bottom</p>
+<p>space-x-4 — horizontal space between children</p>
+<p>space-y-6 — vertical space between children</p>
+<p>gap-4 — gap in grid or flex</p>
+<p>container mx-auto — centered container</p>
+<h3 id="sizing">Sizing</h3>
+<p>w-1/2 — half width</p>
+<p>w-full — full width</p>
+<p>max-w-sm — small max width</p>
+<p>max-w-4xl — large max width</p>
+<p>h-12 — height 3rem</p>
+<p>min-h-screen — min height = viewport</p>
+<p>aspect-square — keep square ratio</p>
+<p>aspect-video — keep video ratio</p>
+<p>object-cover — fit image cover</p>
+<p>object-contain — fit image contain</p>
+<h3 id="typography">Typography</h3>
+<p>font-sans — sans-serif font</p>
+<p>font-serif — serif font</p>
+<p>font-bold — bold text</p>
+<p>font-light — light text</p>
+<p>text-sm — small text</p>
+<p>text-lg — large text</p>
+<p>text-2xl — extra large text</p>
+<p>tracking-wide — letter spacing</p>
+<p>leading-relaxed — line height</p>
+<p>truncate — ellipsis for overflow</p>
+<h3 id="layout-flex--grid">Layout (Flex &amp; Grid)</h3>
+<p>flex — display flex</p>
+<p>flex-col — flex direction column</p>
+<p>flex-row — flex direction row</p>
+<p>justify-center — center horizontally</p>
+<p>justify-between — space between</p>
+<p>items-center — center vertically</p>
+<p>items-start — align start</p>
+<p>grid — display grid</p>
+<p>grid-cols-2 — 2 column grid</p>
+<p>grid-cols-3 gap-4 — 3 columns with gap</p>
+<h3 id="effects">Effects</h3>
+<p>shadow — default shadow</p>
+<p>shadow-lg — large shadow</p>
+<p>rounded — small border radius</p>
+<p>rounded-lg — large radius</p>
+<p>rounded-full — circle</p>
+<p>opacity-50 — 50% opacity</p>
+<p>opacity-100 — full opacity</p>
+<p>hover:bg-blue-500 — change bg on hover</p>
+<p>hover:text-white — text color on hover</p>
+<p>active:scale-95 — shrink on click</p>
+<h3 id="responsive">Responsive</h3>
+<p>sm:text-sm — small screen text</p>
+<p>md:text-lg — medium screen text</p>
+<p>lg:text-xl — large screen text</p>
+<p>xl:text-2xl — extra large screen</p>
+<p>2xl:text-3xl — super large</p>
+<p>sm:hidden — hide on small screen</p>
+<p>md:flex — show flex on medium</p>
+<p>lg:grid — show grid on large</p>
+<p>sm:px-2 md:px-6 lg:px-12 — responsive padding</p>
+<p>sm:w-full md:w-1/2 — responsive width</p>
+<h3 id="advanced-utilities">Advanced Utilities</h3>
+<p>cursor-pointer — pointer cursor</p>
+<p>cursor-not-allowed — disabled cursor</p>
+<p>select-none — disable text select</p>
+<p>select-all — select all text</p>
+<p>z-10 — z-index 10</p>
+<p>z-50 — z-index 50</p>
+<p>absolute top-0 left-0 — absolute position</p>
+<p>fixed bottom-0 right-0 — fixed position</p>
+<p>sticky top-0 — sticky position</p>
+<p>hidden — display none</p>
+<h3 id="animations--transitions">Animations &amp; Transitions</h3>
+<p>transition — enable transition</p>
+<p>transition-all — all properties</p>
+<p>duration-300 — 300ms duration</p>
+<p>ease-in — ease in</p>
+<p>ease-out — ease out</p>
+<p>transform — enable transforms</p>
+<p>scale-110 — scale up</p>
+<p>rotate-45 — rotate 45°</p>
+<p>animate-spin — spin animation</p>
+<p>animate-bounce — bounce animation</p>
+<p>Key Points ^-^</p>
+<ul>
+<li>
+<p>Setup first, then utilities</p>
+</li>
+<li>
+<p>100 classes cover 90% of real work</p>
+</li>
+<li>
+<p>Think in small utilities, combine for complex design</p>
+</li>
+</ul>
+</div>
+    </div>
+   </div>
+</div>
+ 
+        <div class="mt4 h5 text-center">
+    <br />
+    <a href="/" class="gray no-underline inline-block mx2 mt1 md:mt0">Home</a>
+    <a href="/me/" class="gray no-underline inline-block mx2 mt1 md:mt0">About</a>
+    <a href="/links/" class="gray no-underline inline-block mx2 mt1 md:mt0">Links</a>
+    <br />
+    <br />
+    <a href="mailto:mail@hi@cxd3.dev" class="gray no-underline inline-block mx2">
+        Text me
+    </a>
+</div>
+<br />
+<br />
+
+<a href="#" class="scrollup" id="scroll-up">
+    <i class="ri-arrow-drop-up-line"></i>
+ </a> 
+    </div>
+    </div>
+    </div>
+    </div>
+    <script>
+         
+        particlesJS("particles-js", {
+  particles: {
+    number: {
+      value: 90,
+      density: {
+        enable: true,
+        value_area: 800
+      }
+    },
+    color: {
+      value: "#d2c0f5"
+    },
+    shape: {
+      type: "circle",
+      stroke: {
+        width: 0,
+        color: "#000"
+      }
+    },
+    opacity: {
+      value: 0.45,
+      random: true,
+      anim: {
+        enable: true,
+        speed: 0.4,
+        opacity_min: 0.1,
+        sync: true
+      }
+    },
+    size: {
+      value: 2,
+      random: true,
+      anim: {
+        enable: true
+      }
+    },
+    line_linked: {
+      enable: true,
+      distance: 120,
+      color: "#d2c0f5",
+      opacity: 0.25,
+      width: 1
+    },
+    move: {
+      enable: true,
+      speed: 1.1,
+      direction: "none",
+      random: false,
+      straight: false,
+      out_mode: "out",
+      bounce: true
+    }
+  },
+  interactivity: {
+    detect_on: "window",
+    events: {
+      onhover: {
+        enable: true,
+        mode: "repulse"
+      },
+      onclick: {
+        enable: false
+      },
+      resize: true
+    },
+    modes: {
+      repulse: {
+        distance: 120,
+        duration: 0.4
+      }
+    }
+  },
+  retina_detect: true
+});
+ 
+  
+    document.addEventListener('DOMContentLoaded', () => {
+    const backButton = document.getElementById('back-button');
+    if (backButton) {
+        if (window.location.pathname === '/' || window.location.pathname === '/index.html') {
+            backButton.classList.add('hidden');
+        } else {
+            backButton.classList.remove('hidden');
+        }
+    }
+});
+let scrollUp = () =>{
+	const scrollUp = document.getElementById('scroll-up')
+	this.scrollY >= 350 ? scrollUp.classList.add('show-scroll')
+						: scrollUp.classList.remove('show-scroll')
+}
+window.addEventListener('scroll', scrollUp)
+const navMenu = document.getElementById('nav-menu'),
+      navToggle = document.getElementById('nav-toggle'),
+      navClose = document.getElementById('nav-close');
+ 
+if (navToggle) {
+    navToggle.addEventListener('click', () => {
+        document.body.classList.add('show-menu');
+    });
+}
+ 
+if (navClose) {
+    navClose.addEventListener('click', () => {
+        document.body.classList.remove('show-menu');
+    });
+}
+ 
+document.addEventListener('click', (event) => {
+    const isClickInsideMenu = navMenu.contains(event.target); 
+    const isClickOnToggle = navToggle.contains(event.target); 
+    if (!isClickInsideMenu && !isClickOnToggle && document.body.classList.contains('show-menu')) {
+        document.body.classList.remove('show-menu');
+    }
+});
+const navLinks = document.querySelectorAll('.nav__link');
+const setActiveLink = () => {
+    const currentPath = window.location.pathname;
+    navLinks.forEach(link => {
+        const linkPath = new URL(link.href).pathname;
+        if (linkPath === currentPath) {
+            link.classList.add('active-link');
+        } else {
+            link.classList.remove('active-link');
+        }
+    });
+};
+window.addEventListener('load', setActiveLink);
+window.addEventListener('popstate', setActiveLink);
+document.addEventListener('DOMContentLoaded', () => {
+  const typedContainers = document.querySelectorAll('.typed-container');
+  const observer = new IntersectionObserver((entries, obs) => {
+    entries.forEach(entry => {
+      if (entry.isIntersecting) {
+        const container = entry.target;
+        const typedId = container.querySelector('span').id;
+        const stringsEl = container.querySelectorAll('.typed-strings p');
+        const strings = Array.from(stringsEl).map(el => el.innerHTML);
+        new Typed(`#${typedId}`, {
+          strings,
+          typeSpeed: 75,
+          backSpeed: 25,
+          backDelay: 1500,
+          startDelay: 300,
+          loop: false,
+          showCursor: true,
+          cursorChar: '|',
+          contentType: 'html'
+        });
+        obs.unobserve(container);
+      }
+    });
+  }, { threshold: 0.5 });
+  typedContainers.forEach(container => observer.observe(container));
+});
+    </script>
+</body>
+</html>
