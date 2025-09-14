@@ -25,6 +25,9 @@ links
 📌 <a href="../tailwind-css/">Tailwind CSS</a> &rsaquo; Tailwind CSS Cheatsheet
 </p>
 <p>
+📌 <a href="../vite-guide/">Vite</a> &rsaquo; Vite full Guide
+</p>
+<p>
 <a href="https://mastery.games/flexboxzombies/" target="_blank">FlexboxZombies</a> &rsaquo; Flexbox training game
 </p>
 <p>
