@@ -6,12 +6,12 @@
     <description>Recent content on </description>
     <generator>Hugo</generator>
     <language>ru</language>
-    <lastBuildDate>Wed, 01 Jan 2025 18:53:24 +0300</lastBuildDate>
+    <lastBuildDate>Mon, 01 Dec 2025 18:53:24 +0300</lastBuildDate>
     <atom:link href="http://localhost:1313/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Переменные в JavaScript</title>
       <link>http://localhost:1313/variables/</link>
-      <pubDate>Wed, 01 Jan 2025 18:53:24 +0300</pubDate>
+      <pubDate>Mon, 01 Dec 2025 18:53:24 +0300</pubDate>
       <guid>http://localhost:1313/variables/</guid>
       <description>&lt;p&gt;Переменные нужны для хранения информации&lt;/p&gt;&#xA;&lt;p&gt;Структура переменных состоит их следующих частей&lt;/p&gt;&#xA;&lt;p&gt;Переменная создается с помощью ключевых слов &lt;code&gt;let&lt;/code&gt; и &lt;code&gt;const&lt;/code&gt; в старой версии JavaScript использовали &lt;code&gt;var&lt;/code&gt; и его можно встретить в старом коде.&lt;/p&gt;&#xA;&lt;p&gt;Дальше идет имя переменной, например &lt;code&gt;name&lt;/code&gt;&lt;/p&gt;&#xA;&lt;p&gt;Потом ставится знак присваивания =&lt;/p&gt;&#xA;&lt;p&gt;И идет значение переменной&lt;/p&gt;&#xA;&lt;p&gt;Например&lt;/p&gt;&#xA;&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-javascript&#34; data-lang=&#34;javascript&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;kd&#34;&gt;let&lt;/span&gt; &lt;span class=&#34;nx&#34;&gt;name&lt;/span&gt; &lt;span class=&#34;o&#34;&gt;=&lt;/span&gt; &lt;span class=&#34;nx&#34;&gt;Eva&lt;/span&gt;&#xA;&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;Отличие &lt;code&gt;let&lt;/code&gt; и &lt;code&gt;const&lt;/code&gt; заключается в том что значения let можно поменять в других конструкциях кода а значения const нельзя поменять, его используют для обозначения данных которые не нужно будет менять, например день рождения или имя.&lt;/p&gt;</description>
     </item>
