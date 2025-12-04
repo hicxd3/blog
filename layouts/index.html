@@ -1,0 +1,24 @@
+{{ define "main" }}
+<div>
+  <h2 class="mt5">blog</h2>
+  <div class="typed-container">
+    <span id="typed-1"></span>
+    <div class="typed-strings" style="display: none">
+      <p>Моя база знаний, который я наполняю во время изучения языков программирования</p>
+    </div>
+  </div>
+</div>
+<div class="list">
+  {{ range .Pages.GroupByDate "2006-01" }}
+  <h3>{{ dateFormat "January 2006" (time (printf "%s-01" .Key)) }}</h3>
+  <ul>
+    {{ range .Pages }} {{ if not .Params.hidden }}
+    <li>
+      <time class="gray"> {{ dateFormat "02" .Date }} </time>
+      <a href="{{ .Permalink }}"> {{ .Title }} </a>
+    </li>
+    {{ end }} {{ end }}
+  </ul>
+  {{ end }}
+</div>
+{{ end }}

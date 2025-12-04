@@ -1,0 +1,255 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <link rel="icon" type="image/x-icon" href="../images/favicon.ico" />
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>{{ .Title}}</title>
+    <meta name="description" content="{{ .Description }}" />
+    <script src="https://cdn.jsdelivr.net/npm/particles.js@2.0.0/particles.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/remixicon/3.7.0/remixicon.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.9.0/styles/tokyo-night-dark.min.css" />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.9.0/highlight.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.9.0/languages/go.min.js"></script>
+    <script>
+      hljs.highlightAll();
+    </script>
+    <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
+    <link rel="stylesheet" href="/styles/style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:ital,wght@0,100..800;1,100..800&display=swap" rel="stylesheet" />
+    <!-- OpenGraph -->
+    <meta property="og:title" content="{{ .Title }}" />
+    <meta property="og:description" content="{{ with .Params.description }}{{ . }}{{ else }}{{ .Site.Params.description }}{{ end }}" />
+    <meta property="og:type" content="article" />
+    <meta property="og:url" content="{{ .Permalink }}" />
+    <meta property="og:image" content="{{ with .Params.image }}{{ . }}{{ else }}/images/og-default.png{{ end }}" />
+    <meta property="og:site_name" content="{{ .Site.Title }}" />
+
+    <!-- Schema.org JSON-LD -->
+    <script type="application/ld+json">
+      {
+       "@context": "https://schema.org",
+       "@type": "BlogPosting",
+       "headline": "{{ .Title }}",
+       "author": {
+         "@type": "Person",
+         "name": "Cxd3"
+       },
+       "datePublished": "{{ .Date.Format "2006-01-02" }}",
+       "image": "{{ with .Params.image }}{{ . }}{{ else }}/images/og-default.png{{ end }}",
+       "publisher": {
+         "@type": "Organization",
+         "name": "Cxd3.ru",
+         "logo": {
+           "@type": "ImageObject",
+           "url": "/images/logo.png"
+         }
+       },
+       "mainEntityOfPage": "{{ .Permalink }}"
+      }
+    </script>
+  </head>
+  <body>
+    <div id="particles-js"></div>
+    <div class="content-wrapper">
+      <a href="javascript:history.back()" class="back-button" id="back-button">
+        <i class="ri-arrow-drop-left-line"></i>
+      </a>
+      <!-- Menu -->
+      <div class="nav__menu" id="nav-menu">
+        <ul class="nav__list">
+          <li class="nav__item">
+            <a href="/" class="nav__link active-link">Главная</a>
+          </li>
+          <li class="nav__item">
+            <a href="/me/" class="nav__link">Обо мне</a>
+          </li>
+          <li class="nav__item">
+            <a href="/links/" class="nav__link">Ссылки</a>
+          </li>
+        </ul>
+        <!-- Close button -->
+        <div class="nav__close" id="nav-close">
+          <i class="ri-close-line"></i>
+        </div>
+      </div>
+      <!-- Toggle button -->
+      <div class="nav__toggle" id="nav-toggle">
+        <i class="ri-menu-5-line"></i>
+      </div>
+      <!-- Avatar -->
+      <div class="author">
+        <a href="/">
+          <img class="author-avatar" src="/images/ava.jpeg" />
+        </a>
+      </div>
+      <div class="clearfix">
+        <div class="col12 md:col8 lg:col6 mxauto pl2 pr2">
+          <div class="post">{{ partial "navbar" . }} {{ block "main" . }} {{ end }} {{ partial "footer" . }}</div>
+        </div>
+      </div>
+    </div>
+    <script>
+      /*=== particles ===*/
+      particlesJS('particles-js', {
+        particles: {
+          number: {
+            value: 90,
+            density: {
+              enable: true,
+              value_area: 800,
+            },
+          },
+          color: {
+            value: '#d2c0f5',
+          },
+          shape: {
+            type: 'circle',
+            stroke: {
+              width: 0,
+              color: '#000',
+            },
+          },
+          opacity: {
+            value: 0.45,
+            random: true,
+            anim: {
+              enable: true,
+              speed: 0.4,
+              opacity_min: 0.1,
+              sync: true,
+            },
+          },
+          size: {
+            value: 2,
+            random: true,
+            anim: {
+              enable: true,
+            },
+          },
+          line_linked: {
+            enable: true,
+            distance: 120,
+            color: '#d2c0f5',
+            opacity: 0.25,
+            width: 1,
+          },
+          move: {
+            enable: true,
+            speed: 1.1,
+            direction: 'none',
+            random: false,
+            straight: false,
+            out_mode: 'out',
+            bounce: true,
+          },
+        },
+        interactivity: {
+          detect_on: 'window',
+          events: {
+            onhover: {
+              enable: true,
+              mode: 'repulse',
+            },
+            onclick: {
+              enable: false,
+            },
+            resize: true,
+          },
+          modes: {
+            repulse: {
+              distance: 120,
+              duration: 0.4,
+            },
+          },
+        },
+        retina_detect: true,
+      });
+      /*=== end of particles ===*/
+      /*=============== Show Scroll To Top  ===============*/
+      document.addEventListener('DOMContentLoaded', () => {
+        const backButton = document.getElementById('back-button');
+        if (backButton) {
+          if (window.location.pathname === '/' || window.location.pathname === '/index.html') {
+            backButton.classList.add('hidden');
+          } else {
+            backButton.classList.remove('hidden');
+          }
+        }
+      });
+      let scrollUp = () => {
+        const scrollUp = document.getElementById('scroll-up');
+        this.scrollY >= 350 ? scrollUp.classList.add('show-scroll') : scrollUp.classList.remove('show-scroll');
+      };
+      window.addEventListener('scroll', scrollUp);
+      const navMenu = document.getElementById('nav-menu'),
+        navToggle = document.getElementById('nav-toggle'),
+        navClose = document.getElementById('nav-close');
+      /* Menu show */
+      if (navToggle) {
+        navToggle.addEventListener('click', () => {
+          document.body.classList.add('show-menu');
+        });
+      }
+      /* Menu hidden */
+      if (navClose) {
+        navClose.addEventListener('click', () => {
+          document.body.classList.remove('show-menu');
+        });
+      }
+      /* Close menu if was "click" on page */
+      document.addEventListener('click', (event) => {
+        const isClickInsideMenu = navMenu.contains(event.target);
+        const isClickOnToggle = navToggle.contains(event.target);
+        if (!isClickInsideMenu && !isClickOnToggle && document.body.classList.contains('show-menu')) {
+          document.body.classList.remove('show-menu');
+        }
+      });
+      const navLinks = document.querySelectorAll('.nav__link');
+      const setActiveLink = () => {
+        const currentPath = window.location.pathname;
+        navLinks.forEach((link) => {
+          const linkPath = new URL(link.href).pathname;
+          if (linkPath === currentPath) {
+            link.classList.add('active-link');
+          } else {
+            link.classList.remove('active-link');
+          }
+        });
+      };
+      window.addEventListener('load', setActiveLink);
+      window.addEventListener('popstate', setActiveLink);
+      document.addEventListener('DOMContentLoaded', () => {
+        const typedContainers = document.querySelectorAll('.typed-container');
+        const observer = new IntersectionObserver(
+          (entries, obs) => {
+            entries.forEach((entry) => {
+              if (entry.isIntersecting) {
+                const container = entry.target;
+                const typedId = container.querySelector('span').id;
+                const stringsEl = container.querySelectorAll('.typed-strings p');
+                const strings = Array.from(stringsEl).map((el) => el.innerHTML);
+                new Typed(`#${typedId}`, {
+                  strings,
+                  typeSpeed: 75,
+                  backSpeed: 25,
+                  backDelay: 1500,
+                  startDelay: 300,
+                  loop: false,
+                  showCursor: true,
+                  cursorChar: '|',
+                  contentType: 'html',
+                });
+                obs.unobserve(container);
+              }
+            });
+          },
+          { threshold: 0.5 }
+        );
+        typedContainers.forEach((container) => observer.observe(container));
+      });
+    </script>
+  </body>
+</html>

@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title></title>
+    <link>http://localhost:1313/</link>
+    <description>Recent content on </description>
+    <generator>Hugo</generator>
+    <language>ru</language>
+    <lastBuildDate>Thu, 12 Dec 2024 18:53:24 +0300</lastBuildDate>
+    <atom:link href="http://localhost:1313/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Ссылки на полезные ресурсы</title>
+      <link>http://localhost:1313/links/</link>
+      <pubDate>Thu, 12 Dec 2024 18:53:24 +0300</pubDate>
+      <guid>http://localhost:1313/links/</guid>
+      <description>&lt;div&gt;&#xA;&lt;h2 class=&#34;mt5&#34;&gt;&#xA;links&#xA;&lt;/h2&gt;&#xA;&lt;div class=&#34;typed-container&#34;&gt;&#xA;&lt;span id=&#34;typed-2&#34;&gt;&lt;/span&gt;&#xA;&lt;div class=&#34;typed-strings&#34; style=&#34;display: none;&#34;&gt;&#xA;&lt;p&gt;Ссылки на полезные ресурсы&lt;/p&gt;&#xA;&lt;/div&gt;&#xA;&lt;/div&gt;&#xA;&lt;br /&gt;&#xA;&lt;p&gt;&lt;a href=&#34;https://mastery.games/flexboxzombies/&#34; target=&#34;_blank&#34;&gt;FlexboxZombies&lt;/a&gt; › Игра для тренировки Flexbox&lt;/p&gt;&#xA;&lt;/p&gt;&#xA;&lt;p&gt;&#xA;&lt;a href=&#34;https://codingfantasy.com/games/flexboxadventure/play&#34; target=&#34;_blank&#34;&gt;FlexboxAdventure&lt;/a&gt; &amp;rsaquo; Игра для тренировки Flexbox&#xA;&lt;/p&gt;&#xA;&lt;p&gt;&#xA;&lt;a href=&#34;http://www.flexboxdefense.com/&#34; target=&#34;_blank&#34;&gt;FlexboxDefense&lt;/a&gt; &amp;rsaquo; Игра для тренировки Flexbox&#xA;&lt;/p&gt;&#xA;&lt;p&gt;&#xA;&lt;a href=&#34;https://cssgridgarden.com&#34; target=&#34;_blank&#34;&gt;GridGarden&lt;/a&gt; &amp;rsaquo; Игра для тренировки CSS Grid&#xA;&lt;/p&gt;&#xA;&lt;p&gt;&#xA;&lt;a href=&#34;https://flexboxfroggy.com/&#34; target=&#34;_blank&#34;&gt;FlexboxFroggy&lt;/a&gt; &amp;rsaquo; Игра для тренировки Flexbox&#xA;&lt;/p&gt;&#xA;&lt;p&gt;&#xA;&lt;a href=&#34;https://learngitbranching.js.org&#34; target=&#34;_blank&#34;&gt;LearnGit&lt;/a&gt; &amp;rsaquo; Игра для тренировки Git ветвлений&#xA;&lt;/p&gt;&#xA;&lt;/div&gt;</description>
+    </item>
+    <item>
+      <title>Страница обо мне как о разработчике</title>
+      <link>http://localhost:1313/me/</link>
+      <pubDate>Thu, 12 Dec 2024 18:53:24 +0300</pubDate>
+      <guid>http://localhost:1313/me/</guid>
+      <description>&lt;h2&gt;about&lt;/h2&gt;&#xA;&lt;div class=&#34;typed-container&#34;&gt;&#xA;  &lt;span id=&#34;typed-2&#34;&gt;&lt;/span&gt;&#xA;  &lt;div class=&#34;typed-strings&#34; style=&#34;display: none;&#34;&gt;&#xA;    &lt;p&gt;&#xA;      Привет, это Cxd3 👋&#xA;    &lt;/p&gt;&#xA;  &lt;/div&gt;&#xA;&lt;/div&gt;&#xA;&lt;hr style=&#34;width: 100px;&#34;&gt;&#xA;&lt;h3 class=&#34;mt2&#34; style=&#34;padding-top: 10px; padding-bottom: 0px&#34;&gt;&#xA;education&#xA;&lt;/h3&gt;&#xA;&lt;p&gt;&#xA;Прогресс обучения&#xA;&lt;/p&gt;&#xA;&lt;h4 class=&#34;mt2&#34;&gt;&#xA;Февраль 2022&#xA;&lt;/h4&gt;&#xA;&lt;ul&gt;&#xA;&lt;li class=&#34;mb0.5&#34;&gt;&#xA;&lt;a href=&#34;https://htmlacademy.ru/profession/frontender&#34; target=&#34;_blank&#34;&gt;&#xA;HTMLAcademy&#xA;&lt;/a&gt;&#xA;&amp;rsaquo; Курс от  HTMLAcademy по Frontend разработке&#xA;&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;h4 class=&#34;mt2&#34;&gt;&#xA;Январь 2022&#xA;&lt;/h4&gt;&#xA;&lt;ul&gt;&#xA;&lt;li class=&#34;mb0.5&#34;&gt;&#xA;&lt;a href=&#34;https://synergy.ru&#34; target=&#34;_blank&#34;&gt;&#xA;Университет Синергия&#xA;&lt;/a&gt;&#xA;&amp;rsaquo; Факультет информационных систем и технологий&#xA;&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;h4 class=&#34;mt2&#34;&gt;Октябрь 2021&lt;/h4&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;&#xA;&lt;a href=&#34;https://www.udemy.com/course/javascript_full/&#34; target=&#34;_blank&#34;&gt;&#xA;Udemy&#xA;&lt;/a&gt;&#xA;&amp;rsaquo; Курс Вани Петриченко по &#34;JavaScript + React&#34;&#xA;&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;hr style=&#34;width: 100px;&#34;&gt;&#xA;&lt;h3 class=&#34;mt2&#34; style=&#34;padding-top: 10px; padding-bottom: 0px&#34;&gt;&#xA;Проекты&#xA;&lt;/h3&gt;&#xA;&lt;p&gt;&#xA;Список проектов&#xA;&lt;/p&gt;&#xA;&lt;h3 class=&#34;mt2&#34; style=&#34;padding-top: 20px&#34;&gt;&#xA;Июль 2025 (#7)&#xA;&lt;/h3&gt;&#xA;&lt;p&gt;&#xA;Сайт на тему Хэллуина. Написан на HTML + CSS и добавлена анимация с помощью JavaScript&#xA;&lt;/p&gt;</description>
+    </item>
+  </channel>
+</rss>
