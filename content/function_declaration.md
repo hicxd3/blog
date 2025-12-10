@@ -1,5 +1,5 @@
 +++
-date = '2025-12-10T12:00:00+03:00'
+date = '2025-12-09T19:00:00+03:00'
 title = 'Function Declaration в  JavaScript'
 +++
 
